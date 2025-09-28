@@ -1,0 +1,125 @@
+<mujocoinclude>
+    <default class="main">
+        <site size="0.005 0 0" rgba="0.4 0.9 0.4 1" />
+
+        <!--ur5e-->
+        <joint limited="true" axis="0 0 1" />
+        <general ctrllimited="true" forcelimited="true" ctrlrange="-6.2831 6.2831" dyntype="none" biastype="affine"/>
+
+        <default class="visual">
+          <geom type="mesh" contype="0" conaffinity="0" group="2"/>
+        </default>
+        <default class="collision">
+          <geom type="capsule" group="3"/>
+          <default class="eef_collision">
+            <geom type="cylinder" />
+          </default>
+        </default>
+
+      <default class="Widget">
+          <geom contype="0" conaffinity="0" group="2" rgba="1 1 1 1"/>
+      </default>
+
+        <default class="size3">
+          <joint armature="0.1" damping="10"/>
+          <general forcerange="-265 265"/>
+        </default>
+        <default class="size2">
+          <joint armature="0.1" damping="10"/>
+          <general forcerange="-142 142"/>
+        </default>
+        <default class="size1">
+          <joint armature="0.1" damping="10"/>
+          <general forcerange="-20 20"/>
+        </default>
+
+        <default class="free">
+            <joint type="free" limited="false" armature="0" damping="0" />
+        </default>
+
+        <default class="torso_size1">
+            <joint limited="true" axis="0 0 1" armature="0.1" damping="10"/>
+            <general ctrllimited="true" forcelimited="true" forcerange="-465 465"  ctrlrange="-3.14 3.15" dyntype="none" biastype="affine"/>
+        </default>
+
+        <default class="chassis_size1">
+            <joint limited="false" axis="0 0 1" armature="0.0" damping="10"/>
+            <general ctrllimited="false" forcelimited="false" forcerange="-5000 5000"  ctrlrange="-5000 5000" dyntype="none" biastype="affine"/>
+        </default>
+
+        <default class="hand">
+          <joint damping="10" armature="0.1" frictionloss="1.5"/>
+           <general forcerange="-265 265"/>
+        </default>
+
+        <default class="gripper_size1">
+            <joint limited="true" axis="0 0 1" armature="0.02" damping="0.3"/>
+            <general ctrllimited="true" forcelimited="true"  ctrlrange="0 1.14 " biastype="affine" forcerange="-10 10" gainprm="100" biasprm="0 -100 -4"/>
+        </default>
+
+    </default>
+    
+  <asset>
+    <mesh name="astribot_torso_base_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_torso/astribot_torso_base_link.STL"/>
+    <mesh name="wheel_RF_Link" file="../../../urdf/astribot_s1_urdf/meshes/s1_torso/wheel_RF_Link.STL"/>
+    <mesh name="wheel_LF_Link" file="../../../urdf/astribot_s1_urdf/meshes/s1_torso/wheel_LF_Link.STL"/>
+    <mesh name="wheel_RR_Link" file="../../../urdf/astribot_s1_urdf/meshes/s1_torso/wheel_RR_Link.STL"/>
+    <mesh name="wheel_LR_Link" file="../../../urdf/astribot_s1_urdf/meshes/s1_torso/wheel_LR_Link.STL"/>
+    <mesh name="astribot_torso_link_1" file="../../../urdf/astribot_s1_urdf/meshes/s1_torso/astribot_torso_link_1.STL"/>
+    <mesh name="astribot_torso_link_2" file="../../../urdf/astribot_s1_urdf/meshes/s1_torso/astribot_torso_link_2.STL"/>
+    <mesh name="astribot_torso_link_3" file="../../../urdf/astribot_s1_urdf/meshes/s1_torso/astribot_torso_link_3.STL"/>
+    <mesh name="astribot_torso_link_4" file="../../../urdf/astribot_s1_urdf/meshes/s1_torso/astribot_torso_link_4.STL"/>
+
+    <mesh name="astribot_head_base_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_head/astribot_head_base_link.STL"/>
+    <mesh name="astribot_head_link_1" file="../../../urdf/astribot_s1_urdf/meshes/s1_head/astribot_head_link_1.STL"/>
+    <mesh name="astribot_head_link_2" file="../../../urdf/astribot_s1_urdf/meshes/s1_head/astribot_head_link_2.STL"/>
+
+    <mesh name="astribot_arm_left_base_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_arm/astribot_arm_left_base_link.STL"/>
+    <mesh name="astribot_arm_right_base_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_arm/astribot_arm_right_base_link.STL"/>
+    <mesh name="astribot_arm_link_1" file="../../../urdf/astribot_s1_urdf/meshes/s1_arm/astribot_arm_link_1.STL"/>
+    <mesh name="astribot_arm_left_link_2" file="../../../urdf/astribot_s1_urdf/meshes/s1_arm/astribot_arm_left_link_2.STL"/>
+    <mesh name="astribot_arm_link_3" file="../../../urdf/astribot_s1_urdf/meshes/s1_arm/astribot_arm_link_3.STL"/>
+    <mesh name="astribot_arm_link_4" file="../../../urdf/astribot_s1_urdf/meshes/s1_arm/astribot_arm_link_4.STL"/>
+    <mesh name="astribot_arm_link_5" file="../../../urdf/astribot_s1_urdf/meshes/s1_arm/astribot_arm_link_5.STL"/>
+    <mesh name="astribot_arm_link_6" file="../../../urdf/astribot_s1_urdf/meshes/s1_arm/astribot_arm_link_6.STL"/>
+    <mesh name="astribot_arm_link_7" file="../../../urdf/astribot_s1_urdf/meshes/s1_arm/astribot_arm_link_7.STL"/>
+    <mesh name="astribot_arm_right_link_2" file="../../../urdf/astribot_s1_urdf/meshes/s1_arm/astribot_arm_right_link_2.STL"/>
+      
+    <mesh name="left_base_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_left/left_base_link.STL"/>
+    <mesh name="left_thumb_metacarpal_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_left/left_thumb_metacarpal_Link.STL"/>
+    <mesh name="left_thumb_proximal_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_left/left_thumb_proximal_Link.STL"/>
+    <mesh name="left_thumb_distal_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_left/left_thumb_distal_Link.STL"/>
+    <mesh name="left_thumb_tip" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_left/left_thumb_tip.STL"/>
+    <mesh name="left_index_proximal_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_left/left_index_proximal_Link.STL"/>
+    <mesh name="left_index_distal_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_left/left_index_distal_Link.STL"/>
+    <mesh name="left_index_tip" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_left/left_index_tip.STL"/>
+    <mesh name="left_middle_proximal_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_left/left_middle_proximal_Link.STL"/>
+    <mesh name="left_middle_distal_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_left/left_middle_distal_Link.STL"/>
+    <mesh name="left_middle_tip" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_left/left_middle_tip.STL"/>
+    <mesh name="left_ring_proximal_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_left/left_ring_proximal_Link.STL"/>
+    <mesh name="left_ring_distal_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_left/left_ring_distal_Link.STL"/>
+    <mesh name="left_ring_tip" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_left/left_ring_tip.STL"/>
+    <mesh name="left_pinky_proximal_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_left/left_pinky_proximal_Link.STL"/>
+    <mesh name="left_pinky_distal_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_left/left_pinky_distal_Link.STL"/>
+    <mesh name="left_pinky_tip" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_left/left_pinky_tip.STL"/>
+
+    <mesh name="right_base_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_right/right_base_link.STL"/>
+    <mesh name="right_thumb_metacarpal_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_right/right_thumb_metacarpal_link.STL"/>
+    <mesh name="right_thumb_proximal_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_right/right_thumb_proximal_link.STL"/>
+    <mesh name="right_thumb_distal_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_right/right_thumb_distal_link.STL"/>
+    <mesh name="right_thumb_tip" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_right/right_thumb_tip.STL"/>
+    <mesh name="right_index_proximal_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_right/right_index_proximal_link.STL"/>
+    <mesh name="right_index_distal_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_right/right_index_distal_link.STL"/>
+    <mesh name="right_index_tip" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_right/right_index_tip.STL"/>
+    <mesh name="right_middle_proximal_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_right/right_middle_proximal_link.STL"/>
+    <mesh name="right_middle_distal_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_right/right_middle_distal_link.STL"/>
+    <mesh name="right_middle_tip" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_right/right_middle_tip.STL"/>
+    <mesh name="right_ring_proximal_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_right/right_ring_proximal_link.STL"/>
+    <mesh name="right_ring_distal_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_right/right_ring_distal_link.STL"/>
+    <mesh name="right_ring_tip" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_right/right_ring_tip.STL"/>
+    <mesh name="right_pinky_proximal_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_right/right_pinky_proximal_link.STL"/>
+    <mesh name="right_pinky_distal_link" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_right/right_pinky_distal_link.STL"/>
+    <mesh name="right_pinky_tip" file="../../../urdf/astribot_s1_urdf/meshes/s1_hand/s1_hand_right/right_pinky_tip.STL"/>
+  </asset>
+
+</mujocoinclude>

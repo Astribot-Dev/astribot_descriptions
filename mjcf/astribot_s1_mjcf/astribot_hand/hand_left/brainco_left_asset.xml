@@ -1,0 +1,21 @@
+  <mujocoinclude>
+    <asset>
+      <mesh name="left_base_link" file="left_base_link.STL"/>
+      <mesh name="left_thumb_metacarpal_link" file="left_thumb_metacarpal_link.STL"/>
+      <mesh name="left_thumb_proximal_link" file="left_thumb_proximal_link.STL"/>
+      <mesh name="left_thumb_distal_link" file="left_thumb_distal_link.STL"/>
+      <mesh name="left_thumb_tip" file="left_thumb_tip.STL"/>
+      <mesh name="left_index_proximal_link" file="left_index_proximal_link.STL"/>
+      <mesh name="left_index_distal_link" file="left_index_distal_link.STL"/>
+      <mesh name="left_index_tip" file="left_index_tip.STL"/>
+      <mesh name="left_middle_proximal_link" file="left_middle_proximal_link.STL"/>
+      <mesh name="left_middle_distal_link" file="left_middle_distal_link.STL"/>
+      <mesh name="left_middle_tip" file="left_middle_tip.STL"/>
+      <mesh name="left_ring_proximal_link" file="left_ring_proximal_link.STL"/>
+      <mesh name="left_ring_distal_link" file="left_ring_distal_link.STL"/>
+      <mesh name="left_ring_tip" file="left_ring_tip.STL"/>
+      <mesh name="left_pinky_proximal_link" file="left_pinky_proximal_link.STL"/>
+      <mesh name="left_pinky_distal_link" file="left_pinky_distal_link.STL"/>
+      <mesh name="left_pinky_tip" file="left_pinky_tip.STL"/>
+    </asset>
+  </mujocoinclude>

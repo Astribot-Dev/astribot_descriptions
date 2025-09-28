@@ -1,0 +1,40 @@
+<mujocoinclude>
+      <contact>
+    <!-- filter the palm from all other finger bodies except the tips -->
+    <exclude body1="right_base_link" body2="right_thumb_metacarpal_link"/>
+    <exclude body1="right_base_link" body2="right_thumb_proximal_link"/>
+    <exclude body1="right_base_link" body2="right_index_proximal_link"/>
+    <exclude body1="right_base_link" body2="right_middle_proximal_link"/>
+    <exclude body1="right_base_link" body2="right_ring_proximal_link"/>
+    <exclude body1="right_base_link" body2="right_pinky_proximal_link"/>
+    <!-- <exclude body1="right_thumb_metacarpal_link" body2="right_thumb_proximal_link"/>-->
+    <!-- <exclude body1="right_thumb_proximal_link" body2="right_thumb_distal_link"/>-->
+  </contact>
+
+
+   <equality>
+    <!-- 食指约束: distal = proximal * 1.1 -->
+    <joint joint1="right_index_proximal_joint" joint2="right_index_distal_joint" polycoef="0 1.1 0 0"/>
+
+    <!-- 中指约束: distal = proximal * 1.1 -->
+    <joint joint1="right_middle_proximal_joint" joint2="right_middle_distal_joint" polycoef="0 1.1 0 0"/>
+
+    <!-- 无名指约束: distal = proximal * 1.1 -->
+    <joint joint1="right_ring_proximal_joint" joint2="right_ring_distal_joint" polycoef="0 1.1 0 0"/>
+
+    <!-- 小指约束: distal = proximal * 1.1 -->
+    <joint joint1="right_pinky_proximal_joint" joint2="right_pinky_distal_joint" polycoef="0 1.1 0 0"/>
+
+    <!-- 拇指约束: distal = proximal * 1.1 -->
+    <joint joint1="right_thumb_proximal_joint" joint2="right_thumb_distal_joint" polycoef="0 1.1 0 0"/>
+
+    <joint joint1="astribot_gripper_right_joint_L1" joint2="right_thumb_proximal_joint" polycoef="0 1.0 0 0"/>
+    <joint joint1="right_thumb_proximal_joint" joint2="right_index_proximal_joint" polycoef="0 1.0 0 0"/>
+    
+    <joint joint1="right_index_proximal_joint" joint2="right_middle_proximal_joint" />
+    <joint joint1="right_middle_proximal_joint" joint2="right_ring_proximal_joint" />
+    <joint joint1="right_ring_proximal_joint" joint2="right_pinky_proximal_joint" />
+
+  </equality>
+  
+  </mujocoinclude>

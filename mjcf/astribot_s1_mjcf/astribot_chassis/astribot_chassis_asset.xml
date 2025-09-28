@@ -1,0 +1,16 @@
+<mujocoinclude>
+    <asset>
+        <mesh name="astribot_chassis_base_link" file="astribot_chassis/meshes/astribot_chassis_base_link.STL"/>
+        <mesh name="astribot_chassis_base_linkID" file="astribot_chassis/meshes/astribot_chassis_base_linkID.STL"/>
+        <mesh name="astribot_chassis_link_1" file="astribot_chassis/meshes/astribot_chassis_L1.STL"/>
+        <mesh name="astribot_chassis_link_21" file="astribot_chassis/meshes/astribot_chassis_L2_1.STL"/>
+        <mesh name="astribot_chassis_link_22" file="astribot_chassis/meshes/astribot_chassis_L2_2.STL"/>
+        <mesh name="astribot_chassis_link_31" file="astribot_chassis/meshes/astribot_chassis_L3_1.STL"/>
+        <mesh name="astribot_chassis_link_32" file="astribot_chassis/meshes/astribot_chassis_L3_2.STL"/>
+        <mesh name="astribot_chassis_link_41" file="astribot_chassis/meshes/astribot_chassis_L4_1.STL"/>
+        <mesh name="astribot_chassis_link_42" file="astribot_chassis/meshes/astribot_chassis_L4_2.STL"/>
+
+      </asset>
+
+
+</mujocoinclude>

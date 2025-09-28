@@ -1,0 +1,50 @@
+<mujoco model="astribot_gripper_left">
+
+<!--    夹爪基座-->
+    <body name="astribot_gripper_left_base" pos="0.0 0.0 .0">
+      <geom type="mesh" contype="0" conaffinity="0" rgba="0.2 0.2 0.2 1" mesh="gripper_base_link"/>
+      <geom name="astribot_gripper_right_left_geom" type="box" size=" 0.02 0.0135 0.01" pos="0.00 0 0.07" rgba="0.5 0.2 0.2 1" friction="0.7" solimp="0.95 0.99 0.001" solref="0.004 1" priority="1"/>
+
+      <inertial pos="0.0 0.0 0.04"  quat="0.0 0.0 -0.0 1.0" mass="0.4" diaginertia="0.001 0.001 0.001"/>
+
+        <!--        左手指平行连杆1-->
+      <body name="astribot_gripper_left_Link_L1" pos="0.0145 0 0.0510999999999999">
+          <joint class="gripper_size1" name="astribot_gripper_left_joint_L1" pos="0 0 0" axis="0 -1 0" range="0 0.93 " damping="5" />
+          <geom name="astribot_gripper_left_geom_L1" contype="0" conaffinity="0" type="mesh" rgba="0.898039 0.917647 0.929412 1" mesh="gripper_L1_Link"/>
+          <inertial pos="0.0238640864176058 9.47687900128855E-11 0.0229075443586898"  quat="0.0 0.0 -0.0 1.0" mass="0.03" diaginertia="0.001 0.001 0.001"/>
+          <body name="astribot_gripper_left_Link_L11" pos="0.0412500000000001 0 0.036379080527138"  euler="0 0 0">
+              <joint class="gripper_size1" name="astribot_gripper_left_joint_L11" pos="0 0 0" axis="0 1 0" range="-0 1.00" />
+              <inertial pos="0.00580213800883545 -8.25165165516798E-05 0.0308700387872592"  quat="0.0 0.0 -0.0 1.0" mass="0.067" diaginertia="0.001 0.001 0.001"/>
+              <geom name="astribot_gripper_left_geom_L11" contype="0" conaffinity="0" type="mesh" rgba="0.898039 0.917647 0.929412 1" mesh="gripper_L11_Link"/>
+              <geom name="astribot_gripper_left_geom_L112" type="box" size=" 0.005 0.0135 0.03" pos="-0.003 0 0.036" rgba="0.5 0.2 0.2 1" friction="1.7" solimp="0.95 0.99 0.001" solref="0.004 1" priority="1" />
+          </body>
+      </body>
+<!--        左手指平行连杆2-->
+      <body name="astribot_gripper_left_Link_L2" pos="0.0325 0 0.0510999999999999">
+          <joint class="gripper_size1" name="astribot_gripper_left_joint_L2" pos="0 0 0" axis="0 1 0" range="-1.00 0" />
+          <geom name="astribot_gripper_left_geom_L2" contype="0" conaffinity="0" type="mesh" rgba="0.898039 0.917647 0.929412 1" mesh="gripper_L2_Link"/>
+          <inertial pos="0.0140847588556024 1.38103934263007E-10 0.0136360450679544"  quat="0.0 0.0 -0.0 1.0" mass="0.03" diaginertia="0.001 0.001 0.001"/>
+<!--          <body name="left_gripper_L2_anchor" pos="0.036 0 0.031749"/>-->
+      </body>
+
+<!--        右手指平行连杆1-->
+      <body name="astribot_gripper_left_Link_R1" pos="-0.0144999999999999 0 0.0510999999999939" >
+          <joint class="gripper_size1" name="astribot_gripper_left_joint_R1" pos="0 0 0" axis="0 1 0" range="0 0.93 " damping="5" />
+          <geom name="astribot_gripper_left_geom_R1" contype="0" conaffinity="0" type="mesh" rgba="0.898039 0.917647 0.929412 1" mesh="gripper_R1_Link"/>
+          <inertial pos="-0.0238640864176057 -9.47685797632123E-11 0.0229075443586915"  quat="0.0 0.0 -0.0 1.0" mass="0.03" diaginertia="0.001 0.001 0.001"/>
+          <body name="astribot_gripper_left_Link_R11" pos="-0.0412499999999999 0 0.0363790805271382" euler="0 0.03 0">
+              <joint class="gripper_size1" name="astribot_gripper_left_joint_R11" pos="0 0 0" axis="0 1 0" range="-1.00 0" />
+              <inertial pos="-0.00580213800888738 8.25165165509265E-05 0.030870038787216"  quat="0.0 0.0 -0.0 1.0" mass="0.067" diaginertia="0.001 0.001 0.001"/>
+              <geom name="astribot_gripper_left_geom_R11" contype="0" conaffinity="0" type="mesh" rgba="0.898039 0.917647 0.929412 1" mesh="gripper_R11_Link"/>
+              <geom name="astribot_gripper_left_geom_R112" type="box" size=" 0.005 0.0135 0.03" pos="0.003 0 0.036" rgba="0.5 0.2 0.2 1"  friction="0.7" solimp="0.95 0.99 0.001" solref="0.004 1" priority="1" />
+          </body>
+      </body>
+<!--        右手指平行连杆2-->
+      <body name="astribot_gripper_left_Link_R2" pos="-0.0325 0 0.0510999999999999">
+          <joint class="gripper_size1" name="astribot_gripper_left_joint_R2" pos="0 0 0" axis="0 1 0" range="-0 1.00" />
+          <inertial pos="-0.0140847588556023 -1.38096956128494E-10 0.0136360450679544"  quat="0.0 0.0 -0.0 1.0" mass="0.03" diaginertia="0.001 0.001 0.001"/>
+          <geom name="astribot_gripper_left_geom_R2" contype="0" conaffinity="0" type="mesh" rgba="0.898039 0.917647 0.929412 1" mesh="gripper_R2_Link"/>
+      </body>
+    </body>
+</mujoco>
+

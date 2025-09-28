@@ -1,0 +1,39 @@
+<mujoco model="astribot_s1">
+
+    <compiler angle="radian"/>
+    <option impratio="100" integrator="implicit" timestep="0.01" viscosity="0.1" gravity="0 0 -9.81"/>
+
+    <asset>
+        <texture type="2d" name="groundplane" builtin="checker" rgb1="0.2 0.3 0.4" rgb2="0.1 0.2 0.3" width="500" height="500"/>
+        <material name="groundplane" texture="groundplane" texuniform="true" texrepeat="5 5" reflectance="0.2"/>
+    </asset>
+
+    <include file="assets/astribot_s1_asset_for_hand.xml"/>
+
+    <worldbody>
+        <light pos="0 0 2.0" dir="0 0 -1" directional="true"/>
+        <geom name="floor" size="0 0 0.05" type="plane" material="groundplane"/>
+        <camera pos="2.107 0.011 1.6" xyaxes="-0.001 1.000 0.000 -0.277 -0.000 0.961"/>
+
+       <body name="chassis_base" pos="-0.0 0.0 0.097" euler="0 0 3.14159">
+            <!-- <freejoint name="root"/> -->
+                <!-- 添加平移与旋转自由度 -->
+                
+            <joint name="astribot_chassis_x" type="slide" axis="1 0 0" limited="false"/>
+            <joint name="astribot_chassis_y" type="slide" axis="0 1 0" limited="false"/>
+            <joint name="astribot_chassis_zrot" type="hinge" axis="0 0 1" limited="false"/>
+
+            <include file="model_with_effector/astribot_s1_model_with_hand.xml"/>
+        </body>
+
+        <!-- <include file="astribot_s1_endpoint_body.xml"/> -->
+
+    </worldbody>
+
+    <!-- <include file="astribot_chassis/astribot_chassis_actuator.xml"/> -->
+    <include file="actuators/astribot_s1_actuator_for_hand.xml"/>
+
+    <!-- <include file="astribot_gripper/astribot_gripper_left/astribot_gripper_left_contact.xml"></include>
+	<include file="astribot_gripper/astribot_gripper_right/astribot_gripper_right_contact.xml"></include> -->
+
+</mujoco>

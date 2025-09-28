@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<sdf version='1.7'>
+  <model name='astribot_head'>
+    <link name="base">
+     <inertial>
+      <mass>0.0</mass>
+       <inertia>
+        <ixx>0</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyy>0</iyy>
+        <iyz>0</iyz>
+        <izz>0</izz>
+      </inertia>
+     </inertial>
+    </link>
+    <!--joint between {parent} and link_0-->
+    <joint name="base_joint" type="fixed">
+      <child>astribot_head_base_link</child>
+      <parent>base</parent>
+    </joint>
+    <link name='astribot_head_base_link'>
+      <inertial>
+        <pose>-0.028162 -0.000232 -0.05212 0 -0 0</pose>
+        <mass>0.395414</mass>
+        <inertia>
+          <ixx>0.00036025</ixx>
+          <ixy>-3.505e-05</ixy>
+          <ixz>4.865e-05</ixz>
+          <iyy>0.00049377</iyy>
+          <iyz>2.43e-06</iyz>
+          <izz>0.00074441</izz>
+        </inertia>
+      </inertial>
+    </link>
+    <joint name='astribot_head_joint_1' type='revolute'>
+      <pose relative_to='astribot_head_base_link'>0 0 0 0 -0 0</pose>
+      <parent>astribot_head_base_link</parent>
+      <child>astribot_head_link_1</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1.57</lower>
+          <upper>1.57</upper>
+          <effort>100</effort>
+          <velocity>4</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='astribot_head_link_1'>
+      <pose relative_to='astribot_head_joint_1'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>3.2e-05 -0.000386 -0.025799 0 -0 0</pose>
+        <mass>0.139106</mass>
+        <inertia>
+          <ixx>4.567e-05</ixx>
+          <ixy>3e-08</ixy>
+          <ixz>4e-08</ixz>
+          <iyy>4.789e-05</iyy>
+          <iyz>-9.1e-07</iyz>
+          <izz>3.779e-05</izz>
+        </inertia>
+      </inertial>
+    </link>
+    <joint name='astribot_head_joint_2' type='revolute'>
+      <pose relative_to='astribot_head_link_1'>0 0 0 -1.5708 0 0</pose>
+      <parent>astribot_head_link_1</parent>
+      <child>astribot_head_link_2</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1.22</lower>
+          <upper>1.22</upper>
+          <effort>100</effort>
+          <velocity>4</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='astribot_head_link_2'>
+    <!-- todo: This is just for adapting to the old version of kinodynamic line 33-->
+      <pose relative_to='astribot_head_joint_2'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.007058 -0.144726 -0.000617 0 -0 0</pose>
+        <mass>0.970124</mass>
+        <inertia>
+          <ixx>0.0055566</ixx>
+          <ixy>-0.000416</ixy>
+          <ixz>-3.6e-07</ixz>
+          <iyy>0.00151908</iyy>
+          <iyz>-0.00012043</iyz>
+          <izz>0.00544493</izz>
+        </inertia>
+      </inertial>
+      <collision name='astribot_head_link_2_collision'>
+        <pose>0 -0.15 0 0 -0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.11</radius>
+          </sphere>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

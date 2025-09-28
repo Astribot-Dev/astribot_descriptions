@@ -1,0 +1,20 @@
+<mujoco>
+    <actuator>
+        <general class="chassis_size1" name="astribot_chassis_wheel_joint_left" joint="astribot_chassis_wheel_joint_left" gainprm="30" biasprm="0 -30 -10"/>
+        <general class="chassis_size1" name="astribot_chassis_wheel_joint_right" joint="astribot_chassis_wheel_joint_right" gainprm="30" biasprm="0 -30 -10"/>
+
+    </actuator>
+
+    <sensor>
+<!--        <touch name="astribot_chassis_wheel_force_left" site="astribot_chassis_wheel_force_left" />-->
+        <force name="astribot_chassis_front_left_force" site="astribot_chassis_front_left_site" />
+        <force name="astribot_chassis_front_right_force" site="astribot_chassis_front_right_site" />
+        <force name="astribot_chassis_back_force" site="astribot_chassis_back_site" />
+        <gyro name="astribot_chassis_base_imu_gyro" site="astribot_chassis_imu_site" />
+        <accelerometer name="astribot_chassis_base_imu_acc" site="astribot_chassis_imu_site" />
+
+
+<!--        <torque name="force_torque_sensor_torque_right" site="force_torque_sensor_right" />-->
+    </sensor>
+    
+</mujoco>

@@ -1,0 +1,33 @@
+<mujocoinclude>
+    <contact>
+        <exclude body1="astribot_gripper_right_base" body2="astribot_gripper_right_Link_L1"/>
+        <exclude body1="astribot_gripper_right_base" body2="astribot_gripper_right_Link_L2"/>
+        <exclude body1="astribot_gripper_right_Link_L1" body2="astribot_gripper_right_Link_L2"/>
+        <exclude body1="astribot_gripper_right_Link_L1" body2="astribot_gripper_right_Link_L11"/>
+        <exclude body1="astribot_gripper_right_Link_L2" body2="astribot_gripper_right_Link_L11"/>
+
+
+        <exclude body1="astribot_gripper_right_base" body2="astribot_gripper_right_Link_R1"/>
+        <exclude body1="astribot_gripper_right_base" body2="astribot_gripper_right_Link_R2"/>
+        <exclude body1="astribot_gripper_right_Link_R1" body2="astribot_gripper_right_Link_R2"/>
+        <exclude body1="astribot_gripper_right_Link_R1" body2="astribot_gripper_right_Link_R11"/>
+        <exclude body1="astribot_gripper_right_Link_R2" body2="astribot_gripper_right_Link_R11"/>
+
+
+    </contact>
+
+
+    <equality>
+        <joint joint1="astribot_gripper_right_joint_R1" joint2="astribot_gripper_right_joint_L1" />
+        <joint joint1="astribot_gripper_right_joint_R1" joint2="astribot_gripper_right_joint_R2" />
+        <connect body1='astribot_gripper_right_Link_R2'  body2='astribot_gripper_right_Link_R11'        anchor='-0.036 0 0.031749' solimp="0.95 0.99 0.001"
+            solref="0.005 1"/>
+<!--        <joint joint1="astribot_gripper_right_joint_R1" joint2="astribot_gripper_right_joint_R11" polycoef="0.02 -1 0 0 0"/>-->
+
+        <joint joint1="astribot_gripper_right_joint_L1" joint2="astribot_gripper_right_joint_L2" polycoef="0.00 -1 0 0 0"/>
+        <connect body1='astribot_gripper_right_Link_L2'  body2='astribot_gripper_right_Link_L11'        anchor='0.036 0 0.031749' solimp="0.95 0.99 0.001"
+            solref="0.005 1"/>
+<!--        <joint joint1="astribot_gripper_right_joint_L1" joint2="astribot_gripper_right_joint_L11"  polycoef="0.02 1 0 0 0" />-->
+    </equality>
+
+</mujocoinclude>

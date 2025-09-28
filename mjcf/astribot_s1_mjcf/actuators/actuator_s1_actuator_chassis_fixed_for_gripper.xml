@@ -1,0 +1,61 @@
+<mujoco>
+
+    <sensor>
+<!--        <touch name="astribot_chassis_wheel_force_left" site="astribot_chassis_wheel_force_left" />-->
+        <!-- <force name="astribot_chassis_front_left_force" site="astribot_chassis_front_left_site" /> -->
+        <!-- <force name="astribot_chassis_front_right_force" site="astribot_chassis_front_right_site" /> -->
+        <!-- <force name="astribot_chassis_back_force" site="astribot_chassis_back_site" /> -->
+        <gyro name="astribot_chassis_base_imu_gyro" site="astribot_chassis_imu_site" />
+        <accelerometer name="astribot_chassis_base_imu_acc" site="astribot_chassis_imu_site" />
+        
+<!--        <torque name="force_torque_sensor_torque_right" site="force_torque_sensor_right" />-->
+    </sensor>
+
+    <actuator>
+        <general class="torso_size1" name="astribot_torso_joint_1" joint="astribot_torso_joint_1" forcerange="-465 465" gainprm="10000" biasprm="0 -10000 -1000"/>
+        <general class="torso_size1" name="astribot_torso_joint_2" joint="astribot_torso_joint_2" gainprm="10000" biasprm="0 -10000 -1000"/>
+        <general class="torso_size1" name="astribot_torso_joint_3" joint="astribot_torso_joint_3" gainprm="10000" biasprm="0 -10000 -1000"/>
+        <general class="torso_size1" name="astribot_torso_joint_4" joint="astribot_torso_joint_4" gainprm="10000" biasprm="0 -10000 -1000"/>
+        <general class="torso_size1" name="astribot_head_joint_1" joint="astribot_head_joint_1" gainprm="100" biasprm="0 -100 -10"/>
+        <general class="torso_size1" name="astribot_head_joint_2" joint="astribot_head_joint_2" gainprm="100" biasprm="0 -100 -10"/>
+    </actuator>
+
+    <actuator>
+        <general class="size3" name="astribot_arm_left_joint_1" joint="astribot_arm_left_joint_1" gainprm="100" biasprm="0 -100 -10"/>
+        <general class="size3" name="astribot_arm_left_joint_2" joint="astribot_arm_left_joint_2" gainprm="100" biasprm="0 -100 -10"/>
+        <general class="size3" name="astribot_arm_left_joint_3" joint="astribot_arm_left_joint_3" gainprm="100" biasprm="0 -100 -10"/>
+        <general class="size2" name="astribot_arm_left_joint_4" joint="astribot_arm_left_joint_4" gainprm="500" biasprm="0 -500 -50"/>
+        <general class="size2" name="astribot_arm_left_joint_5" joint="astribot_arm_left_joint_5" gainprm="500" biasprm="0 -500 -50"/>
+        <general class="size1" name="astribot_arm_left_joint_6" joint="astribot_arm_left_joint_6" gainprm="200" biasprm="0 -200 -20"/>
+        <general class="size1" name="astribot_arm_left_joint_7" joint="astribot_arm_left_joint_7" gainprm="200" biasprm="0 -200 -20"/>
+    </actuator>
+
+    <sensor>
+        <force name="astribot_arm_left_force_sensor" site="force_torque_sensor_left" />
+        <torque name="astribot_arm_left_torque_sensor" site="force_torque_sensor_left" />
+    </sensor>
+
+    <include file="../astribot_gripper/astribot_gripper_left/astribot_gripper_left_actuator.xml"/>
+
+    <actuator>
+        <general class="size3" name="astribot_arm_right_joint_1" joint="astribot_arm_right_joint_1" gainprm="100" biasprm="0 -100 -10"/>
+        <general class="size3" name="astribot_arm_right_joint_2" joint="astribot_arm_right_joint_2" gainprm="100" biasprm="0 -100 -10"/>
+        <general class="size3" name="astribot_arm_right_joint_3" joint="astribot_arm_right_joint_3" gainprm="100" biasprm="0 -100 -10"/>
+        <general class="size2" name="astribot_arm_right_joint_4" joint="astribot_arm_right_joint_4" gainprm="500" biasprm="0 -500 -50"/>
+        <general class="size2" name="astribot_arm_right_joint_5" joint="astribot_arm_right_joint_5" gainprm="500" biasprm="0 -500 -50"/>
+        <general class="size1" name="astribot_arm_right_joint_6" joint="astribot_arm_right_joint_6" gainprm="200" biasprm="0 -200 -20"/>
+        <general class="size1" name="astribot_arm_right_joint_7" joint="astribot_arm_right_joint_7" gainprm="200" biasprm="0 -200 -20"/>
+    </actuator>
+
+    <sensor>
+        <force name="astribot_arm_right_force_sensor" site="force_torque_sensor_right" />
+        <torque name="astribot_arm_right_torque_sensor" site="force_torque_sensor_right" />
+        <tendonpos name="gripper_left_tendon_length" tendon="gripper_left_split"/>
+        <tendonpos name="gripper_right_tendon_length" tendon="gripper_right_split"/>
+    </sensor>
+
+    
+    
+    <include file="../astribot_gripper/astribot_gripper_right/astribot_gripper_right_actuator.xml"/>
+    
+</mujoco>
