@@ -1,0 +1,133 @@
+<mujoco model="brainco-righthand-v2">
+    <!-- <light name="spotlight" mode="targetbodycom" target="right_base_link" pos="3 0 4"/> -->
+    <body name="right_base_link" pos="0.0 0.0 0.0" quat="1 0 0 0">
+<!--      <joint name="floating_base_joint" type="free"/>-->
+<!--      <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="right_base_link"/>-->
+      <geom name="right_base_link_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="right_base_link"/>
+      <geom name="right_base_link_collision" type="mesh" mesh="right_base_link"/>
+      <!-- <site name="grasp_site" pos="0.11 0.0 0.03" group="4"/> -->
+      <body name="right_thumb_metacarpal_link" pos="0.005619 0.019867 0.027825" quat="-3.0799e-07 0.0838478 0.996479 -3.66027e-06">
+        <inertial pos="-1.51106e-05 0.00707243 0.00420847" mass="0.01" diaginertia="0.0001 0.0001 0.0001"/>
+        <joint name="astribot_gripper_right_joint_L1" pos="0 0 0" axis="0 0 1" range="0 0.75" actuatorfrcrange="-0.5 0.5"/>
+<!--        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="right_thumb_metacarpal_link"/>-->
+        <geom name="right_thumb_metacarpal_link_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="right_thumb_metacarpal_link"/>
+        <geom name="right_thumb_metacarpal_link_collision" type="mesh" mesh="right_thumb_metacarpal_link"/>
+        <body name="right_thumb_proximal_link" pos="0 0.014227 0" quat="0.124805 -0.0726357 -0.986555 0.0765254">
+          <inertial pos="-4.57221e-07 0.025009 -0.00175049" mass="0.05" diaginertia="0.0001 0.0001 0.0001"/>
+          <joint name="right_thumb_proximal_joint" pos="0 0 0" axis="1 0 0" range="0.0 1.0472" actuatorfrcrange="-1.1 1.1"/>
+<!--          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="right_thumb_proximal_link"/>-->
+          <geom name="right_thumb_proximal_link_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="right_thumb_proximal_link"/>
+          <geom name="right_thumb_proximal_link_collision" type="mesh" mesh="right_thumb_proximal_link"/>
+          <body name="right_thumb_distal_link" pos="0 0.052 0">
+            <inertial pos="-5.88258e-09 0.0117545 1.13324e-05" mass="0.01" diaginertia="0.0001 0.0001 0.0001"/>
+            <joint name="right_thumb_distal_joint" pos="0 0 0" axis="1 0 0" range="0.0 1.0472" actuatorfrcrange="-1.1 1.1"/>
+<!--            <geom  type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="right_thumb_distal_link"/>-->
+            <geom name="right_thumb_distal_link_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="right_thumb_distal_link"/>
+            <geom name="right_thumb_distal_link_collision" type="mesh" mesh="right_thumb_distal_link"/>
+            <body name="right_thumb_tip" pos="0 0.026529 -0.0017734" quat="0.999443 -0.0333688 0 0">
+              <inertial pos="0 -8.79922e-05 0" mass="0.001" diaginertia="0.0001 0.0001 0.0001"/>
+              <joint name="right_thumb_tip_joint" pos="0 0 0" axis="1 0 0" range="0 1.2741" actuatorfrcrange="-1.1 1.1"/>
+<!--              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="right_thumb_tip"/>-->
+              <geom name="right_thumb_tip_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="right_thumb_tip"/>
+              <geom name="right_thumb_tip_collision" type="mesh" mesh="right_thumb_tip" />
+              <site name="right_thumb_tip" pos="0 -0.05 0.015" group="4"/>
+            </body>
+          </body>
+        </body>
+      </body>
+
+      <body name="right_index_proximal_link" pos="-0.0021181 0.029568 0.080876" quat="0.992147 -0.0522807 0.0783652 -0.0822789">
+        <inertial pos="-0.00223495 3.15875e-06 0.0176402" mass="0.009" diaginertia="0.0001 0.0001 0.0001"/>
+        <joint name="right_index_proximal_joint" pos="0 0 0" axis="0 1 0" range="0.0 1.4661" actuatorfrcrange="-2 2"/>
+<!--        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="right_index_proximal_link"/>-->
+        <geom name="right_index_proximal_link_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="right_index_proximal_link"/>
+        <geom name="right_index_proximal_link_collision" type="mesh" mesh="right_index_proximal_link"/>
+        <body name="right_index_distal_link" pos="0 0 0.032">
+          <inertial pos="0.00418341 1.1643e-07 0.0153643" mass="0.009" diaginertia="0.0001 0.0001 0.0001"/>
+          <joint name="right_index_distal_joint" pos="0 0 0" axis="0 1 0" range="0.0 1.693" actuatorfrcrange="-2 2"/>
+<!--          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="right_index_distal_link"/>-->
+          <geom name="right_index_distal_link_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="right_index_distal_link"/>
+          <geom name="right_index_distal_link_collision" type="mesh" mesh="right_index_distal_link"/>
+          <body name="right_index_tip" pos="0.011097 0 0.035739" quat="0.971859 0 0.235565 0">
+            <inertial pos="0 0 0" mass="0.001" diaginertia="0.0001 0.0001 0.0001"/>
+            <joint name="right_index_tip_joint" pos="0 0 0" axis="0 1 0" range="0 1" actuatorfrcrange="-1 1"/>
+<!--            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="right_index_tip"/>-->
+            <geom name="right_index_tip_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="right_index_tip"/>
+            <geom name="right_index_tip_collision" type="mesh" mesh="right_index_tip"/>
+            <site name="right_index_tip" pos="0 -0.05 0.015" group="4"/>
+          </body>
+        </body>
+      </body>
+
+      <body name="right_middle_proximal_link" pos="-0.0045767 0.010051 0.084993" quat="0.996681 -0.0175235 0.0746069 -0.0274369">
+        <inertial pos="-0.00222511 5.25632e-06 0.0203008" mass="0.009" diaginertia="0.0001 0.0001 0.0001"/>
+        <joint name="right_middle_proximal_joint" pos="0 0 0" axis="0 1 0" range="0 1.4661" actuatorfrcrange="-2 2"/>
+<!--        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="right_middle_proximal_link"/>-->
+        <geom name="right_middle_proximal_link_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="right_middle_proximal_link"/>
+        <geom name="right_middle_proximal_link_collision" type="mesh" mesh="right_middle_proximal_link"/>
+        <body name="right_middle_distal_link" pos="0 0 0.037">
+          <inertial pos="0.00498635 3.208e-07 0.017821" mass="0.009" diaginertia="0.0001 0.0001 0.0001"/>
+          <joint name="right_middle_distal_joint" pos="0 0 0" axis="0 1 0" range="0 1.693" actuatorfrcrange="-2 2"/>
+<!--          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="right_middle_distal_link"/>-->
+          <geom name="right_middle_distal_link_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="right_middle_distal_link"/>
+          <geom name="right_middle_distal_link_collision" type="mesh" mesh="right_middle_distal_link"/>
+          <body name="right_middle_tip" pos="0.012558 0 0.040442" quat="0.971859 0 0.235565 0">
+            <inertial pos="0 0 0" mass="0.001" diaginertia="0.0001 0.0001 0.0001"/>
+            <joint name="right_middle_tip_joint" pos="0 0 0" axis="0 1 0" range="0 1" actuatorfrcrange="-1 1"/>
+<!--            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="right_middle_tip"/>-->
+            <geom name="right_middle_tip_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="right_middle_tip"/>
+            <geom name="right_middle_tip_collision" type="mesh" mesh="right_middle_tip"/>
+            <site name="right_middle_tip" pos="0 -0.05 0.015" group="4"/>
+          </body>
+        </body>
+      </body>
+
+      <body name="right_ring_proximal_link" pos="-0.0046709 -0.010037 0.083982" quat="0.996722 0.0175386 0.0740633 0.0274276">
+        <inertial pos="-0.00234495 5.87955e-06 0.0191774" mass="0.009" diaginertia="0.0001 0.0001 0.0001"/>
+        <joint name="right_ring_proximal_joint" pos="0 0 0" axis="0 1 0" range="0 1.4661" actuatorfrcrange="-2 2"/>
+<!--        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="right_ring_proximal_link"/>-->
+        <geom name="right_ring_proximal_link_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="right_ring_proximal_link"/>
+        <geom name="right_ring_proximal_link_collision" type="mesh" mesh="right_ring_proximal_link"/>
+        <body name="right_ring_distal_link" pos="0 0 0.035">
+          <inertial pos="0.00471282 -2.41852e-08 0.0172487" mass="0.009" diaginertia="0.0001 0.0001 0.0001"/>
+          <joint name="right_ring_distal_joint" pos="0 0 0" axis="0 1 0" range="0 1.693" actuatorfrcrange="-2 2"/>
+<!--          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="right_ring_distal_link"/>-->
+          <geom name="right_ring_distal_link_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="right_ring_distal_link"/>
+          <geom name="right_ring_distal_link_collision" type="mesh" mesh="right_ring_distal_link"/>
+          <body name="right_ring_tip" pos="0.012266 0 0.039501" quat="0.971859 0 0.235565 0">
+            <inertial pos="0 0 0" mass="0.001" diaginertia="0.0001 0.0001 0.0001"/>
+            <joint name="right_ring_tip_joint" pos="0 0 0" axis="0 1 0" range="0 1" actuatorfrcrange="-1 1"/>
+<!--            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="right_ring_tip"/>-->
+            <geom name="right_ring_tip_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="right_ring_tip"/>
+            <geom name="right_ring_tip_collision" type="mesh" mesh="right_ring_tip"/>
+            <site name="right_ring_tip" pos="0 -0.05 0.015" group="4"/>
+          </body>
+        </body>
+      </body>
+
+      <body name="right_pinky_proximal_link" pos="-0.0023566 -0.029366 0.078694" quat="0.992245 0.052387 0.0771065 0.0822136">
+        <inertial pos="-0.00213212 7.75039e-06 0.0160672" mass="0.009" diaginertia="0.0001 0.0001 0.0001"/>
+        <joint name="right_pinky_proximal_joint" pos="0 0 0" axis="0 1 0" range="0 1.4661" actuatorfrcrange="-2 2"/>
+<!--        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="right_pinky_proximal_link"/>-->
+        <geom name="right_pinky_proximal_link_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="right_pinky_proximal_link"/>
+        <geom name="right_pinky_proximal_link_collision" type="mesh" mesh="right_pinky_proximal_link"/>
+        <body name="right_pinky_distal_link" pos="0 0 0.029">
+          <inertial pos="0.00398576 -1.18733e-07 0.0141074" mass="0.009" diaginertia="0.0001 0.0001 0.0001"/>
+          <joint name="right_pinky_distal_joint" pos="0 0 0" axis="0 1 0" range="0 1.693" actuatorfrcrange="-2 2"/>
+<!--          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="right_pinky_distal_link"/>-->
+          <geom name="right_pinky_distal_link_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="right_pinky_distal_link"/>
+          <geom name="right_pinky_distal_link_collision" type="mesh" mesh="right_pinky_distal_link"/>
+          <body name="right_pinky_tip" pos="0.010221 0 0.032918" quat="0.971859 0 0.235565 0">
+            <inertial pos="0 0 0" mass="0.001" diaginertia="0.0001 0.0001 0.0001"/>
+            <joint name="right_pinky_tip_joint" pos="0 0 0" axis="0 1 0" range="0 1" actuatorfrcrange="-1 1"/>
+<!--            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="right_pinky_tip"/>-->
+            <geom name="right_pinky_tip_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="right_pinky_tip"/>
+            <geom name="right_pinky_tip_collision" type="mesh" mesh="right_pinky_tip"/>
+            <site name="right_pinky_tip" pos="0 -0.05 0.015" group="4"/>
+          </body>
+        </body>
+      </body>
+    </body>
+</mujoco>
+
+

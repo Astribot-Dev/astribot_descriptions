@@ -1,0 +1,61 @@
+<mujoco model="astribot_chassis">
+
+
+    <body name="astribot_chassis_base" pos="0 0 0.058">
+
+
+<!--        <geom name="astribot_chassis_base" type="box" contype="0" conaffinity="0" pos="0 0 -0.008" size="0.33 0.29 0.008" rgba="1 1 1 0.5" mass="8" solref=".01 .002" solimp="0.99 0.99 0.01" friction="10 1 1"/>-->
+
+        <geom contype="0" conaffinity="0" type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="astribot_chassis_base_linkID"/>
+        <inertial pos="-0.106236 -0.000755 0.066896" quat="-0.00760398 0.643869 0.0104866 -0.765027" mass="45.3547" diaginertia="3.24381 2.22511 1.5049"/>
+
+        <site name="astribot_chassis_imu_site" pos="0 0 0" />
+
+<!--        <geom type="mesh" rgba="0.50196 0.50196 0.50196 1" mesh="astribot_chassis_base_link"/>-->
+<!--        <geom pos="-0.08275 0 -0.016" type="mesh" rgba="0.89804 0.91765 0.92941 1" mesh="astribot_chassis_link_1"/>-->
+<!--        <geom pos="0.21363 -0.255 -0.103534" type="mesh" rgba="0.89804 0.91765 0.92941 1" mesh="astribot_chassis_link_21"/>-->
+<!--        <geom pos="0.21275 0.255 -0.115" type="mesh" rgba="0.89804 0.91765 0.92941 1" mesh="astribot_chassis_link_31"/>-->
+<!--        <geom pos="-0.38675 0 -0.053" type="mesh" rgba="0.89804 0.91765 0.92941 1" mesh="astribot_chassis_link_41"/>-->
+
+<!-- Active wheels -->
+        <body name="astribot_chassis_front_left" pos="0.20 0.27 0.042">
+            <site name="astribot_chassis_front_left_site"  />
+            <body name="astribot_chassis_front_left_wheel" pos="0.0 0.0 .0">
+                <joint name="astribot_chassis_wheel_joint_left" pos="0 0 0" axis="0 1 0" limited="false" />
+                <geom name="astribot_chassis_wheel_geom_left" type="cylinder" euler="1.5708 0 0" size=".1 0.02" rgba="1 0 1 0.5" mass="1" solref=".01 .002" solimp="0.99 0.99 0.01" friction="10 1 1"/>
+            </body>
+        </body>
+
+        <body pos="0.2 0 0.042">
+            <site name="chassis" pos="0.0 0 0.0" />
+            <site pos="-0.07 0.155 0.116" />
+            <site pos="-0.07 -0.155 0.116" />
+        </body>
+
+
+        <!-- Active wheels -->
+        <body name="astribot_chassis_front_right" pos="0.2 -0.27 0.042">
+            <site name="astribot_chassis_front_right_site" />
+            <body name="astribot_chassis_front_right_wheel" pos="0.0 0.0 .0">
+                <joint name="astribot_chassis_wheel_joint_right" pos="0 0 0" axis="0 1 0" limited="false" />
+                <geom name="astribot_chassis_wheel_geom_right" type="cylinder" euler="1.5708 0 0" size=".1 0.02" rgba="1 0 1 0.5" mass="1" solref=".01 .002" solimp="0.99 0.99 0.01" friction="10 1 1"/>
+            </body>
+        </body>
+
+        <!-- Passive wheels -->
+        <body name="astribot_chassis_back" pos="-0.289 0.0 0.042">
+            <site name="astribot_chassis_back_site" />
+<!--            <geom name="astribot_chassis_ball_box" type="box" contype="0" conaffinity="0" pos="0 0 0.078" size="0.1 0.15 0.12" rgba="1 1 1 0.5" mass="0.01" />-->
+            <body name="astribot_chassis_back_ball" pos="-0.0 0.0 .0">
+                <joint type="ball" name="astribot_chassis_back_joint" pos="0 0 0" limited="false" />
+                <geom name="astribot_chassis_ball_geom" type="sphere" size=".1" rgba="1 0 1 0.5" mass="1" solref=".01 .002" solimp="0.99 0.99 0.01" friction="10 1 1"/>
+
+            </body>
+        </body>
+
+<!--        <body name="astribot_chassis_ball_right" pos="-0.300 -0.300 .0">-->
+<!--            <joint type="ball" name="astribot_chassis_ball_joint_right" pos="0 0 0" limited="false" />-->
+<!--            <geom name="astribot_chassis_ball_geom_right" type="sphere" size=".076" rgba="1 1 1 0.5" mass="1" solref=".01 .002" solimp="0.99 0.99 0.01" friction="10 1 1"/>-->
+<!--        </body>-->
+    </body>
+</mujoco>

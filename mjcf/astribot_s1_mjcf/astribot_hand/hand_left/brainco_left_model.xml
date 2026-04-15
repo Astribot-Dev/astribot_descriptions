@@ -1,0 +1,134 @@
+<mujoco model="brainco-lefthand-v2">
+
+    <!-- <light name="spotlight" mode="targetbodycom" target="left_base_link" pos="3 0 4"/> -->
+  <body name="left_base_link" pos="0.0 0.0 0.0" quat="0 0 0 1">
+<!--      <joint name="floating_base_joint" type="free"/>-->
+<!--      <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="left_base_link"/>-->
+      <geom name="left_base_link_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="left_base_link"/>
+      <geom name="left_base_link_collision" type="mesh" mesh="left_base_link"/>
+      <site name="grasp_site" pos="0.11 0.0 0.03" group="4"/>
+      <body name="left_thumb_metacarpal_link" pos="0.0045 -0.019 0.027825" quat="0.99648 0 0 0.0838365">
+      <inertial pos="1.52304e-05 -0.0070724 -0.0042084" mass="0.01" diaginertia="0.0001 0.0001 0.0001"/>
+      <joint name="astribot_gripper_left_joint_L1" pos="0 0 0" axis="0 0 1" range="0 0.75" actuatorfrcrange="-0.5 0.5"/>
+<!--        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="left_thumb_metacarpal_link"/>-->
+        <geom name="left_thumb_metacarpal_link_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="left_thumb_metacarpal_link"/>
+        <geom name="left_thumb_metacarpal_link_collision" type="mesh" mesh="left_thumb_metacarpal_link"/>
+        <body name="left_thumb_proximal_link" pos="0 -0.014227 0" quat="0.0726364 0.124805 0.0765192 0.986556">
+          <inertial pos="3.41002e-07 0.0250091 -0.00175057" mass="0.05" diaginertia="0.0001 0.0001 0.0001"/>
+          <joint name="left_thumb_proximal_joint" pos="0 0 0" axis="1 0 0" range="0 1.0472" actuatorfrcrange="-1.1 1.1"/>
+<!--          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="left_thumb_proximal_link"/>-->
+          <geom name="left_thumb_proximal_link_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="left_thumb_proximal_link"/>
+          <geom name="left_thumb_proximal_link_collision" type="mesh" mesh="left_thumb_proximal_link"/>
+          <body name="left_thumb_distal_link" pos="0 0.052 0">
+            <inertial pos="-1.65619e-07 0.0117551 1.13666e-05" mass="0.01" diaginertia="0.0001 0.0001 0.0001"/>
+            <joint name="left_thumb_distal_joint" pos="0 0 0" axis="1 0 0" range="0 1.0472" actuatorfrcrange="-1.1 1.1"/>
+<!--            <geom  type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="left_thumb_distal_link"/>-->
+            <geom name="left_thumb_distal_link_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="left_thumb_distal_link"/>
+            <geom name="left_thumb_distal_link_collision" type="mesh" mesh="left_thumb_distal_link"/>
+            <body name="left_thumb_tip_link" pos="0 0.0265288 -0.00177344" quat="0 0 0.033369 0.999443">
+              <inertial pos="0 0 0" mass="0.001" diaginertia="0.0001 0.0001 0.0001"/>
+              <joint name="left_thumb_tip_joint" pos="0 0 0" axis="-1 0 0" range="0 1.2741" actuatorfrcrange="-1.1 1.1"/>
+<!--              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="left_thumb_tip"/>-->
+              <geom name="left_thumb_tip_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="left_thumb_tip"/>
+              <geom name="left_thumb_tip_collision" type="mesh" mesh="left_thumb_tip" />
+              <site name="left_thumb_tip_site" pos="0 -0.05 0.015" group="4"/>
+            </body>
+          </body>
+        </body>
+      </body>
+
+
+      <body name="left_index_proximal_link" pos="-0.0021349 -0.029578 0.080876" quat="0.992147 0.0522807 0.0783652 0.0822789">
+      <inertial pos="-0.00223539 -3.80545e-06 0.0176439" mass="0.009" diaginertia="0.0001 0.0001 0.0001"/>
+      <joint name="left_index_proximal_joint" pos="0 0 0" axis="0 1 0" range="0 1.4661" actuatorfrcrange="-2 2"/>
+<!--        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="left_index_proximal_link"/>-->
+        <geom name="left_index_proximal_link_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="left_index_proximal_link"/>
+        <geom name="left_index_proximal_link_collision" type="mesh" mesh="left_index_proximal_link"/>
+        <body name="left_index_distal_link" pos="0 0 0.032">
+          <inertial pos="0.00418326 -8.45608e-08 0.0153642" mass="0.009" diaginertia="0.0001 0.0001 0.0001"/>
+          <joint name="left_index_distal_joint" pos="0 0 0" axis="0 1 0" range="0 1.693" actuatorfrcrange="-2 2"/>
+<!--          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="left_index_distal_link"/>-->
+          <geom name="left_index_distal_link_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="left_index_distal_link"/>
+          <geom name="left_index_distal_link_collision" type="mesh" mesh="left_index_distal_link"/>
+          <body name="left_index_tip_link" pos="0.011097 0 0.035739" quat="0.970472 0 0.241212 0">
+            <inertial pos="0 9.73496e-12 0" mass="0.001" diaginertia="0.0001 0.0001 0.0001"/>
+            <joint name="left_index_tip_joint" pos="0 0 0" axis="0 1 0" range="0 1" actuatorfrcrange="-1 1"/>
+<!--            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="left_index_tip"/>-->
+            <geom name="left_index_tip_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="left_index_tip"/>
+            <geom name="left_index_tip_collision" type="mesh" mesh="left_index_tip"/>
+            <site name="left_index_tip_site" pos="0 -0.05 0.015" group="4"/>
+          </body>
+        </body>
+      </body>
+      
+      <body name="left_middle_proximal_link" pos="-0.0045935 -0.010061 0.084993" quat="0.996681 0.0175235 0.0746069 0.0274369">
+        <inertial pos="-0.00222419 -3.61991e-06 0.020305" mass="0.009" diaginertia="0.0001 0.0001 0.0001"/>
+        <joint name="left_middle_proximal_joint" pos="0 0 0" axis="0 1 0" range="0 1.4661" actuatorfrcrange="-2 2"/>
+<!--        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="left_middle_proximal_link"/>-->
+        <geom name="left_middle_proximal_link_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="left_middle_proximal_link"/>
+        <geom name="left_middle_proximal_link_collision" type="mesh" mesh="left_middle_proximal_link"/>
+        <body name="left_middle_distal_Link" pos="0 0 0.037" quat="0.997999 0 0.0632278 0">
+          <inertial pos="0.0026975 3.2721e-07 0.0183076" mass="0.009" diaginertia="0.0001 0.0001 0.0001"/>
+          <joint name="left_middle_distal_joint" pos="0 0 0" axis="0 1 0" range="0 1.693" actuatorfrcrange="-2 2"/>
+<!--          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="left_middle_distal_link"/>-->
+          <geom name="left_middle_distal_link_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="left_middle_distal_link"/>
+          <geom name="left_middle_distal_link_collision" type="mesh" mesh="left_middle_distal_link"/>
+          <body name="left_middle_tip_link" pos="0.0073534 0 0.041703" quat="0.984807 0 0.17365 0">
+            <inertial pos="0 0 0" mass="0.001" diaginertia="0.0001 0.0001 0.0001"/>
+            <joint name="left_middle_tip_joint" pos="0 0 0" axis="0 1 0" range="0 1" actuatorfrcrange="-1 1"/>
+<!--            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="left_middle_tip"/>-->
+            <geom name="left_middle_tip_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="left_middle_tip"/>
+            <geom name="left_middle_tip_collision" type="mesh" mesh="left_middle_tip"/>
+            <site name="left_middle_tip_site" pos="0 -0.05 0.015" group="4"/>
+          </body>
+        </body>
+      </body>
+
+      <body name="left_ring_proximal_link" pos="-0.00468768 0.0100263 0.083982" quat="0.996722 -0.0175386 0.0740628 -0.0274275">
+        <inertial pos="-0.00234461 -5.32058e-06 0.0191786" mass="0.009" diaginertia="0.0001 0.0001 0.0001"/>
+        <joint name="left_ring_proximal_joint" pos="0 0 0" axis="0 1 0" range="0 1.4661" actuatorfrcrange="-2 2"/>
+<!--        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="left_ring_proximal_link"/>-->
+        <geom name="left_ring_proximal_link_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="left_ring_proximal_link"/>
+        <geom name="left_ring_proximal_link_collision" type="mesh" mesh="left_ring_proximal_link"/>
+        <body name="left_ring_distal_link" pos="0 0 0.035" quat="0.997999 0 0.0632278 0">
+          <inertial pos="0.0024984 -2.78996e-08 0.0177056" mass="0.009" diaginertia="0.0001 0.0001 0.0001"/>
+          <joint name="left_ring_distal_joint" pos="0 0 0" axis="0 1 0" range="0 1.693" actuatorfrcrange="-2 2"/>
+<!--          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="left_ring_distal_link"/>-->
+          <geom name="left_ring_distal_link_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="left_ring_distal_link"/>
+          <geom name="left_ring_distal_link_collision" type="mesh" mesh="left_ring_distal_link"/>
+          <body name="left_ring_tip_link" pos="0.0071824 0 0.040734" quat="0.984807 0 0.17365 0">
+            <inertial pos="0 0 0" mass="0.001" diaginertia="0.0001 0.0001 0.0001"/>
+            <joint name="left_ring_tip_joint" pos="0 0 0" axis="0 1 0" range="0 1" actuatorfrcrange="-1 1"/>
+<!--            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="left_ring_tip"/>-->
+            <geom name="left_ring_tip_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="left_ring_tip"/>
+            <geom name="left_ring_tip_collision" type="mesh" mesh="left_ring_tip"/>
+            <site name="left_ring_tip_site" pos="0 -0.05 0.015" group="4"/>
+          </body>
+        </body>
+      </body>
+
+      <body name="left_pinky_proximal_link" pos="-0.0023733 0.029356 0.078694" quat="0.992245 -0.052387 0.0771065 -0.0822136">
+        <inertial pos="-0.00213267 -7.0226e-06 0.016068" mass="0.009" diaginertia="0.0001 0.0001 0.0001"/>
+        <joint name="left_pinky_proximal_joint" pos="0 0 0" axis="0 1 0" range="0 1.4661" actuatorfrcrange="-2 2"/>
+<!--        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="left_pinky_proximal_link"/>-->
+        <geom name="left_pinky_proximal_link_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="left_pinky_proximal_link"/>
+        <geom name="left_pinky_proximal_link_collision" type="mesh" mesh="left_pinky_proximal_link"/>
+        <body name="left_pinky_distal_link" pos="0 0 0.029">
+          <inertial pos="0.00398562 -8.08552e-08 0.0141067" mass="0.009" diaginertia="0.0001 0.0001 0.0001"/>
+          <joint name="left_pinky_distal_joint" pos="0 0 0" axis="0 1 0" range="0 1.693" actuatorfrcrange="-2 2"/>
+<!--          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="left_pinky_distal_link"/>-->
+          <geom name="left_pinky_distal_link_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="left_pinky_distal_link"/>
+          <geom name="left_pinky_distal_link_collision" type="mesh" mesh="left_pinky_distal_link"/>
+          <body name="left_pinky_tip_link" pos="0.010221 0 0.032918" quat="0.971859 0 0.235565 0">
+            <inertial pos="0 0 0" mass="0.001" diaginertia="0.0001 0.0001 0.0001"/>
+            <joint name="left_pinky_tip_joint" pos="0 0 0" axis="0 1 0" range="0 1" actuatorfrcrange="-1 1"/>
+<!--            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="left_pinky_tip"/>-->
+            <geom name="left_pinky_tip_visual" type="mesh" class="visual" rgba="1 1 1 1" mesh="left_pinky_tip"/>
+            <geom name="left_pinky_tip_collision" type="mesh" mesh="left_pinky_tip"/>
+            <site name="left_pinky_tip_site" pos="0 -0.05 0.015" group="4"/>
+          </body>
+        </body>
+      </body>
+
+    </body>
+</mujoco>

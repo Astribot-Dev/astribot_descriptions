@@ -1,0 +1,101 @@
+<mujoco>
+
+    <actuator>
+        <!-- <general class="chassis_size1" name="astribot_chassis_joint_right_front" joint="astribot_chassis_joint_right_front" gainprm="100" biasprm="0 -100 -10"/> -->
+        <!-- <general class="chassis_size1" name="astribot_chassis_joint_left_front" joint="astribot_chassis_joint_left_front" gainprm="100" biasprm="0 -100 -10"/> -->
+        <!-- <general class="chassis_size1" name="astribot_chassis_joint_right_rear" joint="astribot_chassis_joint_right_rear" gainprm="100" biasprm="0 -100 -10"/> -->
+        <!-- <general class="chassis_size1" name="astribot_chassis_joint_left_rear" joint="astribot_chassis_joint_left_rear" gainprm="100" biasprm="0 -100 -10"/> -->
+        <position class="chassis_size1" name="astribot_chassis_x" joint="astribot_chassis_x" kp="2000000"/>
+        <position class="chassis_size1" name="astribot_chassis_y" joint="astribot_chassis_y" kp="2000000"/>
+        <position class="chassis_size1" name="astribot_chassis_zrot" joint="astribot_chassis_zrot" kp="30000"/>
+    </actuator>
+
+    <sensor>
+<!--        <touch name="astribot_chassis_wheel_force_left" site="astribot_chassis_wheel_force_left" />-->
+        <!-- <force name="astribot_chassis_front_left_force" site="astribot_chassis_front_left_site" /> -->
+        <!-- <force name="astribot_chassis_front_right_force" site="astribot_chassis_front_right_site" /> -->
+        <!-- <force name="astribot_chassis_back_force" site="astribot_chassis_back_site" /> -->
+        <gyro name="astribot_chassis_base_imu_gyro" site="astribot_chassis_imu_site" />
+        <accelerometer name="astribot_chassis_base_imu_acc" site="astribot_chassis_imu_site" />
+        
+<!--        <torque name="force_torque_sensor_torque_right" site="force_torque_sensor_right" />-->
+    </sensor>
+
+    <actuator>
+        <general class="torso_size1" name="astribot_torso_joint_1" joint="astribot_torso_joint_1" forcerange="-465 465" gainprm="10000" biasprm="0 -10000 -1000"/>
+        <general class="torso_size1" name="astribot_torso_joint_2" joint="astribot_torso_joint_2" gainprm="10000" biasprm="0 -10000 -1000"/>
+        <general class="torso_size1" name="astribot_torso_joint_3" joint="astribot_torso_joint_3" gainprm="10000" biasprm="0 -10000 -1000"/>
+        <general class="torso_size1" name="astribot_torso_joint_4" joint="astribot_torso_joint_4" gainprm="10000" biasprm="0 -10000 -1000"/>
+        <general class="torso_size1" name="astribot_head_joint_1" joint="astribot_head_joint_1" gainprm="100" biasprm="0 -100 -10"/>
+        <general class="torso_size1" name="astribot_head_joint_2" joint="astribot_head_joint_2" gainprm="100" biasprm="0 -100 -10"/>
+    </actuator>
+
+    <actuator>
+        <general class="size3" name="astribot_arm_left_joint_1" joint="astribot_arm_left_joint_1" gainprm="100" biasprm="0 -100 -10"/>
+        <general class="size3" name="astribot_arm_left_joint_2" joint="astribot_arm_left_joint_2" gainprm="100" biasprm="0 -100 -10"/>
+        <general class="size3" name="astribot_arm_left_joint_3" joint="astribot_arm_left_joint_3" gainprm="100" biasprm="0 -100 -10"/>
+        <general class="size2" name="astribot_arm_left_joint_4" joint="astribot_arm_left_joint_4" gainprm="500" biasprm="0 -500 -50"/>
+        <general class="size2" name="astribot_arm_left_joint_5" joint="astribot_arm_left_joint_5" gainprm="500" biasprm="0 -500 -50"/>
+        <general class="size1" name="astribot_arm_left_joint_6" joint="astribot_arm_left_joint_6" gainprm="200" biasprm="0 -200 -20"/>
+        <general class="size1" name="astribot_arm_left_joint_7" joint="astribot_arm_left_joint_7" gainprm="200" biasprm="0 -200 -20"/>
+    </actuator>
+
+    <sensor>
+        <force name="astribot_arm_left_force_sensor" site="force_torque_sensor_left" />
+        <torque name="astribot_arm_left_torque_sensor" site="force_torque_sensor_left" />
+    </sensor>
+
+    <!-- <include file="astribot_gripper/astribot_gripper_left/astribot_gripper_left_actuator.xml"/> -->
+
+    <actuator>
+        <general class="hand" name="astribot_gripper_left_joint_L1" joint="astribot_gripper_left_joint_L1" forcerange="-200 200"
+            ctrlrange="0 100" gainprm="4.65 0 0" biasprm="0 -500 -10" forcelimited="true" gaintype='fixed' biastype='affine' />
+        <!-- <general class="hand" name="left_thumb_proximal_joint" joint="left_thumb_proximal_joint" gainprm="100" biasprm="0 -100 -10"/> -->
+        
+        <!-- <general class="hand" name="left_index_proximal_joint" joint="left_index_proximal_joint" gainprm="100" biasprm="0 -100 -10"/> -->
+        <!-- <general class="hand" name="left_middle_proximal_joint" joint="left_middle_proximal_joint" gainprm="500" biasprm="0 -500 -50"/>
+        <general class="hand" name="left_ring_proximal_joint" joint="left_ring_proximal_joint" gainprm="500" biasprm="0 -500 -50"/>
+        <general class="hand" name="left_pinky_proximal_joint" joint="left_pinky_proximal_joint" gainprm="200" biasprm="0 -200 -20"/> -->
+    </actuator>
+
+    <actuator>
+        <general class="size3" name="astribot_arm_right_joint_1" joint="astribot_arm_right_joint_1" gainprm="100" biasprm="0 -100 -10"/>
+        <general class="size3" name="astribot_arm_right_joint_2" joint="astribot_arm_right_joint_2" gainprm="100" biasprm="0 -100 -10"/>
+        <general class="size3" name="astribot_arm_right_joint_3" joint="astribot_arm_right_joint_3" gainprm="100" biasprm="0 -100 -10"/>
+        <general class="size2" name="astribot_arm_right_joint_4" joint="astribot_arm_right_joint_4" gainprm="500" biasprm="0 -500 -50"/>
+        <general class="size2" name="astribot_arm_right_joint_5" joint="astribot_arm_right_joint_5" gainprm="500" biasprm="0 -500 -50"/>
+        <general class="size1" name="astribot_arm_right_joint_6" joint="astribot_arm_right_joint_6" gainprm="200" biasprm="0 -200 -20"/>
+        <general class="size1" name="astribot_arm_right_joint_7" joint="astribot_arm_right_joint_7" gainprm="200" biasprm="0 -200 -20"/>
+    </actuator>
+
+    <actuator>
+        <general class="hand" name="astribot_gripper_right_joint_L1" joint="astribot_gripper_right_joint_L1" forcerange="-200 200"
+            ctrlrange="0 100" gainprm="4.65 0 0" biasprm="0 -500 -10" forcelimited="true" gaintype='fixed' biastype='affine'/>
+        <!-- <general class="hand" name="right_thumb_proximal_joint" joint="right_thumb_proximal_joint" gainprm="100" biasprm="0 -100 -10"/>
+        
+        <general class="hand" name="right_index_proximal_joint" joint="right_index_proximal_joint" gainprm="100" biasprm="0 -100 -10"/>
+        <general class="hand" name="right_middle_proximal_joint" joint="right_middle_proximal_joint" gainprm="500" biasprm="0 -500 -50"/>
+        <general class="hand" name="right_ring_proximal_joint" joint="right_ring_proximal_joint" gainprm="500" biasprm="0 -500 -50"/>
+        <general class="hand" name="right_pinky_proximal_joint" joint="right_pinky_proximal_joint" gainprm="200" biasprm="0 -200 -20"/> -->
+    </actuator>
+
+</mujoco>
+
+    <!-- <actuator>
+        <position name="right_thumb_metacarpal_joint" joint="right_thumb_metacarpal_joint" kp="30" kv="10" ctrlrange="0 1.51"/>
+        <position name="right_thumb_proximal_joint" joint="right_thumb_proximal_joint" kp="30" kv="10" ctrlrange="0 1.04"/>
+    <!--    <position name="right_thumb_distal_joint" joint="right_thumb_distal_joint" kp="30" kv="10" ctrlrange="0 1.04"/>-->
+        <position name="right_index_proximal_joint" joint="right_index_proximal_joint" kp="30" kv="10" ctrlrange="0 1.46"/>
+    <!--    <position name="right_index_distal_joint" joint="right_index_distal_joint" kp="30" kv="10" ctrlrange="0 1.69"/>-->
+        <position name="right_middle_proximal_joint" joint="right_middle_proximal_joint" kp="30" kv="10" ctrlrange="0 1.46"/>
+    <!--    <position name="right_middle_distal_joint" joint="right_middle_distal_joint" kp="30" kv="10" ctrlrange="0 1.69"/>-->
+        <position name="right_ring_proximal_joint" joint="right_ring_proximal_joint" kp="30" kv="10" ctrlrange="0 1.46"/>
+    <!--    <position name="right_ring_distal_joint" joint="right_ring_distal_joint" kp="30" kv="10" ctrlrange="0 1.69"/>-->
+        <position name="right_pinky_proximal_joint" joint="right_pinky_proximal_joint" kp="30" kv="10" ctrlrange="0 1.46"/>
+    <!--    <position name="right_pinky_distal_joint" joint="right_pinky_distal_joint" kp="30" kv="10" ctrlrange="0 1.69"/>-->
+    </actuator> -->
+
+</mujoco>
+    <!-- <include file="astribot_gripper/astribot_gripper_right/astribot_gripper_right_actuator.xml"/> -->
+    
+
