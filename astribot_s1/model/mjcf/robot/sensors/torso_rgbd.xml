@@ -1,0 +1,6 @@
+<mujocoinclude>
+    <body name="torso_rgbd" pos="0 0 0.1">
+        <inertial pos="0 0 0" mass="0.2" diaginertia="0.0005 0.0005 0.0005" />
+        <camera name="torso_rgbd" pos="0 0 0" euler="0 0 0" fovy="60" />
+    </body>
+</mujocoinclude>

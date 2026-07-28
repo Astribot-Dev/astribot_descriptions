@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<mujoco>
+    <actuator>
+        <position name="astribot_chassis_x" class="chassis_size1" joint="astribot_chassis_x" kp="20000" />
+        <position name="astribot_chassis_y" class="chassis_size1" joint="astribot_chassis_y" kp="20000" />
+        <position name="astribot_chassis_zrot" class="chassis_size1" joint="astribot_chassis_zrot" kp="5000" />
+    </actuator>
+</mujoco>

@@ -1,0 +1,1072 @@
+{
+  "manifest_version": "1",
+  "target": "astribot_descriptions_github",
+  "variant_id": "astribot_s1",
+  "version": "v1.4.0",
+  "git_sha": "ed1932e10e73514faee23dc7285b9181c4999f88",
+  "build_time": "2026-07-28T10:09:02Z",
+  "visibility": "public",
+  "files": [
+    {
+      "path": "astribot_s1/mesh/dae/astribot_gripper_L11_Link.dae",
+      "sha256": "2b08623bfc40d453daf71cd4e81a78a095fca82a0ae7b01d8cecb5b1aa6b5f4d",
+      "size": 566023
+    },
+    {
+      "path": "astribot_s1/mesh/dae/astribot_gripper_L1_Link.dae",
+      "sha256": "4ad7b5fbd379f741fd1fc81d12563a924993135ab192452126d902508ed7a67f",
+      "size": 70831
+    },
+    {
+      "path": "astribot_s1/mesh/dae/astribot_gripper_L2_Link.dae",
+      "sha256": "00ba9b9fb7b0c4e01de840da174cefc5efc60f19cad0c177ee45cb868589baf7",
+      "size": 95824
+    },
+    {
+      "path": "astribot_s1/mesh/dae/astribot_gripper_R11_Link.dae",
+      "sha256": "b7ace554a1c4fcf94ec5c4da7a35d477f656eef65ecaa645d3998fd0a7f8fc51",
+      "size": 568313
+    },
+    {
+      "path": "astribot_s1/mesh/dae/astribot_gripper_R1_Link.dae",
+      "sha256": "39b9583bef0c77a1851758ba872a98f5cfd714665bde952333d270df6c5386cf",
+      "size": 71253
+    },
+    {
+      "path": "astribot_s1/mesh/dae/astribot_gripper_R2_Link.dae",
+      "sha256": "0278063a632d4456ea034d5b79b08a6e217502f5f36f36c7b24b09695fb459c8",
+      "size": 95908
+    },
+    {
+      "path": "astribot_s1/mesh/dae/astribot_head_link_2.dae",
+      "sha256": "f7241663b5031261bb6e1767825afa4cfe4b257fc55951ac58709030a216d228",
+      "size": 23854067
+    },
+    {
+      "path": "astribot_s1/mesh/dae/astribot_torso_base.dae",
+      "sha256": "626c784e81ebb891074f2a92d53c63609b1ab1158b32e02beb4352e607b4fa52",
+      "size": 24257507
+    },
+    {
+      "path": "astribot_s1/mesh/dae/astribot_torso_link_1.dae",
+      "sha256": "3a85b494275fa88b3ed59694c779ed5c8c529a0688c2fcd4ba59b1ffb15055cf",
+      "size": 13628516
+    },
+    {
+      "path": "astribot_s1/mesh/dae/astribot_torso_link_2.dae",
+      "sha256": "97223011223d3d7837059aad2ada2b6ffbf759416d7f1773839cda093d5fe3f1",
+      "size": 20159800
+    },
+    {
+      "path": "astribot_s1/mesh/dae/astribot_torso_link_4.dae",
+      "sha256": "fbe894d2218009fdd89868fa2576264b2d46b1e7e120c43bd516a1a3213af872",
+      "size": 17600618
+    },
+    {
+      "path": "astribot_s1/mesh/dae/logo_texture.png",
+      "sha256": "37dfe2df003fa6efdc017e316be13e233461724eeb524db7f7aede7115595c95",
+      "size": 82936
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_arm/astribot_arm_left_base_link.obj",
+      "sha256": "66f1518307f0c3dd8598969f93d7ab46dfbd0533c31873acabd5af53fc9e1cc7",
+      "size": 3674204
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_arm/astribot_arm_left_base_link_collision_mesh.obj",
+      "sha256": "55d04ad37e8fca14e424e7611dd69f9facf3e63c694d0c39512ae4170e343d1a",
+      "size": 12098
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_arm/astribot_arm_left_link_2.obj",
+      "sha256": "293f4e15b546e33f832769def85012360ebd19ccfb59403570b33fc9380de0d6",
+      "size": 1757178
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_arm/astribot_arm_left_link_2_collision_mesh.obj",
+      "sha256": "3d4cab242aa0abd3294e4a3059ca08b20dc25a0ff8afbd06394bfab2621bc381",
+      "size": 23171
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_arm/astribot_arm_link_1.obj",
+      "sha256": "52af86ff351e9730572cdecdc72fd9220129bd0793b7952b0d98ddb6ee961143",
+      "size": 1373479
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_arm/astribot_arm_link_1_collision_mesh.obj",
+      "sha256": "08bb9af6ac157a9b24aecac39780045c5eba6c0b5531d5c0538f2b64ab626023",
+      "size": 26870
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_arm/astribot_arm_link_3.obj",
+      "sha256": "481b3ebcf6165a1de5a4fe87550e27d3456cab862ca693234990fdc7476966d5",
+      "size": 4094934
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_arm/astribot_arm_link_3_collision_mesh.obj",
+      "sha256": "ef2b8711a27e90e05ef8ad3ae15c9345920e584063c123b221301be58bd2f141",
+      "size": 27099
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_arm/astribot_arm_link_4.obj",
+      "sha256": "e79ffddeb75f841ea8c4ba92a16e6e1b851ed1ef76911c6e6dfa3e253f87abb2",
+      "size": 1443806
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_arm/astribot_arm_link_4_collision_mesh.obj",
+      "sha256": "a0ae96e72b96de0ca9979ebb02f8aa51bea8b877290b2d0b0a4f133dd98bd50a",
+      "size": 57368
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_arm/astribot_arm_link_5.obj",
+      "sha256": "93ee0755577626454386f1f4b4c012797763047d02c2d2ee69adf4437151a249",
+      "size": 3423129
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_arm/astribot_arm_link_5_collision_mesh.obj",
+      "sha256": "6a44a5cb0517cec055d5607f3a513093a418441283c62849a37f85249f94fb4e",
+      "size": 96718
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_arm/astribot_arm_link_6.obj",
+      "sha256": "947394d1c3a04b3616b8c1d1699b2b54f5ef224a363bc892212a2fbba77cf040",
+      "size": 850005
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_arm/astribot_arm_link_6_collision_mesh.obj",
+      "sha256": "6d8890edc7cf3039bfddabd3d11b8e210c8223d92a711934a22ba88cef732a8e",
+      "size": 19909
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_arm/astribot_arm_link_7.obj",
+      "sha256": "72a3c94cd87772413a7360223bd692bc7bdafbf8f536ca17fe365a50f1d742e9",
+      "size": 282339
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_arm/astribot_arm_link_7_collision_mesh.obj",
+      "sha256": "8d415084bbe3071b684f4ada351be9b39e809fbd3bc6a74e8e6d08513399dd70",
+      "size": 26107
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_arm/astribot_arm_right_base_link.obj",
+      "sha256": "7373c63a11b966f110b0dac168e179348265f213d9ad77d4f94a288ad381b1a1",
+      "size": 3669901
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_arm/astribot_arm_right_base_link_collision_mesh.obj",
+      "sha256": "1b16c6aca795ef3f0b40603085434243046397b7017b481d339c77fa23ab1cb0",
+      "size": 10996
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_arm/astribot_arm_right_link_2.obj",
+      "sha256": "0ac5e8c2e394d12df53dbb9690681d7776452541cfdebbb64a4f024be75ce4e2",
+      "size": 1584791
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_arm/astribot_arm_right_link_2_collision_mesh.obj",
+      "sha256": "c7bfe8281b9be2936c94a4ac5c825351ccb42fcec80e2925766d687b4a2b6604",
+      "size": 23066
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_chassis/astribot_torso_base.obj",
+      "sha256": "df15d0daee6ebadc854c1168e77b55a9015eca1d08ce795a77e3b02e87621634",
+      "size": 7133753
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_chassis/astribot_torso_base_collision_mesh.obj",
+      "sha256": "694660c5286a3ddfe69e55d78e3b5ff1e5081cf0673f1935cddf51ac250cbd2a",
+      "size": 32182
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_chassis/astribot_torso_base_link.obj",
+      "sha256": "dd7b42ad341963e0aaa7e898411078173ba2613a5eff60140232c7d04d0b36da",
+      "size": 40001354
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_chassis/wheel_LF_Link.obj",
+      "sha256": "0ac65e0208cc498d62615058ff466ed697d9619edaef7a6b5adce199648dd42a",
+      "size": 2784472
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_chassis/wheel_LF_Link_collision_mesh.obj",
+      "sha256": "ada22820ee2125ee5f6514e567dc1fa56ed3662b759eb409327db295f90c71dd",
+      "size": 42011
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_chassis/wheel_LF_Link_wr.obj",
+      "sha256": "7f40eadd468d59447266520d6cfd9504e5324d6386a1d6a934637905a4cd4ca7",
+      "size": 2784475
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_chassis/wheel_LR_Link.obj",
+      "sha256": "8baf1f78d7c9cc026759cd9a765322d35b1c3fef39e152faac8d02ee348f1750",
+      "size": 2784472
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_chassis/wheel_LR_Link_collision_mesh.obj",
+      "sha256": "ada22820ee2125ee5f6514e567dc1fa56ed3662b759eb409327db295f90c71dd",
+      "size": 42011
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_chassis/wheel_LR_Link_wr.obj",
+      "sha256": "e57c52a45786a14ce9143b48d6f0e48283c16ab8e9f789226967955df647815d",
+      "size": 2784475
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_chassis/wheel_RF_Link.obj",
+      "sha256": "b9d396dd26abcb05f25c253b20912014b0761271fb4e571fd4e010f6bfb7ba40",
+      "size": 2784472
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_chassis/wheel_RF_Link_collision_mesh.obj",
+      "sha256": "ada22820ee2125ee5f6514e567dc1fa56ed3662b759eb409327db295f90c71dd",
+      "size": 42011
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_chassis/wheel_RF_Link_wr.obj",
+      "sha256": "1d8010d1d272437c7e9568d5e42275dec00b9afe799a89b724e5704a8ee9a3f5",
+      "size": 2784475
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_chassis/wheel_RR_Link.obj",
+      "sha256": "29129196e47d80a55a1b90d1c313e86ef00ada4c76be51a2dc1b2666d7b25159",
+      "size": 2784472
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_chassis/wheel_RR_Link_collision_mesh.obj",
+      "sha256": "ada22820ee2125ee5f6514e567dc1fa56ed3662b759eb409327db295f90c71dd",
+      "size": 42011
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_chassis/wheel_RR_Link_wr.obj",
+      "sha256": "d3f2a26b96320b46127986d0be009df2916e0eb1b5e63b6847076eb264fadd51",
+      "size": 2784475
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_gripper/astribot_gripper_L11_Link.obj",
+      "sha256": "39d37ab37df5f0d6160ff0b06cc0a6ec234b0ee5bb0a9fca15f3af161e96c25e",
+      "size": 480789
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_gripper/astribot_gripper_L11_Link_collision_mesh.obj",
+      "sha256": "6fa7d39b316b243a50712f09a1f80f669cdfb4633215fd064cf0b3b31ac2da95",
+      "size": 15179
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_gripper/astribot_gripper_L1_Link.obj",
+      "sha256": "f1d30502f3db12a371d46eabe31f76e7781b7a2043ed4d3da504d2c992e33b56",
+      "size": 75377
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_gripper/astribot_gripper_L1_Link_collision_mesh.obj",
+      "sha256": "50eda1d9dc273a33a55457955f2a560f54fce849dc10fccc3498f45c70201c20",
+      "size": 13242
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_gripper/astribot_gripper_L2_Link.obj",
+      "sha256": "68d8676a01dc78442b138d8e29fea23c8838507a3b4fbdc6f9dcdf634c31a5e0",
+      "size": 102020
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_gripper/astribot_gripper_L2_Link_collision_mesh.obj",
+      "sha256": "32f3b8e8ed200382bd0b1c7246e3a592652ef1e21f48042fdc05fd1fe25615ef",
+      "size": 13007
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_gripper/astribot_gripper_R11_Link.obj",
+      "sha256": "f1d67c5c19b5fccc78179d694adb409c31c949f6a77791d5c2b1d3037469660a",
+      "size": 481866
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_gripper/astribot_gripper_R11_Link_collision_mesh.obj",
+      "sha256": "2eaeed10fc374830f1bed3c0ed0c59dabfbbc594d18b1ffa949a53c0e8957929",
+      "size": 13287
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_gripper/astribot_gripper_R1_Link.obj",
+      "sha256": "c9074909b21a69815e373fc211cc990adcea2ee4a73afc39d56e86b0a4c4f41d",
+      "size": 75857
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_gripper/astribot_gripper_R1_Link_collision_mesh.obj",
+      "sha256": "c6418114f6c2acbdf835d265015c0f37c7eb005b5c0074c93dab81b3bb6ac84d",
+      "size": 13293
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_gripper/astribot_gripper_R2_Link.obj",
+      "sha256": "1c36c25bf943775ddb338383e8d331b2b34f8ff646424187213cd9a481cd25e1",
+      "size": 102053
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_gripper/astribot_gripper_R2_Link_collision_mesh.obj",
+      "sha256": "a24224b9319b505f5931b8ddd180cb7543afdbd3787ec706c0d9094359386db4",
+      "size": 13130
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_gripper/astribot_gripper_base_link.obj",
+      "sha256": "837cef384d06577c4d2ba33a739eaeeb8def6cc533c3e656abf14f94dfdde082",
+      "size": 1533766
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_gripper/astribot_gripper_base_link_collision_mesh.obj",
+      "sha256": "d0116464fb0d12c5a263b97b96ac5b1090efd4f996d235690173b35bf1176301",
+      "size": 65312
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_gripper/closed_gripper.obj",
+      "sha256": "6e97c009f24ed61406ec8f14341a47dde89b7554107e134dccfa29bb3e02a926",
+      "size": 48909
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_gripper/opened_gripper.obj",
+      "sha256": "b82052a0eaf227cb91599e92feea90bd884676a05a43f0dbfd3cbb7c2ff71bb2",
+      "size": 126150
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_left/left_base_link.obj",
+      "sha256": "73cf0f2b1ef4ce0b005f7579f8a4dd94e6e9794168f8dc197b0db6987c247e9b",
+      "size": 1850538
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_left/left_index_distal_Link.obj",
+      "sha256": "56370458d99ec08aeb1066b6073cf1a18b2bf2d7c902f2b2d524dce43edaee79",
+      "size": 301649
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_left/left_index_proximal_Link.obj",
+      "sha256": "bb880ecf98c00ed510fc9fa1b9dbfb4348d2335aee4462772f1b148eb7eff62c",
+      "size": 231511
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_left/left_index_tip.obj",
+      "sha256": "83888e7f0a433c165dfa9ad46e669ea9982b12d70b5351678c822de635b2a363",
+      "size": 76299
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_left/left_middle_distal_Link.obj",
+      "sha256": "24dac942699d536e9e0033cd0fb7d407e6b08587076025f05286272b08f73535",
+      "size": 297599
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_left/left_middle_proximal_Link.obj",
+      "sha256": "5ce3123156a82165fa30505024e7fa5c9d884e862bd7d547c9eb5aab75147a6d",
+      "size": 227573
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_left/left_middle_tip.obj",
+      "sha256": "21890a7085abe4442001497932602792413361b917f847e1c3e6daeda43bbe40",
+      "size": 76303
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_left/left_pinky_distal_Link.obj",
+      "sha256": "b88f8b492e0e92ffc203dbc55014dd7b76c923eee3df190384eec5f0eab212ea",
+      "size": 408455
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_left/left_pinky_proximal_Link.obj",
+      "sha256": "3b8b459f5b0d9faacdeb24e3b0c050370b6588cc6a49dda10f8914edf6d7aa37",
+      "size": 236369
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_left/left_pinky_tip.obj",
+      "sha256": "64dc9ee6357c604d648d05b104a903e3b0ee1876ea139495ca678cda524ad896",
+      "size": 76299
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_left/left_ring_distal_Link.obj",
+      "sha256": "a8f26e1c8b43290022e12de1deceaaa13dd32a7e2ea9d83aa6bec4184835f7de",
+      "size": 388486
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_left/left_ring_proximal_Link.obj",
+      "sha256": "380df7f0667398a88f3bdbfc12d9905e4f6165c31024fcfd0b28fb34bbab1d03",
+      "size": 191646
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_left/left_ring_tip.obj",
+      "sha256": "b6e3dd615db774fcd8c93f39b024be5e2148cb8670cf9a8d4bf6b7649643c8a1",
+      "size": 76302
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_left/left_thumb_distal_Link.obj",
+      "sha256": "35559fb5b0c9650e7bb674d4d17acea0066c761aacc8acc8a84eef0434bdd449",
+      "size": 148222
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_left/left_thumb_metacarpal_Link.obj",
+      "sha256": "152e3556e049c159da4fecc5469da781b2b8a40bafa9b60132822574ba917723",
+      "size": 198718
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_left/left_thumb_proximal_Link.obj",
+      "sha256": "8d6372bf29a0241c68d48639ccfa110af7bec6772a9d19bec71352687a7ecab6",
+      "size": 455090
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_left/left_thumb_tip.obj",
+      "sha256": "a1656d3674bb399d5693975284f44648975e6519a6d0990cfa75a2ad1b066d72",
+      "size": 76297
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_right/right_base_link.obj",
+      "sha256": "a10e1a2d90199d6d6ce18e9272e610f9eebfe850ed519ecfacb78fd7230da15b",
+      "size": 1845413
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_right/right_index_distal_link.obj",
+      "sha256": "f05a37eba5195092aa4c9f8eed915e9752ba8804cf7f73d91265786dd6b25d9a",
+      "size": 303288
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_right/right_index_proximal_link.obj",
+      "sha256": "14ba8be2664e6ed9dfe42751ea0b5c4482e50ac8c7c819e448cca6686d1d25e3",
+      "size": 231477
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_right/right_index_tip.obj",
+      "sha256": "d67cad12d2e0794e2dd94d3387d8cddc5af72764bf3b2f1197f1c3f81a373c1c",
+      "size": 76302
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_right/right_middle_distal_link.obj",
+      "sha256": "df7a9c33777f8add13b62abc0bcfc625ee30439b557783271f4d47f423ecc2fd",
+      "size": 298149
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_right/right_middle_proximal_link.obj",
+      "sha256": "9faa5226e91784d6ac80f1bb53f7472084146a18dc8755f5dad330686c1d09a0",
+      "size": 226910
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_right/right_middle_tip.obj",
+      "sha256": "431a552b7a749ba328cbab2c8526c3e556e4a60e669d348630b71b08c9fad386",
+      "size": 76300
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_right/right_pinky_distal_link.obj",
+      "sha256": "18879cdf0b3db84b467ce42793242db78b0ad9b4847e3304daa8b04a0d133ccc",
+      "size": 408330
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_right/right_pinky_proximal_link.obj",
+      "sha256": "75a2df9becf52ee5e2561a0f1e4354642b4d80a65ad77dded82b9e77972fba81",
+      "size": 233901
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_right/right_pinky_tip.obj",
+      "sha256": "be1c31888201d38f84d3381e6c984f0ca2c979be2d8be9681706e0b5e5b51aaf",
+      "size": 76302
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_right/right_ring_distal_link.obj",
+      "sha256": "19e64083a479b81f3cac155dc8cba002fa8f2b445279cf9cf7c0410efb919b83",
+      "size": 386703
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_right/right_ring_proximal_link.obj",
+      "sha256": "ff7044a51c6264c18f97c215f055014a043c01f63cc46119b12a51c9bfba03c9",
+      "size": 191855
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_right/right_ring_tip.obj",
+      "sha256": "7a5f9b6276ac5bd4ff25feee153dd28fdd74d90bd056ea34a28364dde5b3dde2",
+      "size": 76299
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_right/right_thumb_distal_link.obj",
+      "sha256": "d2d572a6ce147e94ea42f3f8115b9cbaa00fad11e641997980355ddad984485c",
+      "size": 147091
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_right/right_thumb_metacarpal_link.obj",
+      "sha256": "1423f922086da5ee35c17369230919d6e9fe53510c48b5b5ff5020a347188678",
+      "size": 195782
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_right/right_thumb_proximal_link.obj",
+      "sha256": "26b1fbb46abcb70b9085efb619b9750e27d55f85dd9ed5e2379021b4ba6a259a",
+      "size": 455327
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_hand/s1_hand_right/right_thumb_tip.obj",
+      "sha256": "889f30925f2f08a048ace14da42f90db20e6a7f4b88c9612af8811ad435526c4",
+      "size": 76578
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_head/astribot_head_base_link.obj",
+      "sha256": "13cd1081c063757c3458cf875810d33f76d350bda6c8b7f2ecf4e40dbd589cf5",
+      "size": 98409
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_head/astribot_head_base_link_collision_mesh.obj",
+      "sha256": "04f0bb54f60863dcdf77bdff44c70e5297d7a3925af8ae685716e66097427900",
+      "size": 6448
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_head/astribot_head_link_1.obj",
+      "sha256": "064df053ec4cf9fdcabcb42500ee253ea11713e42068f68063b3477b3a340e24",
+      "size": 53123
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_head/astribot_head_link_1_collision_mesh.obj",
+      "sha256": "450794581cb25ee24f98b68cf9f1c4eb69b9865222e9fbb39b271da3a09eaaaa",
+      "size": 9738
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_head/astribot_head_link_2.obj",
+      "sha256": "5a6dc2fa33de59fd0502c6482eaabc48d846c1ecc863d74f1ec33f83fcd96360",
+      "size": 38496139
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_head/astribot_head_link_2_collision_mesh.obj",
+      "sha256": "69ffffcd440375b507940915ac0553e7df8010373b1ba136d6cdfc05475f7605",
+      "size": 53178
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_torso/astribot_torso_link_1.obj",
+      "sha256": "c3ec77833c6a7d0790511c633b659435dcbb9535155d98633f5d4bd021658a54",
+      "size": 6375054
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_torso/astribot_torso_link_1_collision_mesh.obj",
+      "sha256": "d1e6e24a010349eae0114e090b57aa7b995a4c87a22eb6ec8ab769521ebe3d46",
+      "size": 79519
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_torso/astribot_torso_link_2.obj",
+      "sha256": "d3f639a37cc63757da571bbeeedd130c98afd798af6ba33f1a7960884549b1e3",
+      "size": 33347575
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_torso/astribot_torso_link_2_collision_mesh.obj",
+      "sha256": "d6f07876af8c9fdc7888a58599b3865f05ef76069ba9cdcb4822d52f56f619b5",
+      "size": 101962
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_torso/astribot_torso_link_3.obj",
+      "sha256": "a8ead6f4bd8d28c112f889ac67a4c69e72ed7f9e8a1c027784d4b1c3a3d7a0cf",
+      "size": 2847509
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_torso/astribot_torso_link_3_collision_mesh.obj",
+      "sha256": "3986ff0677253fb3367cece39c4f2923641241e12247c73b33c958ae698089ff",
+      "size": 20280
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_torso/astribot_torso_link_4.obj",
+      "sha256": "955db3acb335e179d35a0ad76f537109f6d2ab0b74fd6d9d5d0db7ed7ef14a32",
+      "size": 28906301
+    },
+    {
+      "path": "astribot_s1/mesh/obj/s1_torso/astribot_torso_link_4_collision_mesh.obj",
+      "sha256": "dd3625a5b0e3789298cce383bcd7722b1ab94a4faf0c28918e4d15ed753510e4",
+      "size": 52571
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_arm/astribot_arm_left_base_link.STL",
+      "sha256": "f5ce4a1ca6343fa73aac37e9ab1581224eae72b13e906592e253f5b9ff71b7e7",
+      "size": 393484
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_arm/astribot_arm_left_link_2.STL",
+      "sha256": "29a31a52440708e5257005fcaa766d782b6e9895a7d641cf96818db5939b72b5",
+      "size": 1168184
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_arm/astribot_arm_link_1.STL",
+      "sha256": "b6c9d2fb9539f3865c15f86dae8bfd88e23daab3a8136775a7f5e840519a9ccf",
+      "size": 160984
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_arm/astribot_arm_link_3.STL",
+      "sha256": "a8d48fa6ed9eae1d1b85be42937c9f162fb9039a630943f8fae9b511c1fb711a",
+      "size": 1431884
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_arm/astribot_arm_link_4.STL",
+      "sha256": "cf0ae423d242e076a628c4181afcd0f42c677d94f5b31582e79997b5620ac043",
+      "size": 325584
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_arm/astribot_arm_link_5.STL",
+      "sha256": "a8301d519a7cac044de0e9b1dda82147382aed2d0b64b5c2d7035461464a21ae",
+      "size": 1988484
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_arm/astribot_arm_link_6.STL",
+      "sha256": "c2a3a57e115c59006eb37ac8dbc28736e2366a048ea2e1545731910ad4c897f7",
+      "size": 626484
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_arm/astribot_arm_link_7.STL",
+      "sha256": "650d570d2e0d2978fc8b870adf2495e8cd24944b6e3a2da3c0fad0a48db2fd8f",
+      "size": 216184
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_arm/astribot_arm_right_base_link.STL",
+      "sha256": "a2d63475f85bf98fc0e7569ee5aeb554ff9dc0d6abe10e85b5e58d17c822946e",
+      "size": 394684
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_arm/astribot_arm_right_link_2.STL",
+      "sha256": "9074ba1114c0d0fb9f950c678689f5e2536beadf84c8b24a872165c84066583d",
+      "size": 1170384
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_chassis/astribot_torso_base.STL",
+      "sha256": "88d76fa4c7834bb756298db81907c204cfcb7a918eb4e1380fbc07bc894a2a2c",
+      "size": 9484534
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_chassis/roller1.stl",
+      "sha256": "fb06c8555680f2c5b605ec3967cdd9724a43d932c6a977256b2286173c76f6c0",
+      "size": 326384
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_chassis/roller2.stl",
+      "sha256": "9e10a4ed9f7840b2d9129db9c6ce99f1e20d2b20cfb4ab97beb5823783d196fa",
+      "size": 247584
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_chassis/wheel_LF_Link.STL",
+      "sha256": "8da5ac79f80c7553daf9cb6c4cfb9510c32da33dbe45109dc141c485a2631e80",
+      "size": 336584
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_chassis/wheel_LF_Link_wr.STL",
+      "sha256": "4bf080c0908855a21de278d5c3d356f9a3e04bc7e967671bf21fdd91b220cc6a",
+      "size": 3733184
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_chassis/wheel_LR_Link.STL",
+      "sha256": "6c007ffc783c41cdcaa0392f9557732a2fa18b760b74737c85a6a0b84e78dc4e",
+      "size": 336584
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_chassis/wheel_LR_Link_wr.STL",
+      "sha256": "4bf080c0908855a21de278d5c3d356f9a3e04bc7e967671bf21fdd91b220cc6a",
+      "size": 3733184
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_chassis/wheel_RF_Link.STL",
+      "sha256": "b6d6a8bcb33b87b26532238dd809020b91a2d6f0d0af56c46d026af9cbfc79ef",
+      "size": 336584
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_chassis/wheel_RF_Link_wr.STL",
+      "sha256": "4bf080c0908855a21de278d5c3d356f9a3e04bc7e967671bf21fdd91b220cc6a",
+      "size": 3733184
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_chassis/wheel_RR_Link.STL",
+      "sha256": "734b580ac76709772672906fef9e398e75c34ff23f2812a5af800ef8480ff123",
+      "size": 336584
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_chassis/wheel_RR_Link_wr.STL",
+      "sha256": "4bf080c0908855a21de278d5c3d356f9a3e04bc7e967671bf21fdd91b220cc6a",
+      "size": 3733184
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_chassis/wheel_roller_canonical.stl",
+      "sha256": "e3725cace8e6a41ba0e38542e35965f317578e78bb91f4defe7a2f6193b3bfb5",
+      "size": 56884
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_gripper/astribot_gripper_L11_Link.STL",
+      "sha256": "8c2ac3e5c2039b5e3e9127f1e612520b4e76863619e6d4853d5f640e988df401",
+      "size": 455284
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_gripper/astribot_gripper_L1_Link.STL",
+      "sha256": "93024aba1a6171b305fefe00618b446457e19f32159460e1e4f463bf5163c4cd",
+      "size": 60584
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_gripper/astribot_gripper_L2_Link.STL",
+      "sha256": "4c461d9621422ea16ddfc133ec57b196ad073576425c27e66a096ff879ac71e6",
+      "size": 82084
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_gripper/astribot_gripper_R11_Link.STL",
+      "sha256": "10ce463e0fb7bfb632b310f9f47ce746be98383ed2538f118c4fb4ce69971c55",
+      "size": 455284
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_gripper/astribot_gripper_R1_Link.STL",
+      "sha256": "88e771f4b181eeebdc83e2e5239dbedcaa6b496b2cc5e5896e1ebc4b9586de2b",
+      "size": 60584
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_gripper/astribot_gripper_R2_Link.STL",
+      "sha256": "df220a8f4c534498c769ff83ebfbc2a7920db8223e8f93629abe71d71083b9e9",
+      "size": 82084
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_gripper/astribot_gripper_base_link.STL",
+      "sha256": "887e309b8db7285917c26d272a84a3c56b30638e1f4e71e2b23930a9d3244db1",
+      "size": 1086384
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_left/left_base_link.STL",
+      "sha256": "d8851e50188ac14edba1552b37d4ccb8f61c0d7ad7338a8db9623512476e968b",
+      "size": 2518884
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_left/left_index_distal_Link.STL",
+      "sha256": "188a5ef9e447ee78932d072d3ced223a66990e8216b413f1a85f67bb3bd2ebd6",
+      "size": 441984
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_left/left_index_proximal_Link.STL",
+      "sha256": "1fed32c1a8451282b314579eed3903a288a62524dc7d8b08464fb559261bb580",
+      "size": 339884
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_left/left_index_tip.STL",
+      "sha256": "9f5a11d72375073e8373a02ce604ca99abcb583074ba2f520510b48abc4c5b86",
+      "size": 117684
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_left/left_middle_distal_Link.STL",
+      "sha256": "cc4dec97e13c6be231b07f5d092e0d292a9a77c6a707062caf17d3602c22ad73",
+      "size": 435984
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_left/left_middle_proximal_Link.STL",
+      "sha256": "50122ebf6e75698ba2c469efd58e07ad3f82b1a002728cd15802f1c435d54c0c",
+      "size": 334284
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_left/left_middle_tip.STL",
+      "sha256": "ef4ac885d12e603918722c22000a59827f168f276d9c41651ef0d94175113486",
+      "size": 117684
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_left/left_pinky_distal_Link.STL",
+      "sha256": "a2f6a2150559d01e6f07a55cda141d3363de7e6e4259457740dee8afdb17b20f",
+      "size": 596184
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_left/left_pinky_proximal_Link.STL",
+      "sha256": "9f1408568638fbbec4cf32507d4b233fbd8cdb9c862e07cc7da6cd826497caa6",
+      "size": 346784
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_left/left_pinky_tip.STL",
+      "sha256": "56eae1cc71cf6acab0a20c1a8e2e470c9ec96f520386c1ea22f10f51e2dbf758",
+      "size": 117684
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_left/left_ring_distal_Link.STL",
+      "sha256": "100a748e3038ed3ce5969f0696133dd3bf9bfa6f1546287272cf44d76a3cacce",
+      "size": 564884
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_left/left_ring_proximal_Link.STL",
+      "sha256": "77220c07d5bbc119cb828af89f35cb4cef755bbc98a1cae2dda846268ff59501",
+      "size": 281184
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_left/left_ring_tip.STL",
+      "sha256": "870a5b7890a41c8fb8e91cd0c4f74f01c64778bf33f29c135b0b0431a489cde1",
+      "size": 117684
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_left/left_thumb_distal_Link.STL",
+      "sha256": "db9d74a4c4025b3d14fb2f67d3326c4be20002b1c51ef21971cc848d70be630e",
+      "size": 221284
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_left/left_thumb_metacarpal_Link.STL",
+      "sha256": "415a75193e7773572b0df8a80fa4e1d187a67901a5ff381a89ee5b7df64735ea",
+      "size": 290384
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_left/left_thumb_proximal_Link.STL",
+      "sha256": "191650b13c24d76d7cf58e4ba51e3a79ac07906db8639c557da5a98b87b5f316",
+      "size": 657684
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_left/left_thumb_tip.STL",
+      "sha256": "5177296e2426d118cc15ca74db26ebbdedf129f7a2b7c1194b2752f19e1fa3cd",
+      "size": 117684
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_right/right_base_link.STL",
+      "sha256": "c506bceeb28732ea1220d4a62000064a0621994c4efe711c954cc6605abd4a34",
+      "size": 2513484
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_right/right_index_distal_link.STL",
+      "sha256": "a9f2ff38d27d39713915d41996a335a4a7f272b51f2b663fd253df4890d2ea7d",
+      "size": 444884
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_right/right_index_proximal_link.STL",
+      "sha256": "94fdff414f1c29940495d1f0264a50621340cfc30f9b5365b3490d39ae367f2f",
+      "size": 339884
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_right/right_index_tip.STL",
+      "sha256": "4af36131feedb7f83a695ff8e7d09a7e8893df96f971b2d363c0d359e3a82bbf",
+      "size": 117684
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_right/right_middle_distal_link.STL",
+      "sha256": "6ca6556cbe479398a4adece02ea2220f7088a237937f9129e6fa8f37a3f8d779",
+      "size": 437084
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_right/right_middle_proximal_link.STL",
+      "sha256": "56d9f019bad093daf93a736596ab4e7d9b17fb3c79e2be4181d909958cf76a37",
+      "size": 333384
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_right/right_middle_tip.STL",
+      "sha256": "844204b7bcf3de3ad500232e2e30ac15a8ec41728be281d0670c7ad1a2b09e34",
+      "size": 117684
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_right/right_pinky_distal_link.STL",
+      "sha256": "0beaa421340096156daaa286364058f200b54bd81b079dd335169dd324ab3344",
+      "size": 595984
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_right/right_pinky_proximal_link.STL",
+      "sha256": "1a4ba525880efd4da2bcdfd5d2d69a684a02f8c7c01f8e185adf23f47469d0f4",
+      "size": 343284
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_right/right_pinky_tip.STL",
+      "sha256": "f632c67971d2d6dc8a5edcfcac4db8b3078e346540270bd89a9e9c783d304415",
+      "size": 117684
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_right/right_ring_distal_link.STL",
+      "sha256": "0075e39ae91e99ca042036d183fc1c0216e703555be258f39ef1bdf1f055d969",
+      "size": 563784
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_right/right_ring_proximal_link.STL",
+      "sha256": "7aa7601fd8360252144de4475e30575277f6ca20dc019e90c7df8ff9f2fc8074",
+      "size": 281484
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_right/right_ring_tip.STL",
+      "sha256": "c3be3c69a1b7cba72d4b09c8ca4e04f3ad15ef2e47f8212bb547be7487f88022",
+      "size": 117684
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_right/right_thumb_distal_link.STL",
+      "sha256": "4aeb45f261a9b9b0010856d45188c6fa5c1ca23485568f2d30728bc23bcf4e44",
+      "size": 218834
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_right/right_thumb_metacarpal_link.STL",
+      "sha256": "bf007bb8ddfd1eda5eba12dc802d9d6ac5b4b183c93c4e1cc9b025a816cfb68b",
+      "size": 289584
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_right/right_thumb_proximal_link.STL",
+      "sha256": "b1d8154a4f00bb6237b5553a64dda8ef0d9026a87d3d862a643f18284d17f472",
+      "size": 657384
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_hand/s1_hand_right/right_thumb_tip.STL",
+      "sha256": "b7c57cc3473e6709ffb95133274c7986adf23a812ff7afbf5d74dc8ccdc4dd45",
+      "size": 117684
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_head/astribot_head_base_link.STL",
+      "sha256": "82a65945d782623b806f4c59f53bfaef39d14bdd5a84f2e21a25867122493242",
+      "size": 148284
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_head/astribot_head_link_1.STL",
+      "sha256": "9e9c1792b072579214109d18438caf8594820452319c0bd8dca34e1b23276798",
+      "size": 83184
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_head/astribot_head_link_2.STL",
+      "sha256": "94170698aea56450148d63cfff41daf899de7eab03d9fe716ff22959cca73306",
+      "size": 9665084
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_torso/astribot_torso_link_1.STL",
+      "sha256": "a35f95371318c34c2b61b5003ded18d9bd5af7910a42a052974e1ac02f639783",
+      "size": 2927384
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_torso/astribot_torso_link_2.STL",
+      "sha256": "30237e4da5116ada620cdeccea5766fc1a3cf152f6f7892ded49f52ae71878a6",
+      "size": 8721384
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_torso/astribot_torso_link_3.STL",
+      "sha256": "eab30e56b62eb82c185fd601f73d28b3c948975ea427b250a5ce0ff58b2aeaab",
+      "size": 2721384
+    },
+    {
+      "path": "astribot_s1/mesh/stl/s1_torso/astribot_torso_link_4.STL",
+      "sha256": "f0a1e9860d36598beec63562a27f88733216cc7d8db9796274e381b5d90c362c",
+      "size": 7149984
+    },
+    {
+      "path": "astribot_s1/mesh/textures/astribot_head_link_2.png",
+      "sha256": "9a9b16978f8d857c74383f61af9487e30157e9d1d559c99de6530b2004c93502",
+      "size": 245361
+    },
+    {
+      "path": "astribot_s1/mesh/textures/astribot_torso_base.png",
+      "sha256": "5857003d2083766116a8bbe292c37ec0af390ac73ae4355a5df6b179a872d72c",
+      "size": 562140
+    },
+    {
+      "path": "astribot_s1/mesh/textures/astribot_torso_base_link.png",
+      "sha256": "5857003d2083766116a8bbe292c37ec0af390ac73ae4355a5df6b179a872d72c",
+      "size": 562140
+    },
+    {
+      "path": "astribot_s1/mesh/textures/astribot_torso_link_1.png",
+      "sha256": "cd67ebf8939ee167ea9506d14e4feb16264f7dc98c1ca708c23c2975c363a6bd",
+      "size": 92189
+    },
+    {
+      "path": "astribot_s1/mesh/textures/astribot_torso_link_2.png",
+      "sha256": "5edecacd88d04d38cc28ae2cbbf2dbd172f9996c1575b0762cea33b5795f84f7",
+      "size": 502245
+    },
+    {
+      "path": "astribot_s1/mesh/textures/astribot_torso_link_4.png",
+      "sha256": "a314b1341074cca6aa64ec00e0b0d23a91431a360535b7f0fdc9729d6bfccd15",
+      "size": 41498
+    },
+    {
+      "path": "astribot_s1/model/mjcf/robot/actuator_base.xml",
+      "sha256": "b8ac91d2dacfb99dd3d121b39d12508bd99e286fe499e72b352c7316d6e4600a",
+      "size": 7922
+    },
+    {
+      "path": "astribot_s1/model/mjcf/robot/actuator_chassis.xml",
+      "sha256": "9974d9319fc80640f160e705b0c5acfa188f1c24a6c6fde9cbbe0f65cb8c4f39",
+      "size": 500
+    },
+    {
+      "path": "astribot_s1/model/mjcf/robot/actuator_chassis_kinematic.xml",
+      "sha256": "5412c8d7a4fdace70c32df529f3f8d13a688c3a0f6ea185a61d15f10ca9b8f26",
+      "size": 398
+    },
+    {
+      "path": "astribot_s1/model/mjcf/robot/assets.xml",
+      "sha256": "30d5dbe00366a97ed9dac9e25ef11d289b7b4043c4fb90908f98eee99da2ffe6",
+      "size": 7401
+    },
+    {
+      "path": "astribot_s1/model/mjcf/robot/kinematic.xml",
+      "sha256": "de643045005718b47971934981ef2461ad21fb7504a0323226675d1b69b9ca2d",
+      "size": 72154
+    },
+    {
+      "path": "astribot_s1/model/mjcf/robot/kinematic_visual.xml",
+      "sha256": "3847ae8ef415d323e4bbdef3bb225b15be16743297b252a390d6b8a90f1dab37",
+      "size": 30778
+    },
+    {
+      "path": "astribot_s1/model/mjcf/robot/s1.xml",
+      "sha256": "5e21ae9b8621b2acd49a89a81aa1e6c683a8856672022404e8b8abfdbe283e87",
+      "size": 827
+    },
+    {
+      "path": "astribot_s1/model/mjcf/robot/s1_kinematic.xml",
+      "sha256": "22d26ecc1346bbf53b1d2f26efb2f23f3992d8db7fc304c7a9871242334c1793",
+      "size": 1144
+    },
+    {
+      "path": "astribot_s1/model/mjcf/robot/sensors/head_stereo_left.xml",
+      "sha256": "36fdf4fa39d4b010c97723126018b42febaeaed1dc3a101cbf33d99db36a8f80",
+      "size": 286
+    },
+    {
+      "path": "astribot_s1/model/mjcf/robot/sensors/head_stereo_right.xml",
+      "sha256": "f6f138514e35f6fcf163610e1df87536f3877c2401d5ec6022a38239ce9f080b",
+      "size": 289
+    },
+    {
+      "path": "astribot_s1/model/mjcf/robot/sensors/imu_back.xml",
+      "sha256": "c2f15a271fdd9a2746724bf79509615919867bf7734f61c25fc498ae006d89b7",
+      "size": 237
+    },
+    {
+      "path": "astribot_s1/model/mjcf/robot/sensors/imu_chassis.xml",
+      "sha256": "25eacff309f646a9d67f53d2df2c02aec51c84e5f40357c2d70ee29731c761a2",
+      "size": 271
+    },
+    {
+      "path": "astribot_s1/model/mjcf/robot/sensors/imu_front.xml",
+      "sha256": "1adf18b322e12a99baf2c0b212e9344f850e0d766f705fed1c3336777fa1714e",
+      "size": 217
+    },
+    {
+      "path": "astribot_s1/model/mjcf/robot/sensors/lidar_mid360_back.xml",
+      "sha256": "dea0505c9ebedcb374b03f1822ddd877f4a12d82e48139c85719b3a8780f2306",
+      "size": 429
+    },
+    {
+      "path": "astribot_s1/model/mjcf/robot/sensors/lidar_mid360_front.xml",
+      "sha256": "f60e8f8c460132d363ac7d84bc779adbb18dea999fe059f61d609b3f0301a5b8",
+      "size": 415
+    },
+    {
+      "path": "astribot_s1/model/mjcf/robot/sensors/torso_rgbd.xml",
+      "sha256": "7e15a29818e161ec71a3f6b211295a53765884e957cfe1c4cd9ceb6ee4d597e6",
+      "size": 240
+    },
+    {
+      "path": "astribot_s1/model/sdf/astribot_head.sdf",
+      "sha256": "a9ccf8ac9788ce283dde75bf392eccdf310bb316746f3ec2ea07ac25ac8c0355",
+      "size": 3908
+    },
+    {
+      "path": "astribot_s1/model/sdf/astribot_torso.sdf",
+      "sha256": "fc88c0dafb62fc1bc59bc2673168003924b4218f7a46bfcb94d9554bcb5d8b61",
+      "size": 7181
+    },
+    {
+      "path": "astribot_s1/model/sdf/astribot_whole_body.sdf",
+      "sha256": "6065f3754c8f8e02e96511bc516e8fd6b71d9849b3bba70053d785d607f05b38",
+      "size": 63074
+    },
+    {
+      "path": "astribot_s1/model/urdf/astribot_arm_left.urdf",
+      "sha256": "ed473b2fd8407c149ff19717ca1e0459cde461a15daf088e7568306991809d6d",
+      "size": 8220
+    },
+    {
+      "path": "astribot_s1/model/urdf/astribot_arm_right.urdf",
+      "sha256": "4b76ddd243b47120bc29a9bdf71950dbf9a7d5fa791db91e0d646c7afefd1ee5",
+      "size": 8260
+    },
+    {
+      "path": "astribot_s1/model/urdf/astribot_chassis.urdf",
+      "sha256": "2e569ca96cd60436c3ee46dc13196ad9660b4cf842c3047736728f1e8bae39fd",
+      "size": 4788
+    },
+    {
+      "path": "astribot_s1/model/urdf/astribot_head.urdf",
+      "sha256": "58e1bb346347776f853a0f4ff2a536e597f67ae245b0209541f0a339abce4f4a",
+      "size": 2907
+    },
+    {
+      "path": "astribot_s1/model/urdf/astribot_torso.urdf",
+      "sha256": "5cee77b579270ba0a28c0a569538e8b1e3d6a8870e7dea0546951f7a09bc7c73",
+      "size": 5019
+    },
+    {
+      "path": "astribot_s1/model/urdf/astribot_whole_body.urdf",
+      "sha256": "9eb3f7dd897a2911f2b9879d1b65c59048a2f59cd7190d9d2ce3d22ccc37fb19",
+      "size": 49374
+    }
+  ],
+  "notes": "GitHub public release target with independent variant list. Pushed to\nthe aos branch. Uses the same layout as the GitLab descriptions target.\n"
+}

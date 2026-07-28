@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<mujoco model="astribot_t1_kinematic">
+    <compiler angle="radian" meshdir="../../mesh" />
+    <option impratio="100" integrator="implicit" timestep="0.005" viscosity="0.1" gravity="0 0 -9.81" />
+    <include file="assets.xml" />
+    <worldbody>
+        <body name="chassis_base" pos="-0.0 0.0 0.0912" euler="0 0 0">
+            <joint name="astribot_chassis_x" type="slide" axis="1 0 0" limited="false" range="-0.001 0.001" />
+            <joint name="astribot_chassis_y" type="slide" axis="0 1 0" limited="false" range="-0.001 0.001" />
+            <joint name="astribot_chassis_zrot" type="hinge" axis="0 0 1" limited="false" range="-0.001 0.001" />
+            <include file="kinematic_visual.xml" />
+            <include file="sensors/lidar_mid360_front.xml" />
+            <include file="sensors/chassis_rear_d405.xml" />
+        </body>
+    </worldbody>
+    <include file="sensors/imu_front.xml" />
+    <include file="sensors/imu_chassis.xml" />
+    <include file="actuator_chassis_kinematic.xml" />
+    <include file="actuator_base.xml" />
+</mujoco>

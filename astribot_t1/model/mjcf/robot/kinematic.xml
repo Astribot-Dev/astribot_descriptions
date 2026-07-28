@@ -1,0 +1,539 @@
+<?xml version="1.0"?>
+<mujoco model="astribot_torso">
+    <inertial pos="-0.03463 -0.000203 0.004083" mass="22.14" diaginertia="1.095313881398545 0.6817082336304022 0.47365388497105315" quat="0.7220738505489941 0.0031269362149843986 0.6918087390317627 -0.0004951994940965037" />
+    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_torso_base_link" material="M_torso_base_link" />
+    <site name="astribot_chassis_imu_site" pos="0.175 0.085 0.01" />
+    <body name="wheel_RF_Link" pos="0.216347 -0.216347 -0.015" quat="0.270599 0.65328 -0.2706 0.653282">
+        <inertial pos="2.7624e-07 -1.7583e-07 0.014539" quat="0.270598 0.653281 -0.270598 0.653281" mass="0.56418" diaginertia="0.0015639 0.000831884 0.000831876" />
+        <joint name="wheel_RF_Joint" type="hinge" axis="0 0 1" limited="false" armature="0.05" damping="0.5" />
+        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" pos="0 0 -0.0175" mesh="wheel_RF_Link_wr" material="M_rubber_wheel" />
+        <body name="wheel_RF_roller_link_1" pos="-0.045496 0.044643 -0.0025">
+            <inertial pos="0.013714 0.008242 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RF_roller_joint_1" type="hinge" axis="-0.857125 -0.515108 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RF_roller_link_1_collision" type="mesh" mesh="wheel_roller_canon" pos="0.013714 0.008242 0.0" quat="0.707107 0.364236 -0.606079 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RF_roller_link_2" pos="-0.063738 -0.000604 -0.0025">
+            <inertial pos="0.003869 0.015525 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RF_roller_joint_2" type="hinge" axis="-0.241843 -0.970316 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RF_roller_link_2_collision" type="mesh" mesh="wheel_roller_canon" pos="0.003869 0.015525 -0.0" quat="0.707107 0.686117 -0.171009 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RF_roller_link_3" pos="-0.061126 -0.018068 -0.0025">
+            <inertial pos="0.008242 -0.013714 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RF_roller_joint_3" type="hinge" axis="0.515108 -0.857125 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RF_roller_link_3_collision" type="mesh" mesh="wheel_roller_canon" pos="0.008242 -0.013714 -0.0" quat="0.707107 0.606079 0.364236 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RF_roller_link_4" pos="-0.030447 -0.055999 -0.002501">
+            <inertial pos="0.015525 -0.00387 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RF_roller_joint_4" type="hinge" axis="0.970315 -0.241843 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RF_roller_link_4_collision" type="mesh" mesh="wheel_roller_canon" pos="0.015525 -0.00387 0.0" quat="0.707107 0.171009 0.686117 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RF_roller_link_5" pos="0.018068 -0.061126 -0.0025">
+            <inertial pos="0.013714 0.008242 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RF_roller_joint_5" type="hinge" axis="0.857125 0.515108 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RF_roller_link_5_collision" type="mesh" mesh="wheel_roller_canon" pos="0.013714 0.008242 0.0" quat="0.707107 -0.364236 0.606079 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RF_roller_link_6" pos="0.055999 -0.030447 -0.0025">
+            <inertial pos="0.003869 0.015525 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RF_roller_joint_6" type="hinge" axis="0.241843 0.970316 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RF_roller_link_6_collision" type="mesh" mesh="wheel_roller_canon" pos="0.003869 0.015525 -0.0" quat="0.707107 -0.686117 0.171009 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RF_roller_link_7" pos="0.044643 0.045496 -0.0025">
+            <inertial pos="0.008242 -0.013714 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RF_roller_joint_7" type="hinge" axis="-0.515108 0.857125 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RF_roller_link_7_collision" type="mesh" mesh="wheel_roller_canon" pos="0.008242 -0.013714 -0.0" quat="0.707107 -0.606079 -0.364236 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RF_roller_link_8" pos="-0.000603 0.063738 -0.0025">
+            <inertial pos="0.015525 -0.00387 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RF_roller_joint_8" type="hinge" axis="-0.970315 0.241843 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RF_roller_link_8_collision" type="mesh" mesh="wheel_roller_canon" pos="0.015525 -0.00387 0.0" quat="0.707107 -0.171009 -0.686117 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RF_roller_link_9" pos="-0.040085 0.049559 -0.0325">
+            <inertial pos="-0.009516 -0.012862 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RF_roller_joint_9" type="hinge" axis="-0.594757 -0.803905 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RF_roller_link_9_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.009516 -0.012862 -0.0" quat="0.707107 0.568447 -0.420557 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RF_roller_link_10" pos="-0.063388 0.006699 -0.032499">
+            <inertial pos="0.002366 -0.015824 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RF_roller_joint_10" type="hinge" axis="0.14789 -0.989003 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RF_roller_link_10_collision" type="mesh" mesh="wheel_roller_canon" pos="0.002366 -0.015824 -0.0" quat="0.707107 0.699331 0.104574 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RF_roller_link_11" pos="-0.023834 -0.059117 -0.0325">
+            <inertial pos="-0.012862 0.009516 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RF_roller_joint_11" type="hinge" axis="0.803905 -0.594758 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RF_roller_link_11_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.012862 0.009516 -0.0" quat="0.707107 0.420557 0.568447 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RF_roller_link_12" pos="0.024949 -0.058655 -0.0325">
+            <inertial pos="-0.015824 -0.002366 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RF_roller_joint_12" type="hinge" axis="0.989004 0.14789 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RF_roller_link_12_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.015824 -0.002366 0.0" quat="0.707107 -0.104574 0.699331 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RF_roller_link_13" pos="0.059117 -0.023834 -0.0325">
+            <inertial pos="-0.009516 -0.012862 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RF_roller_joint_13" type="hinge" axis="0.594757 0.803905 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RF_roller_link_13_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.009516 -0.012862 -0.0" quat="0.707107 -0.568447 0.420557 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RF_roller_link_14" pos="0.063388 -0.0067 -0.0325">
+            <inertial pos="-0.002366 0.015824 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RF_roller_joint_14" type="hinge" axis="-0.14789 0.989003 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RF_roller_link_14_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.002366 0.015824 0.0" quat="0.707107 -0.699331 -0.104574 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RF_roller_link_15" pos="0.049559 0.040084 -0.0325">
+            <inertial pos="-0.012862 0.009516 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RF_roller_joint_15" type="hinge" axis="-0.803905 0.594758 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RF_roller_link_15_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.012862 0.009516 -0.0" quat="0.707107 -0.420557 -0.568447 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RF_roller_link_16" pos="0.006699 0.063388 -0.0325">
+            <inertial pos="-0.015824 -0.002366 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RF_roller_joint_16" type="hinge" axis="-0.989004 -0.14789 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RF_roller_link_16_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.015824 -0.002366 0.0" quat="0.707107 0.104574 -0.699331 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+    </body>
+    <body name="wheel_LF_Link" pos="0.216347 0.216347 -0.015" quat="0.270599 -0.65328 -0.2706 -0.653282">
+        <inertial pos="2.7617e-07 -1.7589e-07 0.014539" quat="0.270598 0.653281 -0.270598 0.653281" mass="0.56418" diaginertia="0.0015639 0.000831884 0.000831876" />
+        <joint name="wheel_LF_Joint" type="hinge" axis="0 0 1" limited="false" armature="0.05" damping="0.5" />
+        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" pos="0 0 -0.0175" mesh="wheel_LF_Link_wr" material="M_rubber_wheel" />
+        <body name="wheel_LF_roller_link_1" pos="-0.045496 0.044643 -0.0025">
+            <inertial pos="0.013714 0.008242 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LF_roller_joint_1" type="hinge" axis="-0.857125 -0.515108 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LF_roller_link_1_collision" type="mesh" mesh="wheel_roller_canon" pos="0.013714 0.008242 0.0" quat="0.707107 0.364236 -0.606079 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LF_roller_link_2" pos="-0.063738 -0.000604 -0.0025">
+            <inertial pos="0.003869 0.015525 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LF_roller_joint_2" type="hinge" axis="-0.241843 -0.970316 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LF_roller_link_2_collision" type="mesh" mesh="wheel_roller_canon" pos="0.003869 0.015525 -0.0" quat="0.707107 0.686117 -0.171009 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LF_roller_link_3" pos="-0.061126 -0.018068 -0.0025">
+            <inertial pos="0.008242 -0.013714 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LF_roller_joint_3" type="hinge" axis="0.515108 -0.857125 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LF_roller_link_3_collision" type="mesh" mesh="wheel_roller_canon" pos="0.008242 -0.013714 -0.0" quat="0.707107 0.606079 0.364236 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LF_roller_link_4" pos="-0.030447 -0.055999 -0.002501">
+            <inertial pos="0.015525 -0.00387 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LF_roller_joint_4" type="hinge" axis="0.970315 -0.241843 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LF_roller_link_4_collision" type="mesh" mesh="wheel_roller_canon" pos="0.015525 -0.00387 0.0" quat="0.707107 0.171009 0.686117 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LF_roller_link_5" pos="0.018068 -0.061126 -0.0025">
+            <inertial pos="0.013714 0.008242 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LF_roller_joint_5" type="hinge" axis="0.857125 0.515108 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LF_roller_link_5_collision" type="mesh" mesh="wheel_roller_canon" pos="0.013714 0.008242 0.0" quat="0.707107 -0.364236 0.606079 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LF_roller_link_6" pos="0.055999 -0.030447 -0.0025">
+            <inertial pos="0.003869 0.015525 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LF_roller_joint_6" type="hinge" axis="0.241843 0.970316 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LF_roller_link_6_collision" type="mesh" mesh="wheel_roller_canon" pos="0.003869 0.015525 -0.0" quat="0.707107 -0.686117 0.171009 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LF_roller_link_7" pos="0.044643 0.045496 -0.0025">
+            <inertial pos="0.008242 -0.013714 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LF_roller_joint_7" type="hinge" axis="-0.515108 0.857125 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LF_roller_link_7_collision" type="mesh" mesh="wheel_roller_canon" pos="0.008242 -0.013714 -0.0" quat="0.707107 -0.606079 -0.364236 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LF_roller_link_8" pos="-0.000603 0.063738 -0.0025">
+            <inertial pos="0.015525 -0.00387 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LF_roller_joint_8" type="hinge" axis="-0.970315 0.241843 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LF_roller_link_8_collision" type="mesh" mesh="wheel_roller_canon" pos="0.015525 -0.00387 0.0" quat="0.707107 -0.171009 -0.686117 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LF_roller_link_9" pos="-0.040085 0.049559 -0.0325">
+            <inertial pos="-0.009516 -0.012862 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LF_roller_joint_9" type="hinge" axis="-0.594757 -0.803905 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LF_roller_link_9_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.009516 -0.012862 -0.0" quat="0.707107 0.568447 -0.420557 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LF_roller_link_10" pos="-0.063388 0.006699 -0.032499">
+            <inertial pos="0.002366 -0.015824 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LF_roller_joint_10" type="hinge" axis="0.14789 -0.989003 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LF_roller_link_10_collision" type="mesh" mesh="wheel_roller_canon" pos="0.002366 -0.015824 -0.0" quat="0.707107 0.699331 0.104574 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LF_roller_link_11" pos="-0.023834 -0.059117 -0.0325">
+            <inertial pos="-0.012862 0.009516 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LF_roller_joint_11" type="hinge" axis="0.803905 -0.594758 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LF_roller_link_11_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.012862 0.009516 -0.0" quat="0.707107 0.420557 0.568447 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LF_roller_link_12" pos="0.024949 -0.058655 -0.0325">
+            <inertial pos="-0.015824 -0.002366 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LF_roller_joint_12" type="hinge" axis="0.989004 0.14789 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LF_roller_link_12_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.015824 -0.002366 0.0" quat="0.707107 -0.104574 0.699331 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LF_roller_link_13" pos="0.059117 -0.023834 -0.0325">
+            <inertial pos="-0.009516 -0.012862 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LF_roller_joint_13" type="hinge" axis="0.594757 0.803905 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LF_roller_link_13_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.009516 -0.012862 -0.0" quat="0.707107 -0.568447 0.420557 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LF_roller_link_14" pos="0.063388 -0.0067 -0.0325">
+            <inertial pos="-0.002366 0.015824 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LF_roller_joint_14" type="hinge" axis="-0.14789 0.989003 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LF_roller_link_14_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.002366 0.015824 0.0" quat="0.707107 -0.699331 -0.104574 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LF_roller_link_15" pos="0.049559 0.040084 -0.0325">
+            <inertial pos="-0.012862 0.009516 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LF_roller_joint_15" type="hinge" axis="-0.803905 0.594758 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LF_roller_link_15_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.012862 0.009516 -0.0" quat="0.707107 -0.420557 -0.568447 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LF_roller_link_16" pos="0.006699 0.063388 -0.0325">
+            <inertial pos="-0.015824 -0.002366 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LF_roller_joint_16" type="hinge" axis="-0.989004 -0.14789 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LF_roller_link_16_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.015824 -0.002366 0.0" quat="0.707107 0.104574 -0.699331 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+    </body>
+    <body name="wheel_RR_Link" pos="-0.216347 -0.211347 -0.015" quat="0.65328 0.270597 -0.653283 0.270598">
+        <inertial pos="-2.7619e-07 1.7583e-07 0.014539" quat="0.270598 0.653281 -0.270598 0.653281" mass="0.56418" diaginertia="0.0015639 0.000831884 0.000831876" />
+        <joint name="wheel_RR_Joint" type="hinge" axis="0 0 1" limited="false" armature="0.05" damping="0.5" />
+        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" pos="0 0 -0.0175" mesh="wheel_RR_Link_wr" material="M_rubber_wheel" />
+        <body name="wheel_RR_roller_link_1" pos="-0.045496 0.044643 -0.0025">
+            <inertial pos="0.013714 0.008242 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RR_roller_joint_1" type="hinge" axis="-0.857125 -0.515108 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RR_roller_link_1_collision" type="mesh" mesh="wheel_roller_canon" pos="0.013714 0.008242 0.0" quat="0.707107 0.364236 -0.606079 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RR_roller_link_2" pos="-0.063738 -0.000604 -0.0025">
+            <inertial pos="0.003869 0.015525 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RR_roller_joint_2" type="hinge" axis="-0.241843 -0.970316 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RR_roller_link_2_collision" type="mesh" mesh="wheel_roller_canon" pos="0.003869 0.015525 -0.0" quat="0.707107 0.686117 -0.171009 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RR_roller_link_3" pos="-0.061126 -0.018068 -0.0025">
+            <inertial pos="0.008242 -0.013714 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RR_roller_joint_3" type="hinge" axis="0.515108 -0.857125 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RR_roller_link_3_collision" type="mesh" mesh="wheel_roller_canon" pos="0.008242 -0.013714 -0.0" quat="0.707107 0.606079 0.364236 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RR_roller_link_4" pos="-0.030447 -0.055999 -0.002501">
+            <inertial pos="0.015525 -0.00387 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RR_roller_joint_4" type="hinge" axis="0.970315 -0.241843 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RR_roller_link_4_collision" type="mesh" mesh="wheel_roller_canon" pos="0.015525 -0.00387 0.0" quat="0.707107 0.171009 0.686117 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RR_roller_link_5" pos="0.018068 -0.061126 -0.0025">
+            <inertial pos="0.013714 0.008242 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RR_roller_joint_5" type="hinge" axis="0.857125 0.515108 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RR_roller_link_5_collision" type="mesh" mesh="wheel_roller_canon" pos="0.013714 0.008242 0.0" quat="0.707107 -0.364236 0.606079 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RR_roller_link_6" pos="0.055999 -0.030447 -0.0025">
+            <inertial pos="0.003869 0.015525 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RR_roller_joint_6" type="hinge" axis="0.241843 0.970316 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RR_roller_link_6_collision" type="mesh" mesh="wheel_roller_canon" pos="0.003869 0.015525 -0.0" quat="0.707107 -0.686117 0.171009 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RR_roller_link_7" pos="0.044643 0.045496 -0.0025">
+            <inertial pos="0.008242 -0.013714 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RR_roller_joint_7" type="hinge" axis="-0.515108 0.857125 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RR_roller_link_7_collision" type="mesh" mesh="wheel_roller_canon" pos="0.008242 -0.013714 -0.0" quat="0.707107 -0.606079 -0.364236 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RR_roller_link_8" pos="-0.000603 0.063738 -0.0025">
+            <inertial pos="0.015525 -0.00387 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RR_roller_joint_8" type="hinge" axis="-0.970315 0.241843 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RR_roller_link_8_collision" type="mesh" mesh="wheel_roller_canon" pos="0.015525 -0.00387 0.0" quat="0.707107 -0.171009 -0.686117 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RR_roller_link_9" pos="-0.040085 0.049559 -0.0325">
+            <inertial pos="-0.009516 -0.012862 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RR_roller_joint_9" type="hinge" axis="-0.594757 -0.803905 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RR_roller_link_9_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.009516 -0.012862 -0.0" quat="0.707107 0.568447 -0.420557 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RR_roller_link_10" pos="-0.063388 0.006699 -0.032499">
+            <inertial pos="0.002366 -0.015824 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RR_roller_joint_10" type="hinge" axis="0.14789 -0.989003 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RR_roller_link_10_collision" type="mesh" mesh="wheel_roller_canon" pos="0.002366 -0.015824 -0.0" quat="0.707107 0.699331 0.104574 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RR_roller_link_11" pos="-0.023834 -0.059117 -0.0325">
+            <inertial pos="-0.012862 0.009516 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RR_roller_joint_11" type="hinge" axis="0.803905 -0.594758 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RR_roller_link_11_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.012862 0.009516 -0.0" quat="0.707107 0.420557 0.568447 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RR_roller_link_12" pos="0.024949 -0.058655 -0.0325">
+            <inertial pos="-0.015824 -0.002366 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RR_roller_joint_12" type="hinge" axis="0.989004 0.14789 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RR_roller_link_12_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.015824 -0.002366 0.0" quat="0.707107 -0.104574 0.699331 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RR_roller_link_13" pos="0.059117 -0.023834 -0.0325">
+            <inertial pos="-0.009516 -0.012862 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RR_roller_joint_13" type="hinge" axis="0.594757 0.803905 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RR_roller_link_13_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.009516 -0.012862 -0.0" quat="0.707107 -0.568447 0.420557 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RR_roller_link_14" pos="0.063388 -0.0067 -0.0325">
+            <inertial pos="-0.002366 0.015824 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RR_roller_joint_14" type="hinge" axis="-0.14789 0.989003 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RR_roller_link_14_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.002366 0.015824 0.0" quat="0.707107 -0.699331 -0.104574 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RR_roller_link_15" pos="0.049559 0.040084 -0.0325">
+            <inertial pos="-0.012862 0.009516 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RR_roller_joint_15" type="hinge" axis="-0.803905 0.594758 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RR_roller_link_15_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.012862 0.009516 -0.0" quat="0.707107 -0.420557 -0.568447 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_RR_roller_link_16" pos="0.006699 0.063388 -0.0325">
+            <inertial pos="-0.015824 -0.002366 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_RR_roller_joint_16" type="hinge" axis="-0.989004 -0.14789 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_RR_roller_link_16_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.015824 -0.002366 0.0" quat="0.707107 0.104574 -0.699331 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+    </body>
+    <body name="wheel_LR_Link" pos="-0.216347 0.211347 -0.015" quat="0.65328 -0.270597 -0.653283 -0.270598">
+        <inertial pos="0.0019998 -0.0070713 0.014539" quat="0.653281 0.270598 -0.653281 0.270598" mass="0.56418" diaginertia="0.0015639 0.000831884 0.000831876" />
+        <joint name="wheel_LR_Joint" type="hinge" axis="0 0 1" limited="false" armature="0.05" damping="0.5" />
+        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" pos="0 0 -0.0175" mesh="wheel_LR_Link_wr" material="M_rubber_wheel" />
+        <body name="wheel_LR_roller_link_1" pos="-0.045496 0.044643 -0.0025">
+            <inertial pos="0.013714 0.008242 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LR_roller_joint_1" type="hinge" axis="-0.857125 -0.515108 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LR_roller_link_1_collision" type="mesh" mesh="wheel_roller_canon" pos="0.013714 0.008242 0.0" quat="0.707107 0.364236 -0.606079 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LR_roller_link_2" pos="-0.063738 -0.000604 -0.0025">
+            <inertial pos="0.003869 0.015525 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LR_roller_joint_2" type="hinge" axis="-0.241843 -0.970316 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LR_roller_link_2_collision" type="mesh" mesh="wheel_roller_canon" pos="0.003869 0.015525 -0.0" quat="0.707107 0.686117 -0.171009 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LR_roller_link_3" pos="-0.061126 -0.018068 -0.0025">
+            <inertial pos="0.008242 -0.013714 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LR_roller_joint_3" type="hinge" axis="0.515108 -0.857125 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LR_roller_link_3_collision" type="mesh" mesh="wheel_roller_canon" pos="0.008242 -0.013714 -0.0" quat="0.707107 0.606079 0.364236 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LR_roller_link_4" pos="-0.030447 -0.055999 -0.002501">
+            <inertial pos="0.015525 -0.00387 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LR_roller_joint_4" type="hinge" axis="0.970315 -0.241843 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LR_roller_link_4_collision" type="mesh" mesh="wheel_roller_canon" pos="0.015525 -0.00387 0.0" quat="0.707107 0.171009 0.686117 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LR_roller_link_5" pos="0.018068 -0.061126 -0.0025">
+            <inertial pos="0.013714 0.008242 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LR_roller_joint_5" type="hinge" axis="0.857125 0.515108 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LR_roller_link_5_collision" type="mesh" mesh="wheel_roller_canon" pos="0.013714 0.008242 0.0" quat="0.707107 -0.364236 0.606079 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LR_roller_link_6" pos="0.055999 -0.030447 -0.0025">
+            <inertial pos="0.003869 0.015525 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LR_roller_joint_6" type="hinge" axis="0.241843 0.970316 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LR_roller_link_6_collision" type="mesh" mesh="wheel_roller_canon" pos="0.003869 0.015525 -0.0" quat="0.707107 -0.686117 0.171009 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LR_roller_link_7" pos="0.044643 0.045496 -0.0025">
+            <inertial pos="0.008242 -0.013714 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LR_roller_joint_7" type="hinge" axis="-0.515108 0.857125 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LR_roller_link_7_collision" type="mesh" mesh="wheel_roller_canon" pos="0.008242 -0.013714 -0.0" quat="0.707107 -0.606079 -0.364236 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LR_roller_link_8" pos="-0.000603 0.063738 -0.0025">
+            <inertial pos="0.015525 -0.00387 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LR_roller_joint_8" type="hinge" axis="-0.970315 0.241843 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LR_roller_link_8_collision" type="mesh" mesh="wheel_roller_canon" pos="0.015525 -0.00387 0.0" quat="0.707107 -0.171009 -0.686117 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LR_roller_link_9" pos="-0.040085 0.049559 -0.0325">
+            <inertial pos="-0.009516 -0.012862 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LR_roller_joint_9" type="hinge" axis="-0.594757 -0.803905 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LR_roller_link_9_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.009516 -0.012862 -0.0" quat="0.707107 0.568447 -0.420557 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LR_roller_link_10" pos="-0.063388 0.006699 -0.032499">
+            <inertial pos="0.002366 -0.015824 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LR_roller_joint_10" type="hinge" axis="0.14789 -0.989003 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LR_roller_link_10_collision" type="mesh" mesh="wheel_roller_canon" pos="0.002366 -0.015824 -0.0" quat="0.707107 0.699331 0.104574 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LR_roller_link_11" pos="-0.023834 -0.059117 -0.0325">
+            <inertial pos="-0.012862 0.009516 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LR_roller_joint_11" type="hinge" axis="0.803905 -0.594758 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LR_roller_link_11_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.012862 0.009516 -0.0" quat="0.707107 0.420557 0.568447 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LR_roller_link_12" pos="0.024949 -0.058655 -0.0325">
+            <inertial pos="-0.015824 -0.002366 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LR_roller_joint_12" type="hinge" axis="0.989004 0.14789 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LR_roller_link_12_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.015824 -0.002366 0.0" quat="0.707107 -0.104574 0.699331 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LR_roller_link_13" pos="0.059117 -0.023834 -0.0325">
+            <inertial pos="-0.009516 -0.012862 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LR_roller_joint_13" type="hinge" axis="0.594757 0.803905 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LR_roller_link_13_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.009516 -0.012862 -0.0" quat="0.707107 -0.568447 0.420557 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LR_roller_link_14" pos="0.063388 -0.0067 -0.0325">
+            <inertial pos="-0.002366 0.015824 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LR_roller_joint_14" type="hinge" axis="-0.14789 0.989003 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LR_roller_link_14_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.002366 0.015824 0.0" quat="0.707107 -0.699331 -0.104574 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LR_roller_link_15" pos="0.049559 0.040084 -0.0325">
+            <inertial pos="-0.012862 0.009516 -0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LR_roller_joint_15" type="hinge" axis="-0.803905 0.594758 -0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LR_roller_link_15_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.012862 0.009516 -0.0" quat="0.707107 -0.420557 -0.568447 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+        <body name="wheel_LR_roller_link_16" pos="0.006699 0.063388 -0.0325">
+            <inertial pos="-0.015824 -0.002366 0.0" mass="0.016491" diaginertia="1e-05 1e-05 1e-05" />
+            <joint name="wheel_LR_roller_joint_16" type="hinge" axis="-0.989004 -0.14789 0.0" limited="false" armature="0.0005" damping="0" />
+            <geom name="wheel_LR_roller_link_16_collision" type="mesh" mesh="wheel_roller_canon" pos="-0.015824 -0.002366 0.0" quat="0.707107 0.104574 -0.699331 0.0" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+        </body>
+    </body>
+    <body name="astribot_torso_link_1" pos="0.0 0.0 0.06" quat="0.49999816339744824 -0.4999999999966268 0.4999999999966268 0.5000018366025517">
+        <inertial pos="2.387387e-06 -0.0499998 0.0" mass="4.898325" diaginertia="0.00020446364026350372 0.00020404017969412997 0.00019802161995763345" quat="0.922489829530605 0.0 0.0 -0.3860213911334389" />
+        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_torso_link_1" material="M_white_shell" />
+        <joint name="astribot_torso_joint_1" pos="0 0 0" axis="0 0 1" range="-0.002 0.805" />
+        <body name="astribot_torso_link_2" pos="-0.37 0.0 0.0">
+            <inertial pos="-0.074438 0.0385828 0.0" mass="8.704329" diaginertia="0.42342136519999996 0.36223307928886195 0.785454444788862" quat="0.97155188870001 0.0 0.0 -0.2368267881035491" />
+            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_torso_link_2" material="M_torso_link_2" />
+            <joint name="astribot_torso_joint_2" pos="0 0 0" axis="0 0 1" range="-2.316 0.001" />
+            <body name="astribot_torso_link_3" pos="-0.355 0.0 0.0">
+                <inertial pos="-0.0266391 0.0999981 0.0" mass="1.222215" diaginertia="0.00019913861619056614 0.00019862914891660092 0.00019340976510716715" quat="0.9865285981348603 0.0 0.0 0.163588890399279" />
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_torso_link_3" material="M_white_shell" />
+                <joint name="astribot_torso_joint_3" pos="0 0 0" axis="0 0 1" range="-0.049 2.604" />
+                <body name="astribot_torso_link_4" pos="0.0 0.0 0.0" quat="-0.49999816339744824 -0.4999999999966268 0.5000018366025517 0.4999999999966268">
+                    <inertial pos="-0.0558229 0.02499 0.100003" mass="7.314068" diaginertia="0.00020163151631723514 0.00019734718605163106 0.0001958196403710784" quat="0.948373207083648 -0.22714357584257194 -0.19487103801418343 -0.10497301835519603" />
+                    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_torso_link_4" material="M_torso_link_4" />
+                    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_head_base_link" pos="0.0 0.0 0.4859" material="M_dark_shell" />
+                    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_left_base_link" pos="0.0 0.0 0.3895" quat="-0.49999816339744824 0.4999999999966268 0.4999999999966268 0.5000018366025517" material="M_dark_shell" />
+                    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_right_base_link" pos="0.0 0.0 0.3895" quat="0.49999816339744824 0.4999999999966268 -0.4999999999966268 0.5000018366025517" material="M_dark_shell" />
+                    <joint name="astribot_torso_joint_4" pos="0 0 0" axis="0 0 1" range="-1.627 1.645" />
+                    <body name="astribot_head_link_1" pos="0.0 0.0 0.4859">
+                        <inertial pos="1.9e-05 0.006577 0.081061" mass="0.256916" diaginertia="0.001804 0.0018239246112601586 7.307538873984129e-05" quat="0.9991468367076948 0.041298894622096814 0.0 0.0" />
+                        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_head_link_1" material="M_dark_shell" />
+                        <joint name="astribot_head_joint_1" pos="0 0 0" axis="0 0 1" range="-1.611 1.605" />
+                        <body name="astribot_head_link_2" pos="0.0 0.0 0.0" quat="0.7071054825112363 -0.7071080798594735 0.0 0.0">
+                            <inertial pos="0.017185 -0.104538 -0.000323" mass="0.79" diaginertia="0.012430124223277581 0.011943796154078288 0.0027330796226441305" quat="-0.4646986965262186 0.5375320947492621 0.4579194471533839 0.5342510163584557" />
+                            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_head_link_2" material="M_head_link_2" />
+                            <include file="sensors/head_stereo_left.xml" />
+                            <include file="sensors/head_stereo_right.xml" />
+                            <joint name="astribot_head_joint_2" pos="0 0 0" axis="0 0 1" range="-0.583 0.534" />
+                        </body>
+                    </body>
+                    <body name="astribot_arm_left_link_1" pos="4.775166634513052e-07 0.129999999999123 0.38950000000175405" quat="-0.49999816339744835 0.4999999999966269 0.4999999999966269 0.5000018366025517">
+                        <inertial pos="-0.0499984 -0.0135568 -0.0349889" mass="0.944026" diaginertia="0.00403884023161445 0.004038802022863925 0.00018159845956918367" quat="0.8704111904225659 3.7072402308721846e-06 1.4035791554448949e-05 0.49232546082487405" />
+                        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_link_1" material="M_dark_shell" />
+                        <joint name="astribot_arm_left_joint_1" pos="0 0 0" axis="0 0 1" range="-3.172 1.579" />
+                        <body name="astribot_arm_left_link_2" pos="0.0 0.0 0.0" quat="0.7071054825112363 0.7071080798594735 0.0 0.0">
+                            <inertial pos="0.0363859 0.0295772 0.0148661" mass="0.929551" diaginertia="0.00019547824219941253 0.0001909360244962626 0.0001778158893940645" quat="0.8243128390768087 -0.11618032024438289 -0.49383066561988603 -0.2512802224896819" />
+                            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_left_link_2" material="M_white_shell" />
+                            <joint name="astribot_arm_left_joint_2" pos="0 0 0" axis="0 0 1" range="-1.538 0.201" />
+                            <body name="astribot_arm_left_link_3" pos="0.0 0.05 0.0" quat="-0.49999816339744824 -0.4999999999966268 0.5000018366025517 0.4999999999966268">
+                                <inertial pos="-0.0114668 0.000839977 0.0800125" mass="2.066445" diaginertia="0.00018842183688127636 0.0001873882367554467 0.00017213698865195352" quat="0.7637459283299503 -0.04710615225593403 -0.09855944937783459 -0.6362068864114891" />
+                                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_link_3" material="M_white_shell" />
+                                <joint name="astribot_arm_left_joint_3" pos="0 0 0" axis="0 0 1" range="-2.321 0.745" />
+                                <body name="astribot_arm_left_link_4" pos="0.03 0.0 0.27" quat="0.7071054825112363 -0.7071080798594735 0.0 0.0">
+                                    <inertial pos="-0.0211702 -0.0600213 0.0224239" mass="0.198128" diaginertia="0.0001855089385562764 0.00018361809475603475 0.0001738694934197664" quat="0.7553517745701638 0.07845827330646496 -0.6479844327451184 0.058345273360055946" />
+                                    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_link_4" material="M_white_shell" />
+                                    <joint name="astribot_arm_left_joint_4" pos="0 0 0" axis="0 0 1" range="-0.053 2.575" />
+                                    <body name="astribot_arm_left_link_5" pos="0.0 0.0 0.0" quat="0.7071054825112363 0.7071080798594735 0.0 0.0">
+                                        <inertial pos="-0.00201275 0.00172804 0.102512" mass="1.187192" diaginertia="0.00018249892468573273 0.00017671359350123858 0.00017146119555837608" quat="0.7536708418109078 0.1282401905920604 -0.6273387287427897 -0.14825935093723414" />
+                                        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_link_5" material="M_white_shell" />
+                                        <joint name="astribot_arm_left_joint_5" pos="0 0 0" axis="0 0 1" range="-2.103 2.098" />
+                                        <body name="astribot_arm_left_link_6" pos="0.0 0.0 0.245" quat="0.7071054825112363 -0.7071080798594735 0.0 0.0">
+                                            <inertial pos="0.00575764 -0.0155831 -0.000365501" mass="0.291449" diaginertia="0.00018079207976885974 0.00017599555410115116 0.00017248074136584895" quat="0.5092611009258762 0.6010108603440621 -0.2309629978153223 -0.5710474327693053" />
+                                            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_link_6" material="M_white_shell" />
+                                            <joint name="astribot_arm_left_joint_6" pos="0 0 0" axis="0 0 1" range="-0.755 0.744" />
+                                            <body name="astribot_arm_left_link_7" pos="0.0 0.0 0.0" quat="0.7071054825112363 0.0 0.7071080798594735 0.0">
+                                                <inertial pos="1.8e-05 -0.0052 0.001774" mass="0.04" diaginertia="0.000161 0.000129 6.4e-05" />
+                                                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_link_7" material="M_white_shell" />
+                                                <site name="arm_left_tool" pos="0 -0.15 0" />
+                                                <site name="force_torque_sensor_left" />
+                                                <joint name="astribot_arm_left_joint_7" pos="0 0 0" axis="0 0 1" range="-1.449 1.485" />
+                                                <body name="arm_left_tool_cam" pos="0 -0.15 0">
+                                                    <camera name="left_wrist_rgbd" pos="0.011420996159648984 0.058882000224149605 0.044260118849329295" quat="0.703108425353722 -0.7109134990656752 -0.009037420129074155 -0.012604129490710232" fovy="57" />
+                                                </body>
+                                                <body name="astribot_arm_left_tool_link" pos="0 -0.048 0" euler="1.5707963 0 0">
+                                                    <body name="astribot_gripper_left_base" pos="0 0 0">
+                                                        <geom type="mesh" contype="0" conaffinity="0" mesh="gripper_base_link" material="M_gripper_base" />
+                                                        <geom name="astribot_gripper_right_left_geom" type="box" size="0.02 0.0135 0.01" pos="0.0 0 0.07" rgba="0.5 0.2 0.2 1" friction="0.7" solimp="0.95 0.99 0.001" solref="0.004 1" priority="1" />
+                                                        <inertial pos="0.0 0.0 0.04" quat="0.0 0.0 0.0 1.0" mass="0.4" diaginertia="0.001 0.001 0.001" />
+                                                        <body name="astribot_gripper_left_Link_L1" pos="0.0145 0 0.0511" euler="0 0 0">
+                                                            <joint name="astribot_gripper_left_joint_L1" pos="0 0 0" axis="0 -1 0" range="0.0 0.93" class="gripper_size1" damping="5" />
+                                                            <geom contype="0" conaffinity="0" type="mesh" mesh="gripper_L1_Link" material="M_dark_shell" name="astribot_gripper_left_geom_L1" />
+                                                            <inertial pos="0.0 0.0 0.02" mass="0.03" diaginertia="0.001 0.001 0.001" />
+                                                            <body name="astribot_gripper_left_Link_L11" pos="0.04125 0 0.0363790805" euler="0 0 0">
+                                                                <joint name="astribot_gripper_left_joint_L11" pos="0 0 0" axis="0 1 0" range="0.0 1.0" class="gripper_size1" />
+                                                                <geom contype="0" conaffinity="0" type="mesh" mesh="gripper_L11_Link" material="M_dark_shell" name="astribot_gripper_left_geom_L11" />
+                                                                <inertial pos="0.0 0.0 0.02" mass="0.067" diaginertia="0.001 0.001 0.001" />
+                                                                <geom name="astribot_gripper_left_geom_L112" type="box" size="0.005 0.0135 0.03" pos="-0.003 0 0.036" rgba="0.5 0.2 0.2 1" friction="1.7" solimp="0.95 0.99 0.001" solref="0.004 1" priority="1" />
+                                                            </body>
+                                                        </body>
+                                                        <body name="astribot_gripper_left_Link_L2" pos="0.0325 0 0.0511" euler="0 0 0">
+                                                            <joint name="astribot_gripper_left_joint_L2" pos="0 0 0" axis="0 1 0" range="-1.0 0.0" class="gripper_size1" />
+                                                            <geom contype="0" conaffinity="0" type="mesh" mesh="gripper_L2_Link" material="M_dark_shell" name="astribot_gripper_left_geom_L2" />
+                                                            <inertial pos="0.0 0.0 0.01" mass="0.03" diaginertia="0.001 0.001 0.001" />
+                                                        </body>
+                                                        <body name="astribot_gripper_left_Link_R1" pos="-0.0145 0 0.0511" euler="0 0 0">
+                                                            <joint name="astribot_gripper_left_joint_R1" pos="0 0 0" axis="0 1 0" range="0.0 0.93" class="gripper_size1" damping="5" />
+                                                            <geom contype="0" conaffinity="0" type="mesh" mesh="gripper_R1_Link" material="M_dark_shell" name="astribot_gripper_left_geom_R1" />
+                                                            <inertial pos="0.0 0.0 0.02" mass="0.03" diaginertia="0.001 0.001 0.001" />
+                                                            <body name="astribot_gripper_left_Link_R11" pos="-0.04125 0 0.0363790805" euler="0 0.03 0">
+                                                                <joint name="astribot_gripper_left_joint_R11" pos="0 0 0" axis="0 1 0" range="-1.0 0.0" class="gripper_size1" />
+                                                                <geom contype="0" conaffinity="0" type="mesh" mesh="gripper_R11_Link" material="M_dark_shell" name="astribot_gripper_left_geom_R11" />
+                                                                <inertial pos="0.0 0.0 0.02" mass="0.067" diaginertia="0.001 0.001 0.001" />
+                                                                <geom name="astribot_gripper_left_geom_R112" type="box" size="0.005 0.0135 0.03" pos="0.003 0 0.036" rgba="0.5 0.2 0.2 1" friction="0.7" solimp="0.95 0.99 0.001" solref="0.004 1" priority="1" />
+                                                            </body>
+                                                        </body>
+                                                        <body name="astribot_gripper_left_Link_R2" pos="-0.0325 0 0.0511" euler="0 0 0">
+                                                            <joint name="astribot_gripper_left_joint_R2" pos="0 0 0" axis="0 1 0" range="0.0 1.0" class="gripper_size1" />
+                                                            <geom contype="0" conaffinity="0" type="mesh" mesh="gripper_R2_Link" material="M_dark_shell" name="astribot_gripper_left_geom_R2" />
+                                                            <inertial pos="0.0 0.0 0.01" mass="0.03" diaginertia="0.001 0.001 0.001" />
+                                                        </body>
+                                                    </body>
+                                                </body>
+                                            </body>
+                                        </body>
+                                    </body>
+                                </body>
+                            </body>
+                        </body>
+                    </body>
+                    <body name="astribot_arm_right_link_1" pos="4.775166634513052e-07 -0.129999999999123 0.38950000000175405" quat="0.49999816339744835 0.4999999999966269 -0.4999999999966269 0.5000018366025517">
+                        <inertial pos="-0.050001 -0.0110283 -0.0348687" mass="0.943987" diaginertia="0.0059431294288417 0.0059423835288015545 0.00018671489366744366" quat="0.976092461384777 -6.860148468869903e-06 1.3564048657907421e-05 -0.2173557144331906" />
+                        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_link_1" material="M_dark_shell" />
+                        <joint name="astribot_arm_right_joint_1" pos="0 0 0" axis="0 0 1" range="-1.606 3.158" />
+                        <body name="astribot_arm_right_link_2" pos="0.0 0.0 0.0" quat="0.7071054825112363 0.7071080798594735 0.0 0.0">
+                            <inertial pos="-0.0305299 0.034114 -0.0260945" mass="0.913929" diaginertia="0.005614290463892217 0.005613130949658324 0.00018561814891607353" quat="0.8885935613233833 0.25156759470762957 0.34326442389434786 0.17112791518663978" />
+                            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_right_link_2" material="M_white_shell" />
+                            <joint name="astribot_arm_right_joint_2" pos="0 0 0" axis="0 0 1" range="-1.539 0.192" />
+                            <body name="astribot_arm_right_link_3" pos="0.0 0.05 0.0" quat="-0.49999816339744824 -0.4999999999966268 0.5000018366025517 0.4999999999966268">
+                                <inertial pos="-0.0103515 0.00256775 0.0799995" mass="2.041129" diaginertia="0.0001687630126734137 0.00016652494400575156 0.00013769629263509465" quat="0.9599062222203384 0.018656523577505264 -0.02490500043675036 -0.2785888002485492" />
+                                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_link_3" material="M_white_shell" />
+                                <joint name="astribot_arm_right_joint_3" pos="0 0 0" axis="0 0 1" range="-0.741 2.331" />
+                                <body name="astribot_arm_right_link_4" pos="0.03 0.0 0.27" quat="0.7071054825112363 -0.7071080798594735 0.0 0.0">
+                                    <inertial pos="-0.00825508 -0.0600088 -0.021136" mass="0.162091" diaginertia="0.00015939743968558338 0.00015052057230099115 0.00013145297696492885" quat="0.5864536555811963 0.5346893431510958 -0.3669130140163876 -0.48533932080711456" />
+                                    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_link_4" material="M_white_shell" />
+                                    <joint name="astribot_arm_right_joint_4" pos="0 0 0" axis="0 0 1" range="-0.052 2.574" />
+                                    <body name="astribot_arm_right_link_5" pos="0.0 0.0 0.0" quat="0.7071054825112363 0.7071080798594735 0.0 0.0">
+                                        <inertial pos="-0.00155915 -0.00397887 0.116108" mass="1.027654" diaginertia="0.00013549612968876012 0.00012070907927671738 0.00011020000025000447" quat="0.9530845909287341 -0.169708729830273 -0.25059333814463114 0.005629247830184495" />
+                                        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_link_5" material="M_white_shell" />
+                                        <joint name="astribot_arm_right_joint_5" pos="0 0 0" axis="0 0 1" range="-2.09 2.108" />
+                                        <body name="astribot_arm_right_link_6" pos="0.0 0.0 0.245" quat="0.7071054825112363 -0.7071080798594735 0.0 0.0">
+                                            <inertial pos="0.00285412 -0.0244072 0.00035094" mass="0.29142" diaginertia="0.0001261063224986391 0.00010746993232221113 9.999997799374834e-05" quat="0.9404074980909604 0.26443438968022454 -0.04452485306314678 -0.20910697871771952" />
+                                            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_link_6" material="M_white_shell" />
+                                            <joint name="astribot_arm_right_joint_6" pos="0 0 0" axis="0 0 1" range="-0.76 0.757" />
+                                            <body name="astribot_arm_right_link_7" pos="0.0 0.0 0.0" quat="0.7071054825112363 0.0 0.7071080798594735 0.0">
+                                                <inertial pos="1.8e-05 -0.0052 0.001774" mass="0.04" diaginertia="0.000161 0.000129 6.4e-05" />
+                                                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_link_7" material="M_white_shell" />
+                                                <site name="arm_right_tool" pos="0 -0.15 0" />
+                                                <site name="force_torque_sensor_right" />
+                                                <joint name="astribot_arm_right_joint_7" pos="0 0 0" axis="0 0 1" range="-1.477 1.447" />
+                                                <body name="arm_right_tool_cam" pos="0 -0.15 0">
+                                                    <camera name="right_wrist_rgbd" pos="0.00772 0.05592 0.04319" quat="-0.7130607009975457 0.7006910271198059 0.013493708973317153 0.019860539389038687" fovy="57" />
+                                                </body>
+                                                <body name="astribot_arm_right_tool_link" pos="0 -0.048 0" euler="1.5707963 0 0">
+                                                    <body name="astribot_gripper_right_base" pos="0 0 0">
+                                                        <geom type="mesh" contype="0" conaffinity="0" mesh="gripper_base_link" material="M_gripper_base" />
+                                                        <geom name="astribot_gripper_right_right_geom" type="box" size="0.02 0.0135 0.01" pos="0.0 0 0.07" rgba="0.5 0.2 0.2 1" friction="0.7" solimp="0.95 0.99 0.001" solref="0.004 1" priority="1" />
+                                                        <inertial pos="0.0 0.0 0.04" quat="0.0 0.0 0.0 1.0" mass="0.4" diaginertia="0.001 0.001 0.001" />
+                                                        <body name="astribot_gripper_right_Link_L1" pos="0.0145 0 0.0511" euler="0 0 0">
+                                                            <joint name="astribot_gripper_right_joint_L1" pos="0 0 0" axis="0 -1 0" range="0.0 0.93" class="gripper_size1" damping="5" />
+                                                            <geom contype="0" conaffinity="0" type="mesh" mesh="gripper_L1_Link" material="M_dark_shell" name="astribot_gripper_right_geom_L1" />
+                                                            <inertial pos="0.0 0.0 0.02" mass="0.03" diaginertia="0.001 0.001 0.001" />
+                                                            <body name="astribot_gripper_right_Link_L11" pos="0.04125 0 0.0363790805" euler="0 0 0">
+                                                                <joint name="astribot_gripper_right_joint_L11" pos="0 0 0" axis="0 1 0" range="0.0 1.0" class="gripper_size1" />
+                                                                <geom contype="0" conaffinity="0" type="mesh" mesh="gripper_L11_Link" material="M_dark_shell" name="astribot_gripper_right_geom_L11" />
+                                                                <inertial pos="0.0 0.0 0.02" mass="0.067" diaginertia="0.001 0.001 0.001" />
+                                                                <geom name="astribot_gripper_right_geom_L112" type="box" size="0.005 0.0135 0.03" pos="-0.003 0 0.036" rgba="0.5 0.2 0.2 1" friction="1.7" solimp="0.95 0.99 0.001" solref="0.004 1" priority="1" />
+                                                            </body>
+                                                        </body>
+                                                        <body name="astribot_gripper_right_Link_L2" pos="0.0325 0 0.0511" euler="0 0 0">
+                                                            <joint name="astribot_gripper_right_joint_L2" pos="0 0 0" axis="0 1 0" range="-1.0 0.0" class="gripper_size1" />
+                                                            <geom contype="0" conaffinity="0" type="mesh" mesh="gripper_L2_Link" material="M_dark_shell" name="astribot_gripper_right_geom_L2" />
+                                                            <inertial pos="0.0 0.0 0.01" mass="0.03" diaginertia="0.001 0.001 0.001" />
+                                                        </body>
+                                                        <body name="astribot_gripper_right_Link_R1" pos="-0.0145 0 0.0511" euler="0 0 0">
+                                                            <joint name="astribot_gripper_right_joint_R1" pos="0 0 0" axis="0 1 0" range="0.0 0.93" class="gripper_size1" damping="5" />
+                                                            <geom contype="0" conaffinity="0" type="mesh" mesh="gripper_R1_Link" material="M_dark_shell" name="astribot_gripper_right_geom_R1" />
+                                                            <inertial pos="0.0 0.0 0.02" mass="0.03" diaginertia="0.001 0.001 0.001" />
+                                                            <body name="astribot_gripper_right_Link_R11" pos="-0.04125 0 0.0363790805" euler="0 0.03 0">
+                                                                <joint name="astribot_gripper_right_joint_R11" pos="0 0 0" axis="0 1 0" range="-1.0 0.0" class="gripper_size1" />
+                                                                <geom contype="0" conaffinity="0" type="mesh" mesh="gripper_R11_Link" material="M_dark_shell" name="astribot_gripper_right_geom_R11" />
+                                                                <inertial pos="0.0 0.0 0.02" mass="0.067" diaginertia="0.001 0.001 0.001" />
+                                                                <geom name="astribot_gripper_right_geom_R112" type="box" size="0.005 0.0135 0.03" pos="0.003 0 0.036" rgba="0.5 0.2 0.2 1" friction="0.7" solimp="0.95 0.99 0.001" solref="0.004 1" priority="1" />
+                                                            </body>
+                                                        </body>
+                                                        <body name="astribot_gripper_right_Link_R2" pos="-0.0325 0 0.0511" euler="0 0 0">
+                                                            <joint name="astribot_gripper_right_joint_R2" pos="0 0 0" axis="0 1 0" range="0.0 1.0" class="gripper_size1" />
+                                                            <geom contype="0" conaffinity="0" type="mesh" mesh="gripper_R2_Link" material="M_dark_shell" name="astribot_gripper_right_geom_R2" />
+                                                            <inertial pos="0.0 0.0 0.01" mass="0.03" diaginertia="0.001 0.001 0.001" />
+                                                        </body>
+                                                    </body>
+                                                </body>
+                                            </body>
+                                        </body>
+                                    </body>
+                                </body>
+                            </body>
+                        </body>
+                    </body>
+                </body>
+            </body>
+        </body>
+    </body>
+</mujoco>

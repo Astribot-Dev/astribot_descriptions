@@ -1,6 +1,0 @@
-# Backup files
-*.bak
-urdf/astribot_s1_urdf/astribot_whole_body_with_head_v2.urdf
-urdf/astribot_s1_urdf/config
-mjcf/astribot_t1_mjcf
-urdf/astribot_t1_urdf

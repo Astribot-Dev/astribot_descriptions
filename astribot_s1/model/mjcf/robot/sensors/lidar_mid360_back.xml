@@ -1,0 +1,7 @@
+<mujocoinclude>
+    <body name="lidar_back" pos="-0.1795908 -0.1745908 0.157397" quat="0.3826834 0 0 0.9238795">
+        <inertial pos="0 0 0" mass="0.6" diaginertia="0.001 0.001 0.001" />
+        <site name="lidar_back_site" pos="0 0 0" quat="1 0 0 0" size="0.005" rgba="0 1 0 1" />
+        <site name="lidar_back_imu_site" pos="0.011 0.02329 -0.04412" quat="1 0 0 0" size="0.005" rgba="1 1 0 1" />
+    </body>
+</mujocoinclude>

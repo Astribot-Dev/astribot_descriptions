@@ -1,0 +1,6 @@
+<mujocoinclude>
+    <sensor>
+        <gyro name="astribot_chassis_base_imu_gyro" site="astribot_chassis_imu_site" noise="0.001" />
+        <accelerometer name="astribot_chassis_base_imu_acc" site="astribot_chassis_imu_site" noise="0.01" />
+    </sensor>
+</mujocoinclude>

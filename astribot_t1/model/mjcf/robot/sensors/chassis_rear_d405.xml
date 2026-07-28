@@ -1,0 +1,6 @@
+<mujocoinclude>
+    <body name="chassis_rear_d405" pos="-0.24 0 0.1" quat="0 0 0 1">
+        <inertial pos="0 0 0" mass="0.05" diaginertia="0.0001 0.0001 0.0001" />
+        <camera name="chassis_rear_d405" pos="0 0 0" euler="0 0 0" fovy="58" />
+    </body>
+</mujocoinclude>
