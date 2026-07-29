@@ -7,420 +7,420 @@
         <inertial pos="2.7624e-07 -1.7583e-07 0.014539" quat="0.270598 0.653281 -0.270598 0.653281" mass="0.56418" diaginertia="0.0015639 0.000831884 0.000831876" />
         <joint name="wheel_RF_Joint" type="hinge" axis="0 0 1" limited="false" armature="0.05" damping="0.5" />
         <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="wheel_RF_Link_wr" material="M_rubber_wheel" />
-        <body name="wheel_RF_roller_link_1_1" pos="0.050207 0.032183 -0.002761">
+        <body name="wheel_RF_roller_link_1_1" pos="0.05662744139678663 0.01870255000938364 -0.002761">
             <inertial pos="0.005434 -0.007882 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RF_roller_Joint_1_1" type="hinge" axis="0.567594 -0.823309 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RF_roller_link_1_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RF_roller_link_1_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RF_roller_link_1_2" pos="0.067631 0.000327 -0.002761">
+        <body name="wheel_RF_roller_link_1_2" pos="0.059635302932582734 0.0002883403181818183 -0.002761">
             <inertial pos="0.000193 0.007817 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RF_roller_Joint_1_2" type="hinge" axis="-0.024735 -0.999694 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RF_roller_link_1_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RF_roller_link_1_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RF_roller_link_2_1" pos="0.059535 -0.003474 -0.002761">
+        <body name="wheel_RF_roller_link_2_1" pos="0.056805645513749954 -0.01815409413234877 -0.002761">
             <inertial pos="-0.000237 -0.009571 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RF_roller_Joint_2_1" type="hinge" axis="-0.024735 -0.999694 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RF_roller_link_2_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RF_roller_link_2_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RF_roller_link_2_2" pos="0.054907 -0.039488 -0.002761">
+        <body name="wheel_RF_roller_link_2_2" pos="0.04841545572382616 -0.03481947936219364 -0.002761">
             <inertial pos="0.004751 0.00621 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RF_roller_Joint_2_2" type="hinge" axis="-0.607617 -0.79423 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RF_roller_link_2_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RF_roller_link_2_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RF_roller_link_3_1" pos="0.046123 -0.037804 -0.002761">
+        <body name="wheel_RF_roller_link_3_1" pos="0.03528602379733878 -0.048076491350488984 -0.002761">
             <inertial pos="-0.005817 -0.007604 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RF_roller_Joint_3_1" type="hinge" axis="-0.607617 -0.79423 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RF_roller_link_3_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RF_roller_link_3_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RF_roller_link_3_2" pos="0.02121 -0.06422 -0.002761">
+        <body name="wheel_RF_roller_link_3_2" pos="0.018702550009383638 -0.05662744139678663 -0.002761">
             <inertial pos="0.007494 0.002232 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RF_roller_Joint_3_2" type="hinge" axis="-0.958409 -0.285398 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RF_roller_link_3_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RF_roller_link_3_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RF_roller_link_4_1" pos="0.015094 -0.057695 -0.002761">
+        <body name="wheel_RF_roller_link_4_1" pos="0.0002883403181818181 -0.059635302932582734 -0.002761">
             <inertial pos="-0.009176 -0.002732 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RF_roller_Joint_4_1" type="hinge" axis="-0.958409 -0.285398 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RF_roller_link_4_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RF_roller_link_4_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RF_roller_link_4_2" pos="-0.020588 -0.064422 -0.002761">
+        <body name="wheel_RF_roller_link_4_2" pos="-0.018154094132348766 -0.056805645513749954 -0.002761">
             <inertial pos="0.007375 -0.0026 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RF_roller_Joint_4_2" type="hinge" axis="-0.943122 0.332447 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RF_roller_link_4_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RF_roller_link_4_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RF_roller_link_5_1" pos="-0.021701 -0.055548 -0.002761">
+        <body name="wheel_RF_roller_link_5_1" pos="-0.03481947936219364 -0.04841545572382616 -0.002761">
             <inertial pos="-0.009029 0.003183 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RF_roller_Joint_5_1" type="hinge" axis="-0.943122 0.332447 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RF_roller_link_5_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RF_roller_link_5_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RF_roller_link_5_2" pos="-0.054523 -0.040017 -0.002761">
+        <body name="wheel_RF_roller_link_5_2" pos="-0.048076491350488984 -0.03528602379733878 -0.002761">
             <inertial pos="0.004438 -0.006438 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RF_roller_Joint_5_2" type="hinge" axis="-0.567594 0.823309 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RF_roller_link_5_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RF_roller_link_5_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RF_roller_link_6_1" pos="-0.050207 -0.032183 -0.002761">
+        <body name="wheel_RF_roller_link_6_1" pos="-0.05662744139678664 -0.01870255000938362 -0.002761">
             <inertial pos="-0.005434 0.007882 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RF_roller_Joint_6_1" type="hinge" axis="-0.567594 0.823309 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RF_roller_link_6_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RF_roller_link_6_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RF_roller_link_6_2" pos="-0.067631 -0.000327 -0.002761">
+        <body name="wheel_RF_roller_link_6_2" pos="-0.059635302932582734 -0.0002883403181818218 -0.002761">
             <inertial pos="-0.000193 -0.007817 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RF_roller_Joint_6_2" type="hinge" axis="0.024735 0.999694 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RF_roller_link_6_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RF_roller_link_6_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RF_roller_link_7_1" pos="-0.059535 0.003474 -0.002761">
+        <body name="wheel_RF_roller_link_7_1" pos="-0.056805645513749954 0.018154094132348763 -0.002761">
             <inertial pos="0.000237 0.009571 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RF_roller_Joint_7_1" type="hinge" axis="0.024735 0.999694 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RF_roller_link_7_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RF_roller_link_7_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RF_roller_link_7_2" pos="-0.054907 0.039488 -0.002761">
+        <body name="wheel_RF_roller_link_7_2" pos="-0.04841545572382617 0.03481947936219363 -0.002761">
             <inertial pos="-0.004751 -0.00621 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RF_roller_Joint_7_2" type="hinge" axis="0.607617 0.79423 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RF_roller_link_7_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RF_roller_link_7_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RF_roller_link_8_1" pos="-0.046123 0.037804 -0.002761">
+        <body name="wheel_RF_roller_link_8_1" pos="-0.035286023797338785 0.04807649135048898 -0.002761">
             <inertial pos="0.005817 0.007604 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RF_roller_Joint_8_1" type="hinge" axis="0.607617 0.79423 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RF_roller_link_8_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RF_roller_link_8_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RF_roller_link_8_2" pos="-0.02121 0.06422 -0.002761">
+        <body name="wheel_RF_roller_link_8_2" pos="-0.018702550009383635 0.05662744139678663 -0.002761">
             <inertial pos="-0.007494 -0.002232 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RF_roller_Joint_8_2" type="hinge" axis="0.958409 0.285398 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RF_roller_link_8_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RF_roller_link_8_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RF_roller_link_9_1" pos="-0.015094 0.057695 -0.002761">
+        <body name="wheel_RF_roller_link_9_1" pos="-0.0002883403181818122 0.059635302932582734 -0.002761">
             <inertial pos="0.009176 0.002732 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RF_roller_Joint_9_1" type="hinge" axis="0.958409 0.285398 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RF_roller_link_9_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RF_roller_link_9_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RF_roller_link_9_2" pos="0.020588 0.064422 -0.002761">
+        <body name="wheel_RF_roller_link_9_2" pos="0.018154094132348773 0.056805645513749954 -0.002761">
             <inertial pos="-0.007375 0.0026 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RF_roller_Joint_9_2" type="hinge" axis="0.943122 -0.332447 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RF_roller_link_9_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RF_roller_link_9_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RF_roller_link_10_1" pos="0.021701 0.055548 -0.002761">
+        <body name="wheel_RF_roller_link_10_1" pos="0.03481947936219364 0.04841545572382616 -0.002761">
             <inertial pos="0.009029 -0.003183 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RF_roller_Joint_10_1" type="hinge" axis="0.943122 -0.332447 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RF_roller_link_10_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RF_roller_link_10_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RF_roller_link_10_2" pos="0.054523 0.040017 -0.002761">
+        <body name="wheel_RF_roller_link_10_2" pos="0.048076491350488984 0.03528602379733877 -0.002761">
             <inertial pos="-0.004438 0.006438 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RF_roller_Joint_10_2" type="hinge" axis="0.567594 -0.823309 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RF_roller_link_10_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RF_roller_link_10_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
     </body>
     <body name="wheel_LF_Link" pos="0.216347 0.216347 -0.015" quat="0.270599 -0.65328 -0.2706 -0.653282">
         <inertial pos="2.7617e-07 -1.7589e-07 0.014539" quat="0.270598 0.653281 -0.270598 0.653281" mass="0.56418" diaginertia="0.0015639 0.000831884 0.000831876" />
         <joint name="wheel_LF_Joint" type="hinge" axis="0 0 1" limited="false" armature="0.05" damping="0.5" />
         <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="wheel_LF_Link_wr" material="M_rubber_wheel" />
-        <body name="wheel_LF_roller_link_1_1" pos="0.050207 0.032183 -0.002761">
+        <body name="wheel_LF_roller_link_1_1" pos="0.05662744139678663 0.01870255000938364 -0.002761">
             <inertial pos="0.005434 -0.007882 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LF_roller_Joint_1_1" type="hinge" axis="0.567594 -0.823309 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LF_roller_link_1_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LF_roller_link_1_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LF_roller_link_1_2" pos="0.067631 0.000327 -0.002761">
+        <body name="wheel_LF_roller_link_1_2" pos="0.059635302932582734 0.0002883403181818183 -0.002761">
             <inertial pos="0.000193 0.007817 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LF_roller_Joint_1_2" type="hinge" axis="-0.024735 -0.999694 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LF_roller_link_1_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LF_roller_link_1_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LF_roller_link_2_1" pos="0.059535 -0.003474 -0.002761">
+        <body name="wheel_LF_roller_link_2_1" pos="0.056805645513749954 -0.01815409413234877 -0.002761">
             <inertial pos="-0.000237 -0.009571 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LF_roller_Joint_2_1" type="hinge" axis="-0.024735 -0.999694 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LF_roller_link_2_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LF_roller_link_2_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LF_roller_link_2_2" pos="0.054907 -0.039488 -0.002761">
+        <body name="wheel_LF_roller_link_2_2" pos="0.04841545572382616 -0.03481947936219364 -0.002761">
             <inertial pos="0.004751 0.00621 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LF_roller_Joint_2_2" type="hinge" axis="-0.607617 -0.79423 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LF_roller_link_2_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LF_roller_link_2_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LF_roller_link_3_1" pos="0.046123 -0.037804 -0.002761">
+        <body name="wheel_LF_roller_link_3_1" pos="0.03528602379733878 -0.048076491350488984 -0.002761">
             <inertial pos="-0.005817 -0.007604 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LF_roller_Joint_3_1" type="hinge" axis="-0.607617 -0.79423 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LF_roller_link_3_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LF_roller_link_3_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LF_roller_link_3_2" pos="0.02121 -0.06422 -0.002761">
+        <body name="wheel_LF_roller_link_3_2" pos="0.018702550009383638 -0.05662744139678663 -0.002761">
             <inertial pos="0.007494 0.002232 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LF_roller_Joint_3_2" type="hinge" axis="-0.958409 -0.285398 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LF_roller_link_3_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LF_roller_link_3_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LF_roller_link_4_1" pos="0.015094 -0.057695 -0.002761">
+        <body name="wheel_LF_roller_link_4_1" pos="0.0002883403181818181 -0.059635302932582734 -0.002761">
             <inertial pos="-0.009176 -0.002732 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LF_roller_Joint_4_1" type="hinge" axis="-0.958409 -0.285398 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LF_roller_link_4_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LF_roller_link_4_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LF_roller_link_4_2" pos="-0.020588 -0.064422 -0.002761">
+        <body name="wheel_LF_roller_link_4_2" pos="-0.018154094132348766 -0.056805645513749954 -0.002761">
             <inertial pos="0.007375 -0.0026 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LF_roller_Joint_4_2" type="hinge" axis="-0.943122 0.332447 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LF_roller_link_4_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LF_roller_link_4_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LF_roller_link_5_1" pos="-0.021701 -0.055548 -0.002761">
+        <body name="wheel_LF_roller_link_5_1" pos="-0.03481947936219364 -0.04841545572382616 -0.002761">
             <inertial pos="-0.009029 0.003183 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LF_roller_Joint_5_1" type="hinge" axis="-0.943122 0.332447 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LF_roller_link_5_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LF_roller_link_5_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LF_roller_link_5_2" pos="-0.054523 -0.040017 -0.002761">
+        <body name="wheel_LF_roller_link_5_2" pos="-0.048076491350488984 -0.03528602379733878 -0.002761">
             <inertial pos="0.004438 -0.006438 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LF_roller_Joint_5_2" type="hinge" axis="-0.567594 0.823309 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LF_roller_link_5_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LF_roller_link_5_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LF_roller_link_6_1" pos="-0.050207 -0.032183 -0.002761">
+        <body name="wheel_LF_roller_link_6_1" pos="-0.05662744139678664 -0.01870255000938362 -0.002761">
             <inertial pos="-0.005434 0.007882 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LF_roller_Joint_6_1" type="hinge" axis="-0.567594 0.823309 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LF_roller_link_6_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LF_roller_link_6_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LF_roller_link_6_2" pos="-0.067631 -0.000327 -0.002761">
+        <body name="wheel_LF_roller_link_6_2" pos="-0.059635302932582734 -0.0002883403181818218 -0.002761">
             <inertial pos="-0.000193 -0.007817 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LF_roller_Joint_6_2" type="hinge" axis="0.024735 0.999694 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LF_roller_link_6_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LF_roller_link_6_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LF_roller_link_7_1" pos="-0.059535 0.003474 -0.002761">
+        <body name="wheel_LF_roller_link_7_1" pos="-0.056805645513749954 0.018154094132348763 -0.002761">
             <inertial pos="0.000237 0.009571 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LF_roller_Joint_7_1" type="hinge" axis="0.024735 0.999694 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LF_roller_link_7_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LF_roller_link_7_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LF_roller_link_7_2" pos="-0.054907 0.039488 -0.002761">
+        <body name="wheel_LF_roller_link_7_2" pos="-0.04841545572382617 0.03481947936219363 -0.002761">
             <inertial pos="-0.004751 -0.00621 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LF_roller_Joint_7_2" type="hinge" axis="0.607617 0.79423 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LF_roller_link_7_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LF_roller_link_7_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LF_roller_link_8_1" pos="-0.046123 0.037804 -0.002761">
+        <body name="wheel_LF_roller_link_8_1" pos="-0.035286023797338785 0.04807649135048898 -0.002761">
             <inertial pos="0.005817 0.007604 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LF_roller_Joint_8_1" type="hinge" axis="0.607617 0.79423 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LF_roller_link_8_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LF_roller_link_8_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LF_roller_link_8_2" pos="-0.02121 0.06422 -0.002761">
+        <body name="wheel_LF_roller_link_8_2" pos="-0.018702550009383635 0.05662744139678663 -0.002761">
             <inertial pos="-0.007494 -0.002232 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LF_roller_Joint_8_2" type="hinge" axis="0.958409 0.285398 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LF_roller_link_8_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LF_roller_link_8_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LF_roller_link_9_1" pos="-0.015094 0.057695 -0.002761">
+        <body name="wheel_LF_roller_link_9_1" pos="-0.0002883403181818122 0.059635302932582734 -0.002761">
             <inertial pos="0.009176 0.002732 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LF_roller_Joint_9_1" type="hinge" axis="0.958409 0.285398 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LF_roller_link_9_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LF_roller_link_9_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LF_roller_link_9_2" pos="0.020588 0.064422 -0.002761">
+        <body name="wheel_LF_roller_link_9_2" pos="0.018154094132348773 0.056805645513749954 -0.002761">
             <inertial pos="-0.007375 0.0026 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LF_roller_Joint_9_2" type="hinge" axis="0.943122 -0.332447 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LF_roller_link_9_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LF_roller_link_9_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LF_roller_link_10_1" pos="0.021701 0.055548 -0.002761">
+        <body name="wheel_LF_roller_link_10_1" pos="0.03481947936219364 0.04841545572382616 -0.002761">
             <inertial pos="0.009029 -0.003183 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LF_roller_Joint_10_1" type="hinge" axis="0.943122 -0.332447 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LF_roller_link_10_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LF_roller_link_10_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LF_roller_link_10_2" pos="0.054523 0.040017 -0.002761">
+        <body name="wheel_LF_roller_link_10_2" pos="0.048076491350488984 0.03528602379733877 -0.002761">
             <inertial pos="-0.004438 0.006438 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LF_roller_Joint_10_2" type="hinge" axis="0.567594 -0.823309 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LF_roller_link_10_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LF_roller_link_10_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
     </body>
     <body name="wheel_RR_Link" pos="-0.216347 -0.211347 -0.015" quat="0.65328 0.270597 -0.653283 0.270598">
         <inertial pos="-2.7619e-07 1.7583e-07 0.014539" quat="0.270598 0.653281 -0.270598 0.653281" mass="0.56418" diaginertia="0.0015639 0.000831884 0.000831876" />
         <joint name="wheel_RR_Joint" type="hinge" axis="0 0 1" limited="false" armature="0.05" damping="0.5" />
         <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="wheel_RR_Link_wr" material="M_rubber_wheel" />
-        <body name="wheel_RR_roller_link_1_1" pos="0.050207 0.032183 -0.002761">
+        <body name="wheel_RR_roller_link_1_1" pos="0.05662744139678663 0.01870255000938364 -0.002761">
             <inertial pos="0.005434 -0.007882 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RR_roller_Joint_1_1" type="hinge" axis="0.567594 -0.823309 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RR_roller_link_1_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RR_roller_link_1_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RR_roller_link_1_2" pos="0.067631 0.000327 -0.002761">
+        <body name="wheel_RR_roller_link_1_2" pos="0.059635302932582734 0.0002883403181818183 -0.002761">
             <inertial pos="0.000193 0.007817 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RR_roller_Joint_1_2" type="hinge" axis="-0.024735 -0.999694 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RR_roller_link_1_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RR_roller_link_1_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RR_roller_link_2_1" pos="0.059535 -0.003474 -0.002761">
+        <body name="wheel_RR_roller_link_2_1" pos="0.056805645513749954 -0.01815409413234877 -0.002761">
             <inertial pos="-0.000237 -0.009571 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RR_roller_Joint_2_1" type="hinge" axis="-0.024735 -0.999694 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RR_roller_link_2_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RR_roller_link_2_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RR_roller_link_2_2" pos="0.054907 -0.039488 -0.002761">
+        <body name="wheel_RR_roller_link_2_2" pos="0.04841545572382616 -0.03481947936219364 -0.002761">
             <inertial pos="0.004751 0.00621 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RR_roller_Joint_2_2" type="hinge" axis="-0.607617 -0.79423 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RR_roller_link_2_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RR_roller_link_2_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RR_roller_link_3_1" pos="0.046123 -0.037804 -0.002761">
+        <body name="wheel_RR_roller_link_3_1" pos="0.03528602379733878 -0.048076491350488984 -0.002761">
             <inertial pos="-0.005817 -0.007604 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RR_roller_Joint_3_1" type="hinge" axis="-0.607617 -0.79423 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RR_roller_link_3_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RR_roller_link_3_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RR_roller_link_3_2" pos="0.02121 -0.06422 -0.002761">
+        <body name="wheel_RR_roller_link_3_2" pos="0.018702550009383638 -0.05662744139678663 -0.002761">
             <inertial pos="0.007494 0.002232 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RR_roller_Joint_3_2" type="hinge" axis="-0.958409 -0.285398 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RR_roller_link_3_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RR_roller_link_3_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RR_roller_link_4_1" pos="0.015094 -0.057695 -0.002761">
+        <body name="wheel_RR_roller_link_4_1" pos="0.0002883403181818181 -0.059635302932582734 -0.002761">
             <inertial pos="-0.009176 -0.002732 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RR_roller_Joint_4_1" type="hinge" axis="-0.958409 -0.285398 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RR_roller_link_4_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RR_roller_link_4_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RR_roller_link_4_2" pos="-0.020588 -0.064422 -0.002761">
+        <body name="wheel_RR_roller_link_4_2" pos="-0.018154094132348766 -0.056805645513749954 -0.002761">
             <inertial pos="0.007375 -0.0026 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RR_roller_Joint_4_2" type="hinge" axis="-0.943122 0.332447 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RR_roller_link_4_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RR_roller_link_4_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RR_roller_link_5_1" pos="-0.021701 -0.055548 -0.002761">
+        <body name="wheel_RR_roller_link_5_1" pos="-0.03481947936219364 -0.04841545572382616 -0.002761">
             <inertial pos="-0.009029 0.003183 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RR_roller_Joint_5_1" type="hinge" axis="-0.943122 0.332447 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RR_roller_link_5_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RR_roller_link_5_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RR_roller_link_5_2" pos="-0.054523 -0.040017 -0.002761">
+        <body name="wheel_RR_roller_link_5_2" pos="-0.048076491350488984 -0.03528602379733878 -0.002761">
             <inertial pos="0.004438 -0.006438 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RR_roller_Joint_5_2" type="hinge" axis="-0.567594 0.823309 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RR_roller_link_5_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RR_roller_link_5_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RR_roller_link_6_1" pos="-0.050207 -0.032183 -0.002761">
+        <body name="wheel_RR_roller_link_6_1" pos="-0.05662744139678664 -0.01870255000938362 -0.002761">
             <inertial pos="-0.005434 0.007882 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RR_roller_Joint_6_1" type="hinge" axis="-0.567594 0.823309 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RR_roller_link_6_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RR_roller_link_6_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RR_roller_link_6_2" pos="-0.067631 -0.000327 -0.002761">
+        <body name="wheel_RR_roller_link_6_2" pos="-0.059635302932582734 -0.0002883403181818218 -0.002761">
             <inertial pos="-0.000193 -0.007817 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RR_roller_Joint_6_2" type="hinge" axis="0.024735 0.999694 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RR_roller_link_6_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RR_roller_link_6_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RR_roller_link_7_1" pos="-0.059535 0.003474 -0.002761">
+        <body name="wheel_RR_roller_link_7_1" pos="-0.056805645513749954 0.018154094132348763 -0.002761">
             <inertial pos="0.000237 0.009571 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RR_roller_Joint_7_1" type="hinge" axis="0.024735 0.999694 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RR_roller_link_7_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RR_roller_link_7_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RR_roller_link_7_2" pos="-0.054907 0.039488 -0.002761">
+        <body name="wheel_RR_roller_link_7_2" pos="-0.04841545572382617 0.03481947936219363 -0.002761">
             <inertial pos="-0.004751 -0.00621 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RR_roller_Joint_7_2" type="hinge" axis="0.607617 0.79423 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RR_roller_link_7_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RR_roller_link_7_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RR_roller_link_8_1" pos="-0.046123 0.037804 -0.002761">
+        <body name="wheel_RR_roller_link_8_1" pos="-0.035286023797338785 0.04807649135048898 -0.002761">
             <inertial pos="0.005817 0.007604 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RR_roller_Joint_8_1" type="hinge" axis="0.607617 0.79423 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RR_roller_link_8_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RR_roller_link_8_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RR_roller_link_8_2" pos="-0.02121 0.06422 -0.002761">
+        <body name="wheel_RR_roller_link_8_2" pos="-0.018702550009383635 0.05662744139678663 -0.002761">
             <inertial pos="-0.007494 -0.002232 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RR_roller_Joint_8_2" type="hinge" axis="0.958409 0.285398 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RR_roller_link_8_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RR_roller_link_8_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RR_roller_link_9_1" pos="-0.015094 0.057695 -0.002761">
+        <body name="wheel_RR_roller_link_9_1" pos="-0.0002883403181818122 0.059635302932582734 -0.002761">
             <inertial pos="0.009176 0.002732 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RR_roller_Joint_9_1" type="hinge" axis="0.958409 0.285398 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RR_roller_link_9_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RR_roller_link_9_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RR_roller_link_9_2" pos="0.020588 0.064422 -0.002761">
+        <body name="wheel_RR_roller_link_9_2" pos="0.018154094132348773 0.056805645513749954 -0.002761">
             <inertial pos="-0.007375 0.0026 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RR_roller_Joint_9_2" type="hinge" axis="0.943122 -0.332447 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RR_roller_link_9_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RR_roller_link_9_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RR_roller_link_10_1" pos="0.021701 0.055548 -0.002761">
+        <body name="wheel_RR_roller_link_10_1" pos="0.03481947936219364 0.04841545572382616 -0.002761">
             <inertial pos="0.009029 -0.003183 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RR_roller_Joint_10_1" type="hinge" axis="0.943122 -0.332447 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RR_roller_link_10_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RR_roller_link_10_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_RR_roller_link_10_2" pos="0.054523 0.040017 -0.002761">
+        <body name="wheel_RR_roller_link_10_2" pos="0.048076491350488984 0.03528602379733877 -0.002761">
             <inertial pos="-0.004438 0.006438 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_RR_roller_Joint_10_2" type="hinge" axis="0.567594 -0.823309 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_RR_roller_link_10_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_RR_roller_link_10_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
     </body>
     <body name="wheel_LR_Link" pos="-0.216347 0.211347 -0.015" quat="0.65328 -0.270597 -0.653283 -0.270598">
         <inertial pos="0.0019998 -0.0070713 0.014539" quat="0.653281 0.270598 -0.653281 0.270598" mass="0.56418" diaginertia="0.0015639 0.000831884 0.000831876" />
         <joint name="wheel_LR_Joint" type="hinge" axis="0 0 1" limited="false" armature="0.05" damping="0.5" />
         <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="wheel_LR_Link_wr" material="M_rubber_wheel" />
-        <body name="wheel_LR_roller_link_1_1" pos="0.050207 0.032183 -0.002761">
+        <body name="wheel_LR_roller_link_1_1" pos="0.05662744139678663 0.01870255000938364 -0.002761">
             <inertial pos="0.005434 -0.007882 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LR_roller_Joint_1_1" type="hinge" axis="0.567594 -0.823309 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LR_roller_link_1_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LR_roller_link_1_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LR_roller_link_1_2" pos="0.067631 0.000327 -0.002761">
+        <body name="wheel_LR_roller_link_1_2" pos="0.059635302932582734 0.0002883403181818183 -0.002761">
             <inertial pos="0.000193 0.007817 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LR_roller_Joint_1_2" type="hinge" axis="-0.024735 -0.999694 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LR_roller_link_1_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LR_roller_link_1_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LR_roller_link_2_1" pos="0.059535 -0.003474 -0.002761">
+        <body name="wheel_LR_roller_link_2_1" pos="0.056805645513749954 -0.01815409413234877 -0.002761">
             <inertial pos="-0.000237 -0.009571 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LR_roller_Joint_2_1" type="hinge" axis="-0.024735 -0.999694 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LR_roller_link_2_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LR_roller_link_2_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LR_roller_link_2_2" pos="0.054907 -0.039488 -0.002761">
+        <body name="wheel_LR_roller_link_2_2" pos="0.04841545572382616 -0.03481947936219364 -0.002761">
             <inertial pos="0.004751 0.00621 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LR_roller_Joint_2_2" type="hinge" axis="-0.607617 -0.79423 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LR_roller_link_2_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LR_roller_link_2_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LR_roller_link_3_1" pos="0.046123 -0.037804 -0.002761">
+        <body name="wheel_LR_roller_link_3_1" pos="0.03528602379733878 -0.048076491350488984 -0.002761">
             <inertial pos="-0.005817 -0.007604 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LR_roller_Joint_3_1" type="hinge" axis="-0.607617 -0.79423 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LR_roller_link_3_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LR_roller_link_3_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LR_roller_link_3_2" pos="0.02121 -0.06422 -0.002761">
+        <body name="wheel_LR_roller_link_3_2" pos="0.018702550009383638 -0.05662744139678663 -0.002761">
             <inertial pos="0.007494 0.002232 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LR_roller_Joint_3_2" type="hinge" axis="-0.958409 -0.285398 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LR_roller_link_3_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LR_roller_link_3_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LR_roller_link_4_1" pos="0.015094 -0.057695 -0.002761">
+        <body name="wheel_LR_roller_link_4_1" pos="0.0002883403181818181 -0.059635302932582734 -0.002761">
             <inertial pos="-0.009176 -0.002732 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LR_roller_Joint_4_1" type="hinge" axis="-0.958409 -0.285398 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LR_roller_link_4_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LR_roller_link_4_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LR_roller_link_4_2" pos="-0.020588 -0.064422 -0.002761">
+        <body name="wheel_LR_roller_link_4_2" pos="-0.018154094132348766 -0.056805645513749954 -0.002761">
             <inertial pos="0.007375 -0.0026 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LR_roller_Joint_4_2" type="hinge" axis="-0.943122 0.332447 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LR_roller_link_4_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LR_roller_link_4_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LR_roller_link_5_1" pos="-0.021701 -0.055548 -0.002761">
+        <body name="wheel_LR_roller_link_5_1" pos="-0.03481947936219364 -0.04841545572382616 -0.002761">
             <inertial pos="-0.009029 0.003183 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LR_roller_Joint_5_1" type="hinge" axis="-0.943122 0.332447 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LR_roller_link_5_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LR_roller_link_5_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LR_roller_link_5_2" pos="-0.054523 -0.040017 -0.002761">
+        <body name="wheel_LR_roller_link_5_2" pos="-0.048076491350488984 -0.03528602379733878 -0.002761">
             <inertial pos="0.004438 -0.006438 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LR_roller_Joint_5_2" type="hinge" axis="-0.567594 0.823309 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LR_roller_link_5_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LR_roller_link_5_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LR_roller_link_6_1" pos="-0.050207 -0.032183 -0.002761">
+        <body name="wheel_LR_roller_link_6_1" pos="-0.05662744139678664 -0.01870255000938362 -0.002761">
             <inertial pos="-0.005434 0.007882 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LR_roller_Joint_6_1" type="hinge" axis="-0.567594 0.823309 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LR_roller_link_6_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LR_roller_link_6_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LR_roller_link_6_2" pos="-0.067631 -0.000327 -0.002761">
+        <body name="wheel_LR_roller_link_6_2" pos="-0.059635302932582734 -0.0002883403181818218 -0.002761">
             <inertial pos="-0.000193 -0.007817 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LR_roller_Joint_6_2" type="hinge" axis="0.024735 0.999694 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LR_roller_link_6_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LR_roller_link_6_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LR_roller_link_7_1" pos="-0.059535 0.003474 -0.002761">
+        <body name="wheel_LR_roller_link_7_1" pos="-0.056805645513749954 0.018154094132348763 -0.002761">
             <inertial pos="0.000237 0.009571 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LR_roller_Joint_7_1" type="hinge" axis="0.024735 0.999694 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LR_roller_link_7_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LR_roller_link_7_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LR_roller_link_7_2" pos="-0.054907 0.039488 -0.002761">
+        <body name="wheel_LR_roller_link_7_2" pos="-0.04841545572382617 0.03481947936219363 -0.002761">
             <inertial pos="-0.004751 -0.00621 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LR_roller_Joint_7_2" type="hinge" axis="0.607617 0.79423 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LR_roller_link_7_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LR_roller_link_7_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LR_roller_link_8_1" pos="-0.046123 0.037804 -0.002761">
+        <body name="wheel_LR_roller_link_8_1" pos="-0.035286023797338785 0.04807649135048898 -0.002761">
             <inertial pos="0.005817 0.007604 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LR_roller_Joint_8_1" type="hinge" axis="0.607617 0.79423 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LR_roller_link_8_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LR_roller_link_8_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LR_roller_link_8_2" pos="-0.02121 0.06422 -0.002761">
+        <body name="wheel_LR_roller_link_8_2" pos="-0.018702550009383635 0.05662744139678663 -0.002761">
             <inertial pos="-0.007494 -0.002232 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LR_roller_Joint_8_2" type="hinge" axis="0.958409 0.285398 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LR_roller_link_8_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LR_roller_link_8_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LR_roller_link_9_1" pos="-0.015094 0.057695 -0.002761">
+        <body name="wheel_LR_roller_link_9_1" pos="-0.0002883403181818122 0.059635302932582734 -0.002761">
             <inertial pos="0.009176 0.002732 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LR_roller_Joint_9_1" type="hinge" axis="0.958409 0.285398 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LR_roller_link_9_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LR_roller_link_9_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LR_roller_link_9_2" pos="0.020588 0.064422 -0.002761">
+        <body name="wheel_LR_roller_link_9_2" pos="0.018154094132348773 0.056805645513749954 -0.002761">
             <inertial pos="-0.007375 0.0026 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LR_roller_Joint_9_2" type="hinge" axis="0.943122 -0.332447 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LR_roller_link_9_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LR_roller_link_9_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LR_roller_link_10_1" pos="0.021701 0.055548 -0.002761">
+        <body name="wheel_LR_roller_link_10_1" pos="0.03481947936219364 0.04841545572382616 -0.002761">
             <inertial pos="0.009029 -0.003183 0.0" mass="0.0233" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LR_roller_Joint_10_1" type="hinge" axis="0.943122 -0.332447 0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LR_roller_link_10_1_collision" type="sphere" size="0.0204" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LR_roller_link_10_1_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
-        <body name="wheel_LR_roller_link_10_2" pos="0.054523 0.040017 -0.002761">
+        <body name="wheel_LR_roller_link_10_2" pos="0.048076491350488984 0.03528602379733877 -0.002761">
             <inertial pos="-0.004438 0.006438 -0.0" mass="0.007017" diaginertia="1e-05 1e-05 1e-05" />
             <joint name="wheel_LR_roller_Joint_10_2" type="hinge" axis="0.567594 -0.823309 -0.0" limited="false" armature="0.0005" damping="0" />
-            <geom name="wheel_LR_roller_link_10_2_collision" type="sphere" size="0.0124" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
+            <geom name="wheel_LR_roller_link_10_2_collision" type="sphere" size="0.020558" group="3" contype="1" conaffinity="2" condim="3" friction="1.0 0.005 0.0001" />
         </body>
     </body>
     <body name="astribot_torso_link_1" pos="0.0 0.0 0.12" quat="0.49999816339744824 -0.4999999999966268 0.4999999999966268 0.5000018366025517">

@@ -2,9 +2,9 @@
   "manifest_version": "1",
   "target": "astribot_descriptions_github",
   "variant_id": "astribot_s1",
-  "version": "v0.0.0-dev",
-  "git_sha": "899dcfd9f954b1aec58f3b89ea35982ff18ac1c8",
-  "build_time": "2026-07-29T07:40:21Z",
+  "version": "v1.3.6",
+  "git_sha": "d6aa1b5d5efff63535a197793760068c368e977f",
+  "build_time": "2026-07-29T09:11:29Z",
   "visibility": "public",
   "files": [
     {
@@ -964,8 +964,8 @@
     },
     {
       "path": "astribot_s1/model/mjcf/robot/kinematic.xml",
-      "sha256": "de643045005718b47971934981ef2461ad21fb7504a0323226675d1b69b9ca2d",
-      "size": 72154
+      "sha256": "bcfb6d82c458b1baa43d21c78c02e2bed24dea463016f0ecbac4bd8fb6699cd4",
+      "size": 74190
     },
     {
       "path": "astribot_s1/model/mjcf/robot/kinematic_visual.xml",
