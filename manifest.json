@@ -2,9 +2,9 @@
   "manifest_version": "1",
   "target": "astribot_descriptions_github",
   "variant_id": "astribot_s1",
-  "version": "v1.4.0",
-  "git_sha": "ed1932e10e73514faee23dc7285b9181c4999f88",
-  "build_time": "2026-07-28T10:09:02Z",
+  "version": "v0.0.0-dev",
+  "git_sha": "899dcfd9f954b1aec58f3b89ea35982ff18ac1c8",
+  "build_time": "2026-07-29T07:40:21Z",
   "visibility": "public",
   "files": [
     {
