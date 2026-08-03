@@ -405,8 +405,7 @@
                                                 <site name="force_torque_sensor_left" />
                                                 <joint name="astribot_arm_left_joint_7" pos="0 0 0" axis="0 0 1" range="-1.449 1.485" />
                                                 <body name="arm_left_tool_cam" pos="0 -0.15 0">
-                                                    <camera name="left_wrist_rgbd" pos="0.011420996159648984 0.058882000224149605 0.044260118849329295" quat="0.703108425353722 -0.7109134990656752 -0.009037420129074155 -0.012604129490710232" fovy="60" />
-                                                    <site name="left_wrist_rgbd_site" pos="0.011420996159648984 0.058882000224149605 0.044260118849329295" quat="0.006918238 -0.7052276075 0.7087943169 -0.0147233117" size="0.005" rgba="0 1 1 1" />
+                                                    <camera name="left_wrist_rgbd" pos="0.011420996159648984 0.058882000224149605 0.044260118849329295" quat="0.703108425353722 -0.7109134990656752 -0.009037420129074155 -0.012604129490710232" fovy="57" />
                                                 </body>
                                                 <body name="astribot_arm_left_tool_link" pos="0 -0.048 0" euler="1.5707963 0 0">
                                                     <body name="astribot_gripper_left_base" pos="0 0 0">
@@ -485,8 +484,7 @@
                                                 <site name="force_torque_sensor_right" />
                                                 <joint name="astribot_arm_right_joint_7" pos="0 0 0" axis="0 0 1" range="-1.477 1.447" />
                                                 <body name="arm_right_tool_cam" pos="0 -0.15 0">
-                                                    <camera name="right_wrist_rgbd" pos="0.00772 0.05592 0.04319" quat="-0.7130607009975457 0.7006910271198059 0.013493708973317153 0.019860539389038687" fovy="60" />
-                                                    <site name="right_wrist_rgbd_site" pos="0.00772 0.05592 0.04319" quat="0.0228619611 -0.7036924489 0.7100592793 -0.0104922872" size="0.005" rgba="0 1 1 1" />
+                                                    <camera name="right_wrist_rgbd" pos="0.00772 0.05592 0.04319" quat="-0.7130607009975457 0.7006910271198059 0.013493708973317153 0.019860539389038687" fovy="57" />
                                                 </body>
                                                 <body name="astribot_arm_right_tool_link" pos="0 -0.048 0" euler="1.5707963 0 0">
                                                     <body name="astribot_gripper_right_base" pos="0 0 0">

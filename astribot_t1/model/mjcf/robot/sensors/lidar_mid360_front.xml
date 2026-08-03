@@ -2,6 +2,6 @@
     <body name="lidar_front" pos="0.2255 0 0.0665" quat="0.6963609 0.1227995 0.1227999 0.6963634">
         <inertial pos="0 0 0" mass="0.6" diaginertia="0.001 0.001 0.001" />
         <site name="lidar_site" pos="0 0 0" quat="1 0 0 0" size="0.005" rgba="1 0 0 1" />
-        <site name="lidar_imu_site" pos="0.011 0.02329 -0.04412" quat="0.9999882 -0.0015614 0.00432263 -0.00157348" size="0.005" rgba="1 1 0 1" />
+        <site name="lidar_imu_site" pos="0.011 0.02329 -0.04412" quat="1 0 0 0" size="0.005" rgba="1 1 0 1" />
     </body>
 </mujocoinclude>
