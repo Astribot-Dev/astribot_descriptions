@@ -41,13 +41,13 @@
                     <body name="astribot_head_link_1" pos="0.0 0.0 0.4859">
                         <inertial pos="1.9e-05 0.006577 0.081061" mass="0.256916" diaginertia="0.001804 0.0018239246112601586 7.307538873984129e-05" quat="0.9991468367076948 0.041298894622096814 0.0 0.0" />
                         <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_head_link_1" material="M_dark_shell" />
-                        <joint name="astribot_head_joint_1" pos="0 0 0" axis="0 0 1" range="-1.611 1.605" />
+                        <joint name="astribot_head_joint_1" pos="0 0 0" axis="0 0 1" range="-1.608 1.608" />
                         <body name="astribot_head_link_2" pos="0.0 0.0 0.0" quat="0.7071054825112363 -0.7071080798594735 0.0 0.0">
                             <inertial pos="0.017185 -0.104538 -0.000323" mass="0.79" diaginertia="0.012430124223277581 0.011943796154078288 0.0027330796226441305" quat="-0.4646986965262186 0.5375320947492621 0.4579194471533839 0.5342510163584557" />
                             <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_head_link_2" material="M_head_link_2" />
                             <include file="sensors/head_stereo_left.xml" />
                             <include file="sensors/head_stereo_right.xml" />
-                            <joint name="astribot_head_joint_2" pos="0 0 0" axis="0 0 1" range="-0.583 0.534" />
+                            <joint name="astribot_head_joint_2" pos="0 0 0" axis="0 0 1" range="-0.558 0.558" />
                         </body>
                     </body>
                     <body name="astribot_arm_left_link_1" pos="4.775166634513052e-07 0.129999999999123 0.38950000000175405" quat="-0.49999816339744835 0.4999999999966269 0.4999999999966269 0.5000018366025517">

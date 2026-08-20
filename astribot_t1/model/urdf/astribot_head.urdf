@@ -68,14 +68,14 @@
     <child link="astribot_head_link_1" />
     <origin xyz="0 0 0" rpy="0 0 0" />
     <axis xyz="0 0 1" />
-    <limit lower="-1.611" upper="1.605" effort="15.0" velocity="2.0" />
+    <limit lower="-1.608" upper="1.608" effort="15.0" velocity="2.0" />
   </joint>
   <joint name="astribot_head_joint_2" type="revolute">
     <parent link="astribot_head_link_1" />
     <child link="astribot_head_link_2" />
     <origin xyz="0 0 0" rpy="-1.5708 0 0" />
     <axis xyz="0 0 1" />
-    <limit lower="-0.583" upper="0.534" effort="15.0" velocity="2.0" />
+    <limit lower="-0.558" upper="0.558" effort="15.0" velocity="2.0" />
   </joint>
 </robot>
 
