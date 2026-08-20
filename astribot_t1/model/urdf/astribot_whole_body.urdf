@@ -177,8 +177,8 @@
     <origin xyz="0 0 0" rpy="1.5708 0 -1.5708"/>
     <axis xyz="0 0 1"/>
     <limit
-      lower="-1.627"
-      upper="1.645"
+      lower="-1.636"
+      upper="1.636"
       effort="200.0"
       velocity="3.0"/>
   </joint>
@@ -471,8 +471,8 @@
     <origin xyz="0 0 0" rpy="1.5708 0 0"/>
     <axis xyz="0 0 1"/>
     <limit
-      lower="-2.103"
-      upper="2.098"
+      lower="-2.101"
+      upper="2.101"
       effort="20.0"
       velocity="10.0"/>
   </joint>
@@ -505,8 +505,8 @@
     <origin xyz="0 0 0.245" rpy="-1.5708 0 0"/>
     <axis xyz="0 0 1"/>
     <limit
-      lower="-0.755"
-      upper="0.744"
+      lower="-0.75"
+      upper="0.75"
       effort="8.0"
       velocity="5.0"/>
   </joint>
@@ -539,8 +539,8 @@
     <origin xyz="0 0 0" rpy="0 1.5708 0"/>
     <axis xyz="0 0 1"/>
     <limit
-      lower="-1.449"
-      upper="1.485"
+      lower="-1.467"
+      upper="1.467"
       effort="8.0"
       velocity="5.0"/>
   </joint>
@@ -618,8 +618,8 @@
     <origin xyz="0 0 0.13" rpy="0 0 0"/>
     <axis xyz="0 0 1"/>
     <limit
-      lower="-1.606"
-      upper="3.158"
+      lower="-1.579"
+      upper="3.172"
       effort="80.0"
       velocity="3.0"/>
   </joint>
@@ -652,8 +652,8 @@
     <origin xyz="0 0 0" rpy="1.5708 0 0"/>
     <axis xyz="0 0 1"/>
     <limit
-      lower="-1.539"
-      upper="0.192"
+      lower="-1.538"
+      upper="0.201"
       effort="80.0"
       velocity="3.0"/>
   </joint>
@@ -686,8 +686,8 @@
     <origin xyz="0.0 0.05 0" rpy="1.5708 0 -1.5708"/>
     <axis xyz="0 0 1"/>
     <limit
-      lower="-0.741"
-      upper="2.331"
+      lower="-0.745"
+      upper="2.321"
       effort="40.0"
       velocity="3.0"/>
   </joint>
@@ -720,8 +720,8 @@
     <origin xyz="0.03 0 0.27" rpy="-1.5708 0 0"/>
     <axis xyz="0 0 1"/>
     <limit
-      lower="-0.052"
-      upper="2.574"
+      lower="-0.053"
+      upper="2.575"
       effort="45.0"
       velocity="5.0"/>
   </joint>
@@ -754,8 +754,8 @@
     <origin xyz="0 0 0" rpy="1.5708 0 0"/>
     <axis xyz="0 0 1"/>
     <limit
-      lower="-2.09"
-      upper="2.108"
+      lower="-2.101"
+      upper="2.101"
       effort="20.0"
       velocity="10.0"/>
   </joint>
@@ -788,8 +788,8 @@
     <origin xyz="0 0 0.245" rpy="-1.5708 0 0"/>
     <axis xyz="0 0 1"/>
     <limit
-      lower="-0.76"
-      upper="0.757"
+      lower="-0.75"
+      upper="0.75"
       effort="8.0"
       velocity="5.0"/>
   </joint>
@@ -822,8 +822,8 @@
     <origin xyz="0 0 0" rpy="0 1.5708 0"/>
     <axis xyz="0 0 1"/>
     <limit
-      lower="-1.477"
-      upper="1.447"
+      lower="-1.467"
+      upper="1.467"
       effort="8.0"
       velocity="5.0"/>
   </joint>

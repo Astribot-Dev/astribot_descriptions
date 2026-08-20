@@ -182,8 +182,8 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1.627</lower>
-          <upper>1.645</upper>
+          <lower>-1.636</lower>
+          <upper>1.636</upper>
           <effort>200.0</effort>
           <velocity>3.0</velocity>
         </limit>

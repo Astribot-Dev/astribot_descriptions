@@ -134,7 +134,7 @@
     <child link="astribot_torso_link_4" />
     <origin xyz="0 0 0" rpy="1.5708 0 -1.5708" />
     <axis xyz="0 0 1" />
-    <limit lower="-1.627" upper="1.645" effort="200.0" velocity="3.0" />
+    <limit lower="-1.636" upper="1.636" effort="200.0" velocity="3.0" />
   </joint>
   <joint name="astribot_torso_end_effector_fixed_joint" type="fixed">
     <parent link="astribot_torso_link_4" />

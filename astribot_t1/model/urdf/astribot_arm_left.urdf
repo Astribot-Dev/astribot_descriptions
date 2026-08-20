@@ -194,21 +194,21 @@
     <child link="astribot_arm_left_link_5" />
     <origin xyz="0 0 0" rpy="1.5708 0 0" />
     <axis xyz="0 0 1" />
-    <limit lower="-2.103" upper="2.098" effort="20.0" velocity="10.0" />
+    <limit lower="-2.101" upper="2.101" effort="20.0" velocity="10.0" />
   </joint>
   <joint name="astribot_arm_left_joint_6" type="revolute">
     <parent link="astribot_arm_left_link_5" />
     <child link="astribot_arm_left_link_6" />
     <origin xyz="0 0 0.245" rpy="-1.5708 0 0" />
     <axis xyz="0 0 1" />
-    <limit lower="-0.755" upper="0.744" effort="8.0" velocity="5.0" />
+    <limit lower="-0.75" upper="0.75" effort="8.0" velocity="5.0" />
   </joint>
   <joint name="astribot_arm_left_joint_7" type="revolute">
     <parent link="astribot_arm_left_link_6" />
     <child link="astribot_arm_left_link_7" />
     <origin xyz="0 0 0" rpy="0 1.5708 0" />
     <axis xyz="0 0 1" />
-    <limit lower="-1.449" upper="1.485" effort="8.0" velocity="5.0" />
+    <limit lower="-1.467" upper="1.467" effort="8.0" velocity="5.0" />
   </joint>
   <joint name="astribot_arm_left_tool_joint" type="fixed">
     <parent link="astribot_arm_left_link_7" />

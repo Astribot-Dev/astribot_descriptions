@@ -37,7 +37,7 @@
                     <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_head_base_link" pos="0.0 0.0 0.4859" material="M_dark_shell" />
                     <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_left_base_link" pos="0.0 0.0 0.3895" quat="-0.49999816339744824 0.4999999999966268 0.4999999999966268 0.5000018366025517" material="M_dark_shell" />
                     <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_right_base_link" pos="0.0 0.0 0.3895" quat="0.49999816339744824 0.4999999999966268 -0.4999999999966268 0.5000018366025517" material="M_dark_shell" />
-                    <joint name="astribot_torso_joint_4" pos="0 0 0" axis="0 0 1" range="-1.627 1.645" />
+                    <joint name="astribot_torso_joint_4" pos="0 0 0" axis="0 0 1" range="-1.636 1.636" />
                     <body name="astribot_head_link_1" pos="0.0 0.0 0.4859">
                         <inertial pos="1.9e-05 0.006577 0.081061" mass="0.256916" diaginertia="0.001804 0.0018239246112601586 7.307538873984129e-05" quat="0.9991468367076948 0.041298894622096814 0.0 0.0" />
                         <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_head_link_1" material="M_dark_shell" />
@@ -69,17 +69,17 @@
                                     <body name="astribot_arm_left_link_5" pos="0.0 0.0 0.0" quat="0.7071054825112363 0.7071080798594735 0.0 0.0">
                                         <inertial pos="-0.00201275 0.00172804 0.102512" mass="1.187192" diaginertia="0.00018249892468573273 0.00017671359350123858 0.00017146119555837608" quat="0.7536708418109078 0.1282401905920604 -0.6273387287427897 -0.14825935093723414" />
                                         <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_link_5" material="M_white_shell" />
-                                        <joint name="astribot_arm_left_joint_5" pos="0 0 0" axis="0 0 1" range="-2.103 2.098" />
+                                        <joint name="astribot_arm_left_joint_5" pos="0 0 0" axis="0 0 1" range="-2.101 2.101" />
                                         <body name="astribot_arm_left_link_6" pos="0.0 0.0 0.245" quat="0.7071054825112363 -0.7071080798594735 0.0 0.0">
                                             <inertial pos="0.00575764 -0.0155831 -0.000365501" mass="0.291449" diaginertia="0.00018079207976885974 0.00017599555410115116 0.00017248074136584895" quat="0.5092611009258762 0.6010108603440621 -0.2309629978153223 -0.5710474327693053" />
                                             <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_link_6" material="M_white_shell" />
-                                            <joint name="astribot_arm_left_joint_6" pos="0 0 0" axis="0 0 1" range="-0.755 0.744" />
+                                            <joint name="astribot_arm_left_joint_6" pos="0 0 0" axis="0 0 1" range="-0.75 0.75" />
                                             <body name="astribot_arm_left_link_7" pos="0.0 0.0 0.0" quat="0.7071054825112363 0.0 0.7071080798594735 0.0">
                                                 <inertial pos="1.8e-05 -0.0052 0.001774" mass="0.04" diaginertia="0.000161 0.000129 6.4e-05" />
                                                 <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_link_7" material="M_white_shell" />
                                                 <site name="arm_left_tool" pos="0 -0.15 0" />
                                                 <site name="force_torque_sensor_left" />
-                                                <joint name="astribot_arm_left_joint_7" pos="0 0 0" axis="0 0 1" range="-1.449 1.485" />
+                                                <joint name="astribot_arm_left_joint_7" pos="0 0 0" axis="0 0 1" range="-1.467 1.467" />
                                                 <body name="arm_left_tool_cam" pos="0 -0.15 0">
                                                     <camera name="left_wrist_rgbd" pos="0.011420996159648984 0.058882000224149605 0.044260118849329295" quat="0.703108425353722 -0.7109134990656752 -0.009037420129074155 -0.012604129490710232" fovy="60" />
                                                     <site name="left_wrist_rgbd_site" pos="0.011420996159648984 0.058882000224149605 0.044260118849329295" quat="0.006918238 -0.7052276075 0.7087943169 -0.0147233117" size="0.005" rgba="0 1 1 1" />
@@ -133,33 +133,33 @@
                     <body name="astribot_arm_right_link_1" pos="4.775166634513052e-07 -0.129999999999123 0.38950000000175405" quat="0.49999816339744835 0.4999999999966269 -0.4999999999966269 0.5000018366025517">
                         <inertial pos="-0.050001 -0.0110283 -0.0348687" mass="0.943987" diaginertia="0.0059431294288417 0.0059423835288015545 0.00018671489366744366" quat="0.976092461384777 -6.860148468869903e-06 1.3564048657907421e-05 -0.2173557144331906" />
                         <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_link_1" material="M_dark_shell" />
-                        <joint name="astribot_arm_right_joint_1" pos="0 0 0" axis="0 0 1" range="-1.606 3.158" />
+                        <joint name="astribot_arm_right_joint_1" pos="0 0 0" axis="0 0 1" range="-1.579 3.172" />
                         <body name="astribot_arm_right_link_2" pos="0.0 0.0 0.0" quat="0.7071054825112363 0.7071080798594735 0.0 0.0">
                             <inertial pos="-0.0305299 0.034114 -0.0260945" mass="0.913929" diaginertia="0.005614290463892217 0.005613130949658324 0.00018561814891607353" quat="0.8885935613233833 0.25156759470762957 0.34326442389434786 0.17112791518663978" />
                             <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_right_link_2" material="M_white_shell" />
-                            <joint name="astribot_arm_right_joint_2" pos="0 0 0" axis="0 0 1" range="-1.539 0.192" />
+                            <joint name="astribot_arm_right_joint_2" pos="0 0 0" axis="0 0 1" range="-1.538 0.201" />
                             <body name="astribot_arm_right_link_3" pos="0.0 0.05 0.0" quat="-0.49999816339744824 -0.4999999999966268 0.5000018366025517 0.4999999999966268">
                                 <inertial pos="-0.0103515 0.00256775 0.0799995" mass="2.041129" diaginertia="0.0001687630126734137 0.00016652494400575156 0.00013769629263509465" quat="0.9599062222203384 0.018656523577505264 -0.02490500043675036 -0.2785888002485492" />
                                 <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_link_3" material="M_white_shell" />
-                                <joint name="astribot_arm_right_joint_3" pos="0 0 0" axis="0 0 1" range="-0.741 2.331" />
+                                <joint name="astribot_arm_right_joint_3" pos="0 0 0" axis="0 0 1" range="-0.745 2.321" />
                                 <body name="astribot_arm_right_link_4" pos="0.03 0.0 0.27" quat="0.7071054825112363 -0.7071080798594735 0.0 0.0">
                                     <inertial pos="-0.00825508 -0.0600088 -0.021136" mass="0.162091" diaginertia="0.00015939743968558338 0.00015052057230099115 0.00013145297696492885" quat="0.5864536555811963 0.5346893431510958 -0.3669130140163876 -0.48533932080711456" />
                                     <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_link_4" material="M_white_shell" />
-                                    <joint name="astribot_arm_right_joint_4" pos="0 0 0" axis="0 0 1" range="-0.052 2.574" />
+                                    <joint name="astribot_arm_right_joint_4" pos="0 0 0" axis="0 0 1" range="-0.053 2.575" />
                                     <body name="astribot_arm_right_link_5" pos="0.0 0.0 0.0" quat="0.7071054825112363 0.7071080798594735 0.0 0.0">
                                         <inertial pos="-0.00155915 -0.00397887 0.116108" mass="1.027654" diaginertia="0.00013549612968876012 0.00012070907927671738 0.00011020000025000447" quat="0.9530845909287341 -0.169708729830273 -0.25059333814463114 0.005629247830184495" />
                                         <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_link_5" material="M_white_shell" />
-                                        <joint name="astribot_arm_right_joint_5" pos="0 0 0" axis="0 0 1" range="-2.09 2.108" />
+                                        <joint name="astribot_arm_right_joint_5" pos="0 0 0" axis="0 0 1" range="-2.101 2.101" />
                                         <body name="astribot_arm_right_link_6" pos="0.0 0.0 0.245" quat="0.7071054825112363 -0.7071080798594735 0.0 0.0">
                                             <inertial pos="0.00285412 -0.0244072 0.00035094" mass="0.29142" diaginertia="0.0001261063224986391 0.00010746993232221113 9.999997799374834e-05" quat="0.9404074980909604 0.26443438968022454 -0.04452485306314678 -0.20910697871771952" />
                                             <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_link_6" material="M_white_shell" />
-                                            <joint name="astribot_arm_right_joint_6" pos="0 0 0" axis="0 0 1" range="-0.76 0.757" />
+                                            <joint name="astribot_arm_right_joint_6" pos="0 0 0" axis="0 0 1" range="-0.75 0.75" />
                                             <body name="astribot_arm_right_link_7" pos="0.0 0.0 0.0" quat="0.7071054825112363 0.0 0.7071080798594735 0.0">
                                                 <inertial pos="1.8e-05 -0.0052 0.001774" mass="0.04" diaginertia="0.000161 0.000129 6.4e-05" />
                                                 <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_arm_link_7" material="M_white_shell" />
                                                 <site name="arm_right_tool" pos="0 -0.15 0" />
                                                 <site name="force_torque_sensor_right" />
-                                                <joint name="astribot_arm_right_joint_7" pos="0 0 0" axis="0 0 1" range="-1.477 1.447" />
+                                                <joint name="astribot_arm_right_joint_7" pos="0 0 0" axis="0 0 1" range="-1.467 1.467" />
                                                 <body name="arm_right_tool_cam" pos="0 -0.15 0">
                                                     <camera name="right_wrist_rgbd" pos="0.00772 0.05592 0.04319" quat="-0.7130607009975457 0.7006910271198059 0.013493708973317153 0.019860539389038687" fovy="60" />
                                                     <site name="right_wrist_rgbd_site" pos="0.00772 0.05592 0.04319" quat="0.0228619611 -0.7036924489 0.7100592793 -0.0104922872" size="0.005" rgba="0 1 1 1" />
