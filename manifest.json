@@ -3,8 +3,8 @@
   "target": "astribot_descriptions_github",
   "variant_id": "astribot_s1",
   "version": "v0.0.0-dev",
-  "git_sha": "928ad0db05c809a1e4480d5fc93c4f6f6fe4dfd8",
-  "build_time": "2026-08-20T10:49:47Z",
+  "git_sha": "87e25081d825a8366ac6ce744a748e760de55fc5",
+  "build_time": "2026-08-26T14:11:34Z",
   "visibility": "public",
   "files": [
     {
