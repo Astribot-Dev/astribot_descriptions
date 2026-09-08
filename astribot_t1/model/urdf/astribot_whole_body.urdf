@@ -338,7 +338,7 @@
       lower="-3.172"
       upper="1.579"
       effort="80.0"
-      velocity="3.0"/>
+      velocity="3.5"/>
   </joint>
   <link name="astribot_arm_left_link_1">
     <inertial>
@@ -372,7 +372,7 @@
       lower="-1.538"
       upper="0.201"
       effort="80.0"
-      velocity="3.0"/>
+      velocity="3.5"/>
   </joint>
   <link name="astribot_arm_left_link_2">
     <inertial>
@@ -406,7 +406,7 @@
       lower="-2.321"
       upper="0.745"
       effort="40.0"
-      velocity="3.0"/>
+      velocity="3.5"/>
   </joint>
   <link name="astribot_arm_left_link_3">
     <inertial>
@@ -508,7 +508,7 @@
       lower="-0.75"
       upper="0.75"
       effort="8.0"
-      velocity="5.0"/>
+      velocity="5.5"/>
   </joint>
   <link name="astribot_arm_left_link_6">
     <inertial>
@@ -542,7 +542,7 @@
       lower="-1.467"
       upper="1.467"
       effort="8.0"
-      velocity="5.0"/>
+      velocity="5.5"/>
   </joint>
   <link name="astribot_arm_left_link_7">
     <inertial>
@@ -621,7 +621,7 @@
       lower="-1.579"
       upper="3.172"
       effort="80.0"
-      velocity="3.0"/>
+      velocity="3.5"/>
   </joint>
   <link name="astribot_arm_right_link_1">
     <inertial>
@@ -655,7 +655,7 @@
       lower="-1.538"
       upper="0.201"
       effort="80.0"
-      velocity="3.0"/>
+      velocity="3.5"/>
   </joint>
   <link name="astribot_arm_right_link_2">
     <inertial>
@@ -689,7 +689,7 @@
       lower="-0.745"
       upper="2.321"
       effort="40.0"
-      velocity="3.0"/>
+      velocity="3.5"/>
   </joint>
   <link name="astribot_arm_right_link_3">
     <inertial>
@@ -791,7 +791,7 @@
       lower="-0.75"
       upper="0.75"
       effort="8.0"
-      velocity="5.0"/>
+      velocity="5.5"/>
   </joint>
   <link name="astribot_arm_right_link_6">
     <inertial>
@@ -825,7 +825,7 @@
       lower="-1.467"
       upper="1.467"
       effort="8.0"
-      velocity="5.0"/>
+      velocity="5.5"/>
   </joint>
   <link name="astribot_arm_right_link_7">
     <inertial>

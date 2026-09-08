@@ -1176,7 +1176,7 @@
           <lower>-3.172</lower>
           <upper>1.579</upper>
           <effort>80.0</effort>
-          <velocity>3.0</velocity>
+          <velocity>3.5</velocity>
         </limit>
       </axis>
     </joint>
@@ -1190,7 +1190,7 @@
           <lower>-1.538</lower>
           <upper>0.201</upper>
           <effort>80.0</effort>
-          <velocity>3.0</velocity>
+          <velocity>3.5</velocity>
         </limit>
       </axis>
     </joint>
@@ -1204,7 +1204,7 @@
           <lower>-2.321</lower>
           <upper>0.745</upper>
           <effort>40.0</effort>
-          <velocity>3.0</velocity>
+          <velocity>3.5</velocity>
         </limit>
       </axis>
     </joint>
@@ -1246,7 +1246,7 @@
           <lower>-0.75</lower>
           <upper>0.75</upper>
           <effort>8.0</effort>
-          <velocity>5.0</velocity>
+          <velocity>5.5</velocity>
         </limit>
       </axis>
     </joint>
@@ -1260,7 +1260,7 @@
           <lower>-1.467</lower>
           <upper>1.467</upper>
           <effort>8.0</effort>
-          <velocity>5.0</velocity>
+          <velocity>5.5</velocity>
         </limit>
       </axis>
     </joint>
@@ -1289,7 +1289,7 @@
           <lower>-1.579</lower>
           <upper>3.172</upper>
           <effort>80.0</effort>
-          <velocity>3.0</velocity>
+          <velocity>3.5</velocity>
         </limit>
       </axis>
     </joint>
@@ -1303,7 +1303,7 @@
           <lower>-1.538</lower>
           <upper>0.201</upper>
           <effort>80.0</effort>
-          <velocity>3.0</velocity>
+          <velocity>3.5</velocity>
         </limit>
       </axis>
     </joint>
@@ -1317,7 +1317,7 @@
           <lower>-0.745</lower>
           <upper>2.321</upper>
           <effort>40.0</effort>
-          <velocity>3.0</velocity>
+          <velocity>3.5</velocity>
         </limit>
       </axis>
     </joint>
@@ -1359,7 +1359,7 @@
           <lower>-0.75</lower>
           <upper>0.75</upper>
           <effort>8.0</effort>
-          <velocity>5.0</velocity>
+          <velocity>5.5</velocity>
         </limit>
       </axis>
     </joint>
@@ -1373,7 +1373,7 @@
           <lower>-1.467</lower>
           <upper>1.467</upper>
           <effort>8.0</effort>
-          <velocity>5.0</velocity>
+          <velocity>5.5</velocity>
         </limit>
       </axis>
     </joint>
