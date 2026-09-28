@@ -28,6 +28,14 @@
           </mesh>
         </geometry>
       </visual>
+      <collision name="astribot_torso_base_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_chassis/astribot_torso_base_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_torso_link_1">
       <pose relative_to="astribot_torso_joint_1">0 0 0 0 0 0</pose>
@@ -52,6 +60,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_torso_link_1_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_torso/astribot_torso_link_1_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_torso_link_2">
       <pose relative_to="astribot_torso_joint_2">0 0 0 0 0 0</pose>
@@ -75,6 +91,14 @@
           </mesh>
         </geometry>
       </visual>
+      <collision name="astribot_torso_link_2_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_torso/astribot_torso_link_2_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_torso_link_3">
       <pose relative_to="astribot_torso_joint_3">0 0 0 0 0 0</pose>
@@ -99,6 +123,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_torso_link_3_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_torso/astribot_torso_link_3_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_torso_link_4">
       <pose relative_to="astribot_torso_joint_4">0 0 0 0 0 0</pose>
@@ -122,6 +154,14 @@
           </mesh>
         </geometry>
       </visual>
+      <collision name="astribot_torso_link_4_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_torso/astribot_torso_link_4_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_torso_end_effector">
       <pose relative_to="astribot_torso_end_effector_fixed_joint">0 0 0 0 0 0</pose>
@@ -161,6 +201,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_head_base_link_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_head/astribot_head_base_link_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_head_link_1">
       <pose relative_to="astribot_head_joint_1">0 0 0 0 0 0</pose>
@@ -185,6 +233,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_head_link_1_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_head/astribot_head_link_1_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_head_link_2">
       <pose relative_to="astribot_head_joint_2">0 0 0 0 0 0</pose>
@@ -208,6 +264,14 @@
           </mesh>
         </geometry>
       </visual>
+      <collision name="astribot_head_link_2_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_head/astribot_head_link_2_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_arm_left_base_link">
       <pose relative_to="astribot_arm_left_base_fixed_joint">0 0 0 0 0 0</pose>
@@ -247,6 +311,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_arm_left_link_1_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_arm/astribot_arm_link_1_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_arm_left_link_2">
       <pose relative_to="astribot_arm_left_joint_2">0 0 0 0 0 0</pose>
@@ -271,6 +343,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_arm_left_link_2_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_arm/astribot_arm_link_2_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_arm_left_link_3">
       <pose relative_to="astribot_arm_left_joint_3">0 0 0 0 0 0</pose>
@@ -295,6 +375,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_arm_left_link_3_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_arm/astribot_arm_link_3_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_arm_left_link_4">
       <pose relative_to="astribot_arm_left_joint_4">0 0 0 0 0 0</pose>
@@ -319,6 +407,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_arm_left_link_4_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_arm/astribot_arm_link_4_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_arm_left_link_5">
       <pose relative_to="astribot_arm_left_joint_5">0 0 0 0 0 0</pose>
@@ -343,6 +439,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_arm_left_link_5_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_arm/astribot_arm_link_5_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_arm_left_link_6">
       <pose relative_to="astribot_arm_left_joint_6">0 0 0 0 0 0</pose>
@@ -367,6 +471,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_arm_left_link_6_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_arm/astribot_arm_link_6_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_arm_left_link_7">
       <pose relative_to="astribot_arm_left_joint_7">0 0 0 0 0 0</pose>
@@ -391,6 +503,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_arm_left_link_7_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_arm/astribot_arm_link_7_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_arm_left_tool_link">
       <pose relative_to="astribot_arm_left_tool_joint">0 0 0 0 0 0</pose>
@@ -460,6 +580,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_arm_right_link_1_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_arm/astribot_arm_link_1_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_arm_right_link_2">
       <pose relative_to="astribot_arm_right_joint_2">0 0 0 0 0 0</pose>
@@ -484,6 +612,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_arm_right_link_2_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_arm/astribot_arm_link_2_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_arm_right_link_3">
       <pose relative_to="astribot_arm_right_joint_3">0 0 0 0 0 0</pose>
@@ -508,6 +644,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_arm_right_link_3_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_arm/astribot_arm_link_3_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_arm_right_link_4">
       <pose relative_to="astribot_arm_right_joint_4">0 0 0 0 0 0</pose>
@@ -532,6 +676,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_arm_right_link_4_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_arm/astribot_arm_link_4_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_arm_right_link_5">
       <pose relative_to="astribot_arm_right_joint_5">0 0 0 0 0 0</pose>
@@ -556,6 +708,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_arm_right_link_5_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_arm/astribot_arm_link_5_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_arm_right_link_6">
       <pose relative_to="astribot_arm_right_joint_6">0 0 0 0 0 0</pose>
@@ -580,6 +740,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_arm_right_link_6_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_arm/astribot_arm_link_6_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_arm_right_link_7">
       <pose relative_to="astribot_arm_right_joint_7">0 0 0 0 0 0</pose>
@@ -604,6 +772,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_arm_right_link_7_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_arm/astribot_arm_link_7_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_arm_right_tool_link">
       <pose relative_to="astribot_arm_right_tool_joint">0 0 0 0 0 0</pose>
@@ -658,6 +834,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_gripper_left_base_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_gripper/astribot_gripper_base_link_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_gripper_left_Link_L1">
       <pose relative_to="astribot_gripper_left_joint_L1">0 0 0 0 0 0</pose>
@@ -682,6 +866,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_gripper_left_Link_L1_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_gripper/astribot_gripper_L1_Link_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_gripper_left_Link_L2">
       <pose relative_to="astribot_gripper_left_joint_L2">0 0 0 0 0 0</pose>
@@ -706,6 +898,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_gripper_left_Link_L2_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_gripper/astribot_gripper_L2_Link_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_gripper_left_Link_L11">
       <pose relative_to="astribot_gripper_left_joint_L11">0 0 0 0 0 0</pose>
@@ -730,6 +930,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_gripper_left_Link_L11_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_gripper/astribot_gripper_L11_Link_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_gripper_left_Link_R1">
       <pose relative_to="astribot_gripper_left_joint_R1">0 0 0 0 0 0</pose>
@@ -754,6 +962,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_gripper_left_Link_R1_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_gripper/astribot_gripper_R1_Link_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_gripper_left_Link_R2">
       <pose relative_to="astribot_gripper_left_joint_R2">0 0 0 0 0 0</pose>
@@ -778,6 +994,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_gripper_left_Link_R2_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_gripper/astribot_gripper_R2_Link_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_gripper_left_Link_R11">
       <pose relative_to="astribot_gripper_left_joint_R11">0 0 0 0 0 0</pose>
@@ -802,6 +1026,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_gripper_left_Link_R11_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_gripper/astribot_gripper_R11_Link_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_gripper_right_base">
       <pose relative_to="astribot_gripper_right_arm_joint">0 0 0 0 0 0</pose>
@@ -826,6 +1058,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_gripper_right_base_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_gripper/astribot_gripper_base_link_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_gripper_right_Link_L1">
       <pose relative_to="astribot_gripper_right_joint_L1">0 0 0 0 0 0</pose>
@@ -850,6 +1090,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_gripper_right_Link_L1_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_gripper/astribot_gripper_L1_Link_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_gripper_right_Link_L2">
       <pose relative_to="astribot_gripper_right_joint_L2">0 0 0 0 0 0</pose>
@@ -874,6 +1122,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_gripper_right_Link_L2_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_gripper/astribot_gripper_L2_Link_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_gripper_right_Link_L11">
       <pose relative_to="astribot_gripper_right_joint_L11">0 0 0 0 0 0</pose>
@@ -898,6 +1154,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_gripper_right_Link_L11_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_gripper/astribot_gripper_L11_Link_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_gripper_right_Link_R1">
       <pose relative_to="astribot_gripper_right_joint_R1">0 0 0 0 0 0</pose>
@@ -922,6 +1186,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_gripper_right_Link_R1_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_gripper/astribot_gripper_R1_Link_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_gripper_right_Link_R2">
       <pose relative_to="astribot_gripper_right_joint_R2">0 0 0 0 0 0</pose>
@@ -946,6 +1218,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_gripper_right_Link_R2_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_gripper/astribot_gripper_R2_Link_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_gripper_right_Link_R11">
       <pose relative_to="astribot_gripper_right_joint_R11">0 0 0 0 0 0</pose>
@@ -970,6 +1250,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_gripper_right_Link_R11_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_gripper/astribot_gripper_R11_Link_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="wheel_RF_Link">
       <pose relative_to="wheel_RF_Joint">0 0 0 0 0 0</pose>

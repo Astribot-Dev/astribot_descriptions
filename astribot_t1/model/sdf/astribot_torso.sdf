@@ -23,6 +23,14 @@
           </mesh>
         </geometry>
       </visual>
+      <collision name="astribot_torso_base_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_chassis/astribot_torso_base_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_torso_link_1">
       <pose relative_to="astribot_torso_joint_1">0 0 0 0 0 0</pose>
@@ -47,6 +55,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_torso_link_1_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_torso/astribot_torso_link_1_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_torso_link_2">
       <pose relative_to="astribot_torso_joint_2">0 0 0 0 0 0</pose>
@@ -70,6 +86,14 @@
           </mesh>
         </geometry>
       </visual>
+      <collision name="astribot_torso_link_2_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_torso/astribot_torso_link_2_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_torso_link_3">
       <pose relative_to="astribot_torso_joint_3">0 0 0 0 0 0</pose>
@@ -94,6 +118,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_torso_link_3_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_torso/astribot_torso_link_3_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_torso_link_4">
       <pose relative_to="astribot_torso_joint_4">0 0 0 0 0 0</pose>
@@ -117,6 +149,14 @@
           </mesh>
         </geometry>
       </visual>
+      <collision name="astribot_torso_link_4_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_torso/astribot_torso_link_4_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_torso_end_effector">
       <pose relative_to="astribot_torso_end_effector_fixed_joint">0 0 0 0 0 0</pose>

@@ -24,6 +24,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_head_base_link_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_head/astribot_head_base_link_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_head_link_1">
       <pose relative_to="astribot_head_joint_1">0 0 0 0 0 0</pose>
@@ -48,6 +56,14 @@
         </geometry>
         <material />
       </visual>
+      <collision name="astribot_head_link_1_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_head/astribot_head_link_1_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <link name="astribot_head_link_2">
       <pose relative_to="astribot_head_joint_2">0 0 0 0 0 0</pose>
@@ -71,6 +87,14 @@
           </mesh>
         </geometry>
       </visual>
+      <collision name="astribot_head_link_2_collision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>../../mesh/obj/t1_head/astribot_head_link_2_collision_mesh.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <joint name="astribot_head_joint_1" type="revolute">
       <pose relative_to="astribot_head_base_link">0 0 0 0 0 0</pose>
