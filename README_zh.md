@@ -1,66 +1,79 @@
-# Astribot S1 机器人描述文件
+# Astribot 机器人模型描述文件
 
-[English](README.md)
+[English](README.md) | [简体中文](README_zh.md)
 
-本仓库包含 Astribot S1 机器人的仿真模型文件，支持 URDF、MJCF（MuJoCo）和 USD 格式。
+本仓库提供 Astribot S1 和 T1 的模型描述文件及配套几何资源。
 
-# 使用指引
+# Usage Guide
 
-放入astribot_simulation仓库最表层目录
+## Repository Structure
 
-## 仓库结构
-
-```
+```text
 astribot_descriptions/
-├── urdf/astribot_s1_urdf/              # URDF & SDF 模型文件
-│   ├── astribot_whole_body.urdf              # 全身（躯干 + 双臂）
-│   ├── astribot_whole_body_with_head.urdf    # 全身 + 头部
-│   ├── astribot_whole_body_with_wheel.urdf   # 全身 + 头部 + 轮式底盘
-│   ├── astribot_whole_body_maniskill.urdf    # ManiSkill 版本（含夹爪）
-│   ├── astribot_arm_left.urdf                # 左臂
-│   ├── astribot_arm_right.urdf               # 右臂
-│   ├── astribot_torso.urdf                   # 躯干
-│   ├── astribot_head.urdf                    # 头部
-│   ├── *.sdf                                 # SDF 格式变体
-│   └── meshes/                               # 网格文件（STL、DAE、OBJ）
-├── mjcf/astribot_s1_mjcf/              # MuJoCo MJCF 模型文件
-│   ├── model_with_effector/
-│   │   ├── astribot_s1_model_with_gripper.xml
-│   │   └── astribot_s1_model_with_hand.xml
-│   ├── assets/                               # MJCF 资源定义
-│   └── actuators/                            # 执行器配置
-└── usd/astribot_s1_usd/               # USD 格式（Isaac Sim）
+├── astribot_s1/
+│   ├── mesh/                  # DAE、OBJ、STL 和纹理
+│   └── model/
+│       ├── mjcf/robot/
+│       ├── sdf/
+│       └── urdf/
+├── astribot_t1/
+│   ├── mesh/                  # DAE、OBJ、STL 和纹理
+│   └── model/
+│       ├── mjcf/robot/
+│       ├── sdf/
+│       └── urdf/
+├── manifest.json
+└── tools/check_assets.py
 ```
 
-## 机器人配置
+## Robot Configuration
 
-Astribot S1 是一款移动操作机器人，具备：
+本仓库包含 S1 和 T1 描述文件。主要整机文件如下：
 
-- 4 自由度躯干
-- 双 7 自由度手臂（共 14 自由度）
-- 2 自由度头部
-- 可选夹爪或灵巧手
+| 机型 | 动态 MJCF | 运动学 MJCF | 整机 URDF | 整机 SDF |
+|---|---|---|---|---|
+| S1 | `astribot_s1/model/mjcf/robot/s1.xml` | `astribot_s1/model/mjcf/robot/s1_kinematic.xml` | `astribot_s1/model/urdf/astribot_whole_body.urdf` | `astribot_s1/model/sdf/astribot_whole_body.sdf` |
+| T1 | `astribot_t1/model/mjcf/robot/t1.xml` | `astribot_t1/model/mjcf/robot/t1_kinematic.xml` | `astribot_t1/model/urdf/astribot_whole_body.urdf` | `astribot_t1/model/sdf/astribot_whole_body.sdf` |
 
-## 参数一致性
+模型通过相对路径引用配套文件，请保留机型目录结构。`assets.xml`、`kinematic.xml` 等 MJCF 片段不能作为独立入口使用。
 
-所有 URDF、SDF 和 MJCF 文件均基于统一的参数源，确保运动学和动力学参数一致：
+## Parameter Consistency
 
-- **运动学限位** — 关节位置、速度、力矩限幅。所有 URDF/SDF 的 `<limit>` 标签、MJCF 的 `range` 属性、USD 的 `physics:lowerLimit`/`physics:upperLimit`（单位为度）均派生自同一权威参数源。
-- **辨识动力学** — 通过物理一致性辨识获得的动力学参数（质量、质心、惯性张量）。这些参数贴合真实机器人动力学特性，可实现精确的动力学补偿，支持重力补偿/零力拖动、高精度轨迹跟踪、阻抗控制等力控功能开发，以及 Real2Sim 迁移。所有 URDF/SDF 的 `<inertial>` 标签、MJCF 的 `<inertial>` 参数、USD 的 `physics:mass`/`physics:diagonalInertia`/`physics:principalAxes` 均派生自同一参数源。
-- **MJCF 动力学** — MJCF 的 `<inertial>` 参数（pos, quat, mass, diaginertia）通过 MuJoCo 的 URDF 导入工具从 URDF 动力学参数转换而来。坐标系变换和惯量对角化在转换过程中自动处理，因此数值表示不同但物理含义等价。
-- **USD 动力学** — USD 的 `diagonalInertia` 和 `principalAxes` 通过对同一惯量张量进行特征值分解获得。关节限位从弧度转换为度。
+各格式文件记录了该格式和仓库版本所发布的参数。不同格式的坐标约定和参数表示方式可能不同，本指南不声称这些数值可以直接互换。关节限位和坐标系是模型描述数据，不是经认证的真实硬件限值。
 
-> **注意：** 用于生成这些参数的 config YAML 文件为内部维护，未包含在本仓库中。权威参数值可直接从 URDF 文件中读取（如 `<limit>` 和 `<inertial>` 标签）。
+## Formats
 
-## 支持格式
+| 格式 | 文件内容 |
+|---|---|
+| URDF | 机器人连杆、关节、惯性属性和几何资源引用 |
+| SDF | 整机模型描述和几何资源引用 |
+| MJCF | 动态与运动学模型描述及其引用片段 |
+| DAE、OBJ、STL 和纹理 | 外观与碰撞几何资源 |
 
-| 格式 | 仿真器                      | 文件路径                         |
-| ---- | --------------------------- | -------------------------------- |
-| URDF | ROS、PyBullet、ManiSkill 等 | `urdf/astribot_s1_urdf/*.urdf` |
-| SDF  | Gazebo                      | `urdf/astribot_s1_urdf/*.sdf`  |
-| MJCF | MuJoCo                      | `mjcf/astribot_s1_mjcf/`       |
-| USD  | Isaac Sim                   | `usd/astribot_s1_usd/`         |
+## License
 
-## 许可证
+仓库级许可证为 Apache License 2.0（Apache-2.0），详见 [LICENSE](LICENSE)。个别资源或标识可能有单独声明或许可条款；如适用，请遵循对应文件声明。Apache-2.0 不授予商标权。
 
-本项目基于 [Apache License 2.0](LICENSE) 开源协议发布。
+## Download and Verify Assets
+
+模型资源使用 Git LFS。请切换到所需仓库版本对应的 Tag，再获取并校验资源：
+
+```bash
+git lfs install --local
+git lfs pull
+python3 tools/check_assets.py
+```
+
+`manifest.json` 记录每项资源的预期大小和 SHA-256 摘要，适用时也记录 Git LFS 对象 ID。GitHub 自动生成的源码压缩包可能只包含 LFS 指针文件；完整获取资源请使用 Git LFS。
+
+## Quality Checks
+
+自动检查会核对资源清单和引用、解析仓库内的 URDF 文件，并检查 SDF 结构和资源引用。这些检查不构成对真实硬件限值或性能的认证。
+
+## Versions and Migration
+
+请使用同一仓库版本中的文件。升级前请阅读[变更记录](CHANGELOG.md)，从早期 S1 目录迁移时请阅读[迁移说明](MIGRATION.md)。模型限位和坐标系不是经认证的硬件规格。
+
+## Contributing and Support
+
+文件解析或资源查找问题请通过 [GitHub Issues](https://github.com/Astribot-Dev/astribot_descriptions/issues) 报告，并提供仓库 Tag、操作系统、使用工具、入口路径和最小复现步骤；提交日志前请移除个人路径和凭据。

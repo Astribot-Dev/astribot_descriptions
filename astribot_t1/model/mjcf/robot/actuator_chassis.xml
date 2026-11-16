@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<mujoco>
+    <actuator>
+        <velocity name="astribot_chassis_motor_RF" joint="wheel_RF_Joint" forcerange="-150 150" kv="30" />
+        <velocity name="astribot_chassis_motor_LF" joint="wheel_LF_Joint" forcerange="-150 150" kv="30" />
+        <velocity name="astribot_chassis_motor_RR" joint="wheel_RR_Joint" forcerange="-150 150" kv="30" />
+        <velocity name="astribot_chassis_motor_LR" joint="wheel_LR_Joint" forcerange="-150 150" kv="30" />
+    </actuator>
+</mujoco>

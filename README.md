@@ -1,65 +1,79 @@
-# Astribot S1 Robot Description Files
+# Astribot Robot Description Files
 
-[中文版](README_zh.md)
+[English](README.md) | [简体中文](README_zh.md)
 
-This repository contains the simulation model files for the Astribot S1 robot, including URDF, MJCF (MuJoCo), and USD formats.
+Robot description files and supporting geometry for Astribot S1 and T1.
 
 # Usage Guide
 
-Place this repository in the top-level directory of the astribot_simulation repository.
-
 ## Repository Structure
 
-```
+```text
 astribot_descriptions/
-├── urdf/astribot_s1_urdf/              # URDF & SDF model files
-│   ├── astribot_whole_body.urdf              # Whole body (torso + arms)
-│   ├── astribot_whole_body_with_head.urdf    # Whole body + head
-│   ├── astribot_whole_body_with_wheel.urdf   # Whole body + head + wheels
-│   ├── astribot_whole_body_maniskill.urdf    # ManiSkill version (with grippers)
-│   ├── astribot_arm_left.urdf                # Left arm only
-│   ├── astribot_arm_right.urdf               # Right arm only
-│   ├── astribot_torso.urdf                   # Torso only
-│   ├── astribot_head.urdf                    # Head only
-│   ├── *.sdf                                 # SDF format variants
-│   └── meshes/                               # Mesh files (STL, DAE, OBJ)
-├── mjcf/astribot_s1_mjcf/              # MuJoCo MJCF model files
-│   ├── model_with_effector/
-│   │   ├── astribot_s1_model_with_gripper.xml
-│   │   └── astribot_s1_model_with_hand.xml
-│   ├── assets/                               # MJCF asset definitions
-│   └── actuators/                            # Actuator configurations
-└── usd/astribot_s1_usd/               # USD format for Isaac Sim
+├── astribot_s1/
+│   ├── mesh/                  # DAE, OBJ, STL and textures
+│   └── model/
+│       ├── mjcf/robot/
+│       ├── sdf/
+│       └── urdf/
+├── astribot_t1/
+│   ├── mesh/                  # DAE, OBJ, STL and textures
+│   └── model/
+│       ├── mjcf/robot/
+│       ├── sdf/
+│       └── urdf/
+├── manifest.json
+└── tools/check_assets.py
 ```
 
 ## Robot Configuration
 
-The Astribot S1 is a mobile manipulation robot with:
-- 4-DOF torso
-- Dual 7-DOF arms (14 DOF total)
-- 2-DOF head
-- Optional grippers or dexterous hands
+This repository includes S1 and T1 descriptions. The primary whole-robot files are:
+
+| Robot | Dynamic MJCF | Kinematic MJCF | Whole-body URDF | Whole-body SDF |
+|---|---|---|---|---|
+| S1 | `astribot_s1/model/mjcf/robot/s1.xml` | `astribot_s1/model/mjcf/robot/s1_kinematic.xml` | `astribot_s1/model/urdf/astribot_whole_body.urdf` | `astribot_s1/model/sdf/astribot_whole_body.sdf` |
+| T1 | `astribot_t1/model/mjcf/robot/t1.xml` | `astribot_t1/model/mjcf/robot/t1_kinematic.xml` | `astribot_t1/model/urdf/astribot_whole_body.urdf` | `astribot_t1/model/sdf/astribot_whole_body.sdf` |
+
+Each model uses relative paths to supporting files. Keep the robot directory structure intact. Included MJCF fragments such as `assets.xml` and `kinematic.xml` are not standalone entry points.
 
 ## Parameter Consistency
 
-All URDF, SDF, and MJCF files share the same kinematic and dynamics parameters from a single source of truth:
-
-- **Kinematic limits** — Joint position, velocity, and effort limits. All URDF/SDF `<limit>` tags, MJCF `range` attributes, and USD `physics:lowerLimit`/`physics:upperLimit` (in degrees) are derived from the same authoritative source.
-- **Identified dynamics** — Dynamics parameters (mass, center of mass, inertia tensor) obtained through physically-consistent identification on the real robot. These parameters closely match the actual robot dynamics, enabling accurate dynamics compensation for force-control applications such as gravity compensation / zero-force dragging, high-precision trajectory tracking, impedance control, and real-to-sim (Real2Sim) transfer. All URDF/SDF `<inertial>` tags, MJCF `<inertial>` parameters, and USD `physics:mass`/`physics:diagonalInertia`/`physics:principalAxes` are derived from the same source.
-- **MJCF dynamics** — The MJCF `<inertial>` parameters (pos, quat, mass, diaginertia) are converted from URDF dynamics via MuJoCo's URDF import tool. The coordinate frame transformation and inertia diagonalization are handled automatically during conversion, so the values differ in representation but are physically equivalent.
-- **USD dynamics** — The USD `diagonalInertia` and `principalAxes` are obtained by eigenvalue decomposition of the same inertia tensor. Joint limits are converted from radians to degrees.
-
-> **Note:** The config YAML files used to generate these parameters are maintained internally and are not included in this repository. The authoritative parameter values can be read directly from the URDF files (e.g., `<limit>` and `<inertial>` tags).
+The files in each format are the source of the values distributed for that format and repository version. Coordinate conventions and parameter representations can differ between formats; this guide does not claim that their values are numerically interchangeable. Joint limits and frames are descriptive model data, not certified physical hardware limits.
 
 ## Formats
 
-| Format | Simulator | Files |
-|--------|-----------|-------|
-| URDF   | ROS, PyBullet, ManiSkill, etc. | `urdf/astribot_s1_urdf/*.urdf` |
-| SDF    | Gazebo | `urdf/astribot_s1_urdf/*.sdf` |
-| MJCF   | MuJoCo | `mjcf/astribot_s1_mjcf/` |
-| USD    | Isaac Sim | `usd/astribot_s1_usd/` |
+| Format | Included content |
+|---|---|
+| URDF | Robot links, joints, inertial properties and geometry references |
+| SDF | Whole-body model descriptions and geometry references |
+| MJCF | Dynamic and kinematic model descriptions and their included fragments |
+| DAE, OBJ, STL and textures | Visual and collision geometry assets |
 
 ## License
 
-This project is licensed under the [Apache License 2.0](LICENSE).
+The repository-level license is Apache License 2.0 (Apache-2.0); see [LICENSE](LICENSE). Individual assets or marks may have separate notices or terms. Follow any file-specific notice that applies. Apache-2.0 does not grant trademark rights.
+
+## Download and Verify Assets
+
+Model assets use Git LFS. Check out the exact tag for the repository version you need, then fetch and verify the assets:
+
+```bash
+git lfs install --local
+git lfs pull
+python3 tools/check_assets.py
+```
+
+`manifest.json` records the expected size and SHA-256 digest of each asset, including its Git LFS object ID where applicable. GitHub source archives may contain LFS pointer files instead of the asset payloads; use Git LFS for a complete checkout.
+
+## Quality Checks
+
+Automated checks validate the asset inventory and resource references, parse the distributed URDF files, and check SDF structure and references. These checks do not certify physical hardware limits or performance.
+
+## Versions and Migration
+
+Use files from a single repository version. Review [CHANGELOG.md](CHANGELOG.md) for changes and [MIGRATION.md](MIGRATION.md) before moving from the earlier S1 layout. Model limits and frames are not certified hardware specifications.
+
+## Contributing and Support
+
+Report file parsing or resource lookup issues through [GitHub Issues](https://github.com/Astribot-Dev/astribot_descriptions/issues). Include the repository tag, operating system, consuming tool and entry-point path with a minimal reproduction; remove personal paths and credentials from logs.

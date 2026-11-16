@@ -1,0 +1,6 @@
+<mujocoinclude>
+    <sensor>
+        <gyro name="lidar_imu_gyro" site="lidar_imu_site" noise="0.001" />
+        <accelerometer name="lidar_imu_acc" site="lidar_imu_site" noise="0.01" />
+    </sensor>
+</mujocoinclude>

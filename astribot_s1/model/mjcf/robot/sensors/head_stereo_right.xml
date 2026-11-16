@@ -1,0 +1,6 @@
+<mujocoinclude>
+    <body name="head_stereo_right" pos="-0.035 0 0" quat="0.7071068 0 0.7071068 0">
+        <inertial pos="0 0 0" mass="0.05" diaginertia="0.0001 0.0001 0.0001" />
+        <camera name="head_stereo_right" pos="0 0 0" euler="0 0 0" fovy="65" />
+    </body>
+</mujocoinclude>
