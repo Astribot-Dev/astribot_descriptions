@@ -2,6 +2,12 @@
 
 This file records changes to the model files and repository tooling. Published releases are identified by immutable version tags.
 
+## v2.1.2
+
+- Correct the left and right wrist RGB-D camera mounts in both T1 MJCF entry points. The vertical field of view changes from 60 degrees to approximately 57.8333 degrees, and the matching reference sites move with the cameras.
+- Attach the T1 chassis IMU site, front lidar assembly and rear depth camera assembly directly to `chassis_base`. They no longer inherit the 56.2 mm vertical offset of `physical_torso_base`.
+- Model entry paths and sensor names are unchanged. S1 models, URDF/SDF files and mesh payloads are unchanged from v2.1.1. See [MIGRATION.md](MIGRATION.md) if you applied custom calibration or used the previous transforms.
+
 ## v2.1.1
 
 This version distributes standalone S1/T1 model assets under Apache-2.0. Its scope does not include an integrated host release or a tested combination of other repositories.

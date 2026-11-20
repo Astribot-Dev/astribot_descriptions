@@ -7,6 +7,7 @@
 
 # Internal GitLab CI is retained in the private pre-release repository only.
 /.gitlab-ci.yml export-ignore
+/release.yaml export-ignore
 /.github/ export-ignore
 /ci/ export-ignore
 /tests/ export-ignore

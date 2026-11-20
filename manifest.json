@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "release_ready",
-  "version": "v2.1.1",
+  "version": "v2.1.2",
   "release_scope": "model_assets",
   "host_validation": "not_in_scope",
   "robots": [
@@ -2636,13 +2636,13 @@
     },
     {
       "path": "astribot_t1/model/mjcf/robot/kinematic.xml",
-      "size": 67933,
-      "sha256": "b2fa8dfc19828189fbc9dea2a70551a85cc1d181b93006cb7a8e9fd1140c68cb"
+      "size": 67864,
+      "sha256": "e930fbeaee4ef7af4edd799f3e1d32e4c5d9d229c36e88662701daf816bf9b7f"
     },
     {
       "path": "astribot_t1/model/mjcf/robot/kinematic_visual.xml",
-      "size": 30069,
-      "sha256": "e9d6b3e61f40652d8a62b93dca1709510f078ee58f8dd20e020e8dff4698676d"
+      "size": 30000,
+      "sha256": "00841210d7a84995ab57b4e5b55dd5d46708c146bd5f2f496f3cb89e3cf4b188"
     },
     {
       "path": "astribot_t1/model/mjcf/robot/sensors/chassis_rear_d405.xml",
@@ -2676,13 +2676,13 @@
     },
     {
       "path": "astribot_t1/model/mjcf/robot/t1.xml",
-      "size": 932,
-      "sha256": "3fc4376f84680727f861b84ff2baf90c9f365d8515086958095ef8b92a098b99"
+      "size": 1001,
+      "sha256": "40fdc04a73018a87ce4ba99b58dc603a4b4d1421bee0e498ca5846fdc9871520"
     },
     {
       "path": "astribot_t1/model/mjcf/robot/t1_kinematic.xml",
-      "size": 1249,
-      "sha256": "8f53ae61c09e87ae310bd5bc172ce7e5a0ce322cb5145754ebb08a9e99e56d3c"
+      "size": 1318,
+      "sha256": "5b3f119a2a304cc04d5fd2a5993d3b5a49e4a92765991fabd2a81cd6b34c3b8a"
     },
     {
       "path": "astribot_t1/model/sdf/astribot_head.sdf",

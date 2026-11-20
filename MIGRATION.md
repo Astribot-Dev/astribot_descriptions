@@ -18,6 +18,12 @@ Arm, head and torso effort and velocity limits differ from the earlier default r
 
 For T1, review `t1.xml`, `t1_kinematic.xml`, `kinematic.xml` and `kinematic_visual.xml` together. The chassis root is at the model origin, a physical torso body is included, wheel local positions are updated and `torso_tool` is present. Local-coordinate changes do not directly describe world-coordinate motion. Validate chassis, wheel, torso, tool and sensor transforms with the consuming controller.
 
+## Updating T1 sensor calibrations from v2.1.1 to v2.1.2
+
+Keep using the same dynamic or kinematic model entry. For both wrists, reload the camera pose and vertical field of view from the model before using stored camera matrices or previously recorded observations. Check any application override to avoid applying a calibration correction twice.
+
+The chassis IMU site, front lidar and rear camera now reference `chassis_base` directly. A transform previously measured relative to `physical_torso_base` is no longer the transform to use relative to `chassis_base`. Check transforms using the published entry point with your own application. To reproduce observations made with the previous calibration, pin `v2.1.1`.
+
 ## Upgrade and rollback
 
 Keep the previous application version, model tag, environment and local modifications available while testing a new combination. Test in a separate checkout so the existing installation remains recoverable.

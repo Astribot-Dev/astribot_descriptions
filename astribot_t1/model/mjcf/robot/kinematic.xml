@@ -2,7 +2,6 @@
 <mujoco model="astribot_torso">
     <inertial pos="-0.03463 -0.000203 0.004083" mass="22.14" diaginertia="1.095313881398545 0.6817082336304022 0.47365388497105315" quat="0.7220738505489941 0.0031269362149843986 0.6918087390317627 -0.0004951994940965037" />
     <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="astribot_torso_base_link" material="M_torso_base_link" />
-    <site name="astribot_chassis_imu_site" pos="0.175 0.085 0.01" />
     <body name="wheel_RF_Link" pos="0.216347 -0.216347 0.02" quat="0.270599 0.65328 -0.2706 0.653282">
         <inertial pos="2.7624e-07 -1.7583e-07 0.014539" quat="0.270598 0.653281 -0.270598 0.653281" mass="0.56418" diaginertia="0.0015639 0.000831884 0.000831876" />
         <joint name="wheel_RF_Joint" type="hinge" axis="0 0 1" limited="false" armature="0.05" damping="0.5" />
@@ -406,8 +405,8 @@
                                                 <site name="force_torque_sensor_left" />
                                                 <joint name="astribot_arm_left_joint_7" pos="0 0 0" axis="0 0 1" range="-1.467 1.467" />
                                                 <body name="arm_left_tool_cam" pos="0 -0.15 0">
-                                                    <camera name="left_wrist_rgbd" pos="0.011420996159648984 0.058882000224149605 0.044260118849329295" quat="0.703108425353722 -0.7109134990656752 -0.009037420129074155 -0.012604129490710232" fovy="60" />
-                                                    <site name="left_wrist_rgbd_site" pos="0.011420996159648984 0.058882000224149605 0.044260118849329295" quat="0.006918238 -0.7052276075 0.7087943169 -0.0147233117" size="0.005" rgba="0 1 1 1" />
+                                                    <camera name="left_wrist_rgbd" pos="0.009532305707743894 0.06207015893241446 0.04254519728505637" quat="0 0 0.7071067811865476 0.7071067811865476" fovy="57.83328458925149" />
+                                                    <site name="left_wrist_rgbd_site" pos="0.009532305707743894 0.06207015893241446 0.04254519728505637" quat="0.7071067811865476 0 0 -0.7071067811865476" size="0.005" rgba="0 1 1 1" />
                                                 </body>
                                                 <body name="astribot_arm_left_tool_link" pos="0 -0.048 0" euler="1.5707963 0 0">
                                                     <body name="astribot_gripper_left_base" pos="0 0 0">
@@ -486,8 +485,8 @@
                                                 <site name="force_torque_sensor_right" />
                                                 <joint name="astribot_arm_right_joint_7" pos="0 0 0" axis="0 0 1" range="-1.467 1.467" />
                                                 <body name="arm_right_tool_cam" pos="0 -0.15 0">
-                                                    <camera name="right_wrist_rgbd" pos="0.00772 0.05592 0.04319" quat="-0.7130607009975457 0.7006910271198059 0.013493708973317153 0.019860539389038687" fovy="60" />
-                                                    <site name="right_wrist_rgbd_site" pos="0.00772 0.05592 0.04319" quat="0.0228619611 -0.7036924489 0.7100592793 -0.0104922872" size="0.005" rgba="0 1 1 1" />
+                                                    <camera name="right_wrist_rgbd" pos="0.009532305707743894 0.06207015893241446 0.04254519728505637" quat="0 0 0.7071067811865476 0.7071067811865476" fovy="57.83328458925149" />
+                                                    <site name="right_wrist_rgbd_site" pos="0.009532305707743894 0.06207015893241446 0.04254519728505637" quat="0.7071067811865476 0 0 -0.7071067811865476" size="0.005" rgba="0 1 1 1" />
                                                 </body>
                                                 <body name="astribot_arm_right_tool_link" pos="0 -0.048 0" euler="1.5707963 0 0">
                                                     <body name="astribot_gripper_right_base" pos="0 0 0">

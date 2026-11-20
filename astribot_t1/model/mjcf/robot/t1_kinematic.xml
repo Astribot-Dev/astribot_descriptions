@@ -8,12 +8,13 @@
             <joint name="astribot_chassis_x" type="slide" axis="1 0 0" limited="false" range="-0.001 0.001" />
             <joint name="astribot_chassis_y" type="slide" axis="0 1 0" limited="false" range="-0.001 0.001" />
             <joint name="astribot_chassis_zrot" type="hinge" axis="0 0 1" limited="false" range="-0.001 0.001" />
+            <site name="astribot_chassis_imu_site" pos="0.175 0.085 0.01" />
             <!-- SDK chassis frame; the physical torso is welded at z=56.2 mm. -->
             <body name="physical_torso_base" pos="0 0 0.0562">
                 <include file="kinematic_visual.xml" />
-                <include file="sensors/lidar_mid360_front.xml" />
-                <include file="sensors/chassis_rear_d405.xml" />
             </body>
+            <include file="sensors/lidar_mid360_front.xml" />
+            <include file="sensors/chassis_rear_d405.xml" />
         </body>
     </worldbody>
     <include file="sensors/imu_front.xml" />

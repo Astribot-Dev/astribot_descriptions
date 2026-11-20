@@ -6,12 +6,13 @@
     <worldbody>
         <body name="chassis_base" pos="0 0 0" euler="0 0 0">
             <freejoint name="chassis_free" />
+            <site name="astribot_chassis_imu_site" pos="0.175 0.085 0.01" />
             <!-- SDK chassis frame; the physical torso is welded at z=56.2 mm. -->
             <body name="physical_torso_base" pos="0 0 0.0562">
                 <include file="kinematic.xml" />
-                <include file="sensors/lidar_mid360_front.xml" />
-                <include file="sensors/chassis_rear_d405.xml" />
             </body>
+            <include file="sensors/lidar_mid360_front.xml" />
+            <include file="sensors/chassis_rear_d405.xml" />
         </body>
     </worldbody>
     <include file="sensors/imu_front.xml" />
